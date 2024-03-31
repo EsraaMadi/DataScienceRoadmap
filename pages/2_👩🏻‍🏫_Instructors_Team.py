@@ -5,7 +5,7 @@ st.set_page_config(layout='wide')
 # show logo image
 _, im_col, _ = st.columns([0.35, 0.3, 0.35])
 with im_col:
-    st.image("ulits/tuwaiq-academy-logo.svg")
+    st.image("ulits/images/tuwaiq-academy-logo.svg")
 st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')
@@ -16,7 +16,7 @@ with col2:
     st.info("""## 👩🏻‍🏫 Esraa Madhi
     Data Science | AI Educator
     """)
-    st.image("ulits/Esraa.png")
+    st.image("ulits/images/Esraa.png")
     st.markdown('#')
     st.markdown("""---""")
 
@@ -26,11 +26,11 @@ with col1:
     st.success("""## 👩🏻‍🏫 Refal
     TBD
     """)
-    st.image("ulits/Refal.png")
+    st.image("ulits/images/Refal.png")
     st.markdown('#')
 with col3:
     st.success("""## 🧑🏼‍🏫 Yasser
     TBD
     """)
-    st.image("ulits/Yasser.png")
+    st.image("ulits/images/sYasser.png")
     st.markdown('#')

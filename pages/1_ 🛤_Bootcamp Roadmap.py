@@ -2,8 +2,7 @@ from datetime import datetime
 from collections import defaultdict, namedtuple
 import streamlit as st
 import pandas as pd
-import gspread
-from oauth2client.service_account import ServiceAccountCredentials
+import ulits.load_data as ld
 
 STAGE_COLORS = {
     "Side_session": "rgba(103, 36, 222, 0.2)",
@@ -44,26 +43,7 @@ ITEMS_NUMBERS = {
 
 @st.cache_data(show_spinner="Fetching roadmap...")
 def _get_raw_roadmap():
-    # Define the scope
-    scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
-    
-    # Add credentials to the account
-    creds = ServiceAccountCredentials.from_json_keyfile_name('data-science-bootcamp-roadmap-c697bad66df1.json', scope)
-    
-    # Authorize the clientsheet 
-    client = gspread.authorize(creds)
-    
-    # Open the spreadhseet
-    sheet = client.open('Bootcamp TOC')
-    
-    # Get the first sheet of the Spreadsheet
-    worksheet = sheet.get_worksheet(0)
-    
-    # Get all the records of the data
-    data = worksheet.get_all_records()
-    
-    # Convert to a DataFrame
-    df = pd.DataFrame(data)
+    df = ld.load_roadmap()
     return df
 
 def _get_item_tag(name):
@@ -144,7 +124,7 @@ def _draw_agenda(df, today):
 # show logo image
 _, im_col, _ = st.columns([0.35, 0.3, 0.35])
 with im_col:
-    st.image("ulits/tuwaiq-academy-logo.svg")
+    st.image("ulits/images/tuwaiq-academy-logo.svg")
 st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')

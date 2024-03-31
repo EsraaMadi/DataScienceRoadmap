@@ -5,7 +5,7 @@ st.set_page_config(layout='wide')
 # show logo image
 _, im_col, _ = st.columns([0.35, 0.3, 0.35])
 with im_col:
-    st.image("ulits/tuwaiq-academy-logo.svg")
+    st.image("ulits/images/tuwaiq-academy-logo.svg")
 st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')

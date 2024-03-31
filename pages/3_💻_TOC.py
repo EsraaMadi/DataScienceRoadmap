@@ -10,27 +10,7 @@ st.set_page_config(layout='wide')
 
 @st.cache_data(show_spinner="Fetching TOC...")
 def _get_raw_roadmap():
-    # Define the scope
-    scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
-    
-    # Add credentials to the account
-    creds = ServiceAccountCredentials.from_json_keyfile_name('data-science-bootcamp-roadmap-c697bad66df1.json', scope)
-    
-    # Authorize the clientsheet 
-    client = gspread.authorize(creds)
-    
-    # Open the spreadhseet
-    sheet = client.open('Bootcamp TOC')
-    
-    # Get the first sheet of the Spreadsheet
-    worksheet = sheet.get_worksheet(0)
-    
-    # Get all the records of the data
-    data = worksheet.get_all_records()
-    
-    # Convert to a DataFrame
-    df = pd.DataFrame(data)
-    df['Title'] = df['Title'].str.strip()
+    df = ld.load_roadmap()
     return df
 
 def _filter_groups(today, df):
@@ -108,7 +88,7 @@ today = datetime(2024, 5, 8).date() # datetime.now().date()
 # show logo image
 _, im_col, _ = st.columns([0.35, 0.3, 0.35])
 with im_col:
-    st.image("ulits/tuwaiq-academy-logo.svg")
+    st.image("ulits/images/tuwaiq-academy-logo.svg")
 st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')

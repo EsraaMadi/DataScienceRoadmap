@@ -32,5 +32,5 @@ with col3:
     st.success("""## 🧑🏼‍🏫 Yasser
     TBD
     """)
-    st.image("ulits/images/sYasser.png")
+    st.image("ulits/images/Yasser.png")
     st.markdown('#')

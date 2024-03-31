@@ -1,9 +1,7 @@
 import streamlit as st
 import pandas as pd
-import gspread
 from datetime import datetime
-from oauth2client.service_account import ServiceAccountCredentials
-import plotly.graph_objects as go
+import ulits.load_data as ld
 
 
 st.set_page_config(layout='wide')

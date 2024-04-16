@@ -9,7 +9,7 @@ STAGE_COLORS = {
     'Interactive Activity': "rgba(140, 46, 0, 0.2)",
     "Self Assessment": "rgba(251, 182, 66, 0.8)",
     "Hands-on_Session": "rgba(221, 0, 129, 0.2)",
-    "Lab": "rgba(221, 0, 129, 0.2)",
+    "Lab": "rgba(30, 0, 150, 0.2)",
     "Usecase": "rgba(221, 0, 129, 0.2)",
     "Usecase - Project": "rgba(254, 241, 96, 0.6)",
     "Usecase - Lab": "rgba(0, 120, 223, 0.2)",
@@ -19,7 +19,7 @@ STAGE_COLORS = {
 STAGE_EMOJI = {
     "Side_session": "🥙",
     'Interactive Activity': "🦋",
-    "Assessment": "🌚",
+    "Self Assessment": "🌚",
     "Hands-on_Session": "👭🏻",
     "Lab": "☂️",
     "Usecase": "🏄🏻‍♂️",

@@ -17,5 +17,5 @@ with col2:
 
 _, col, _ = st.columns([0.2, 0.6, 0.2])
 with col:
-    st.text_input('Network Name', 'Student_Bootcamp', disabled=True)
-    st.text_input('Password', 'Bootcamp@001', disabled=True)
+    st.text_input('Network Name', "Tuwaiq's Students", disabled=True)
+    st.text_input('Password', 'Tuwaiq@001', disabled=True)

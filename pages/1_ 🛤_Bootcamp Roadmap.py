@@ -101,7 +101,7 @@ def _draw_groups(time, groups):
 
             a, b = st.columns([0.03, 0.97])
             a.markdown(ITEMS_NUMBERS[item_count])
-            b.markdown(f"<strong>{row['Title']}</strong> {item_tag}{description}", unsafe_allow_html=True)
+            b.markdown(f"<strong><a href={row['Display_link']}> {row['Title']} </a> </strong> {item_tag}{description}", unsafe_allow_html=True)
             item_count+= 1
         st.markdown("""---""")
         
@@ -138,7 +138,8 @@ st.write(
 )
 
 # Get today's date
-today = datetime(2024, 4, 28).date() # datetime.now().date()
+#today = datetime(2024, 4, 28).date()
+today = datetime.now().date()
 
 roadmap_df = _get_raw_roadmap()
 _draw_agenda(roadmap_df, today)

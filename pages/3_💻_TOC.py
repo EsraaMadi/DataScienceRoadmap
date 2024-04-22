@@ -106,7 +106,7 @@ st.markdown('#')
 
 # show the first dropdown list
 roadmap_df = _get_raw_roadmap()
-make_choice = st.selectbox('Filter TOC By:',options = ['General Topics', 'Data Skill', 'Project phase'])
+make_choice = st.selectbox('Filter TOC By:',options = ['General Topics', 'Data Skill', 'Project Phase'])
 st.markdown('#')
 
 # show the dataframe
@@ -130,7 +130,7 @@ elif make_choice == 'Data Skill':
     
 else:
     toc_df = split_text_column(roadmap_df, 'DS_step')
-    step_choice = st.selectbox('Choose data project phase:',options = list(toc_df['DS_step'].unique()))
+    step_choice = st.selectbox('Choose data project phase:',options = sorted(list(toc_df['DS_step'].unique())))
     toc_df = toc_df[toc_df['DS_step']==step_choice][['Date','Title', 'type', 'general_type']]
     toc_df = _filter_groups(today, toc_df)
     toc_plot_df = toc_df[toc_df["Is Finished"]]

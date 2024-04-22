@@ -27,7 +27,7 @@ with col:
     st.info(' Quiznos في الدور الأرضي قرب المصاعد ممر  C', icon="ℹ️")
     st.markdown('#')
     st.markdown('#')
-_, col, _ = st.columns([0.4, 0.2, 0.4])
+_, col, _ = st.columns([0.45, 0.1, 0.45])
 with col:
     st.markdown("""---""")
     st.markdown('#')

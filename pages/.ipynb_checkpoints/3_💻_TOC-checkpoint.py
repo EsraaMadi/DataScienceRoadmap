@@ -82,7 +82,7 @@ def plot_stats(finished_df):
 
 
 # Get today's date
-today = datetime(2024, 5, 8).date() # datetime.now().date()
+today = datetime.now().date()
 
 # show logo image
 _, im_col, _ = st.columns([0.35, 0.3, 0.35])

@@ -25,7 +25,11 @@ with col:
     st.info('مصلى النساء في الدور الأول قرب المصاعد ممر  A', icon="ℹ️")
     st.info(' DUNKIN في الدور الأرضي قرب المصاعد ممر  A', icon="ℹ️")
     st.info(' Quiznos في الدور الأرضي قرب المصاعد ممر  C', icon="ℹ️")
-
-st.write("[خريطة المبنى](https://github.com/Tuwaiq-DS-ML-bootcamp-V-6/Others/blob/main/Building_Map.pdf)")
+    st.markdown('#')
+    st.markdown('#')
+    st.markdown("""---""")
+    st.markdown('#')
+    st.markdown('#')
+    st.write("[خريطة المبنى](https://github.com/Tuwaiq-DS-ML-bootcamp-V-6/Others/blob/main/Building_Map.pdf)")
     
 

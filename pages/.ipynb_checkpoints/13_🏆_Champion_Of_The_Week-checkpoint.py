@@ -16,7 +16,7 @@ st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')
 
-df = _get_raw_chanpion(file_name)
+df = _get_raw_chanpion()
 print(df.shape)
 # col1, col2, col3، col4, col5, col6 = st.columns(6)
 # col1.metric("Temperature", "70 °F", "1.2 °F")

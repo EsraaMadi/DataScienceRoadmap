@@ -53,11 +53,15 @@ def load_champian():
 
     # Loop through each worksheet in the spreadsheet
     for worksheet in sheet.worksheets():
-        # Get all the records of the data
-        data = worksheet.get_all_records()
+        
+        data = worksheet.get_all_values()
+        headers = data[10] 
+        df = pd.DataFrame(data[11:], columns=headers)
+        # # Get all the records of the data
+        # data = worksheet.get_all_records()
 
-        # Convert to a DataFrame
-        df = pd.DataFrame(data)
+        # # Convert to a DataFrame
+        # df = pd.DataFrame(data)
 
         # Store the DataFrame in a dictionary with the worksheet title as the key
         dataframes[worksheet.title] = df

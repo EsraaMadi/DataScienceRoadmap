@@ -57,7 +57,7 @@ def load_champian():
         headers = data[10] 
         data = [row[1:] for row in data[11:]] # delete first column 
         df = pd.DataFrame(data, columns=headers[1:])
-        df.dropna(inplace=True)
+        df.dropna(inplace=True, axis=0)
         # Store the DataFrame in a dictionary with the worksheet title as the key
         dataframes[worksheet.title] = df
 

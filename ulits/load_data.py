@@ -89,7 +89,7 @@ def _aggregate_data(df_dict):
     idx = 0
     agg_df = pd.DataFrame()
     for k, df in df_dict.items():
-        if idx = 0:
+        if idx == 0:
             agg_df = df
         else:
             agg_df.merge(df, on='Name', how='inner')

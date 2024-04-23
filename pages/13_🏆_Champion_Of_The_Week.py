@@ -17,7 +17,7 @@ st.markdown('#')
 st.markdown('#')
 
 df_lst = _get_raw_chanpion()
-print(df_lst)
+print('df_lst', df_lst)
 # df_lst = ld.get_champions(df_lst)
 # for i in df_lst:
 #     print(df_lst)

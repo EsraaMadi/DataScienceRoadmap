@@ -26,11 +26,13 @@ creds = ServiceAccountCredentials.from_json_keyfile_dict(credentials_dict, scope
 # Authorize the clientsheet 
 client = gspread.authorize(creds)
 
-# Open the spreadhseet
-sheet = client.open(file_name)
+
 
 
 def load_roadmap(file_name):
+
+    # Open the spreadhseet
+    sheet = client.open(file_name)
     
     # Get the first sheet of the Spreadsheet
     worksheet = sheet.get_worksheet(0)

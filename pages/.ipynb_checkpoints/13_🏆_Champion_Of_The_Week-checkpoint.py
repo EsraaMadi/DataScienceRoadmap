@@ -4,7 +4,7 @@ st.set_page_config(layout='wide')
 
 @st.cache_data(show_spinner="Fetching roadmap...")
 def _get_raw_roadmap():
-    df = ld.load_roadmap('Bootcamp TOC')
+    df = ld.load_roadmap('ChampionOfTheWeek template')
     return df
 
 
@@ -16,7 +16,8 @@ st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')
 
-col1, col2, col3، col4, col5, col6 = st.columns(3)
+df = _get_raw_roadmap()
+col1, col2, col3، col4, col5, col6 = st.columns(6)
 col1.metric("Temperature", "70 °F", "1.2 °F")
 col2.metric("Wind", "9 mph", "-8%")
 col3.metric("Humidity", "86%", "4%")

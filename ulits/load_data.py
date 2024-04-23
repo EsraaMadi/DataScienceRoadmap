@@ -57,7 +57,6 @@ def load_champian():
         headers = data[10]      
         data = [row[1:] for row in data[11:] if len(row[1])> 2] # delete first column 
         df = pd.DataFrame(data, columns=headers[1:])
-        df.dropna(how='all', inplace=True)
         # Store the DataFrame in a dictionary with the worksheet title as the key
         dataframes[worksheet.title] = df
 
@@ -69,7 +68,8 @@ def clean_week(df_dict):
         df_new = df.copy()
         duplicated_columns = set()
         
-        for col in df.columns:
+        for col in df.columns[1:]:
+            df[col] = df[col].astype(int)
             if '_' in col:
                 duplicated_columns.add(col.split('_')[0])
         for col in duplicated_columns:

@@ -2,7 +2,7 @@ import streamlit as st
 import ulits.load_data as ld
 st.set_page_config(layout='wide')
 
-@st.cache_data(show_spinner="Fetching roadmap...")
+# @st.cache_data(show_spinner="Fetching roadmap...")
 def _get_raw_chanpion():
     df_lst = ld.load_champian()
     return df_lst

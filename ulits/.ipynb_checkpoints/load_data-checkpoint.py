@@ -61,28 +61,30 @@ def load_champian():
         dataframes[worksheet.title] = df
 
     return dataframes
+def _clean_df(df):
+    duplicated_columns = set()
+    
+    for col in df.columns[1:]:
+        df[col] = df[col].astype(int)
+        if '_' in col:
+            duplicated_columns.add(col.split('_')[0])
+            
+    df_new = df.copy()
+    
+    for col in duplicated_columns:
+        # Use the filter method to select columns
+        selected_columns = df_new.filter(like=col)
+        
+        # Sum the selected columns and create a new column for the sum
+        df_new[col] = selected_columns.sum(axis=1)
+
+        # Drop the original columns
+        df_new = df_new.drop(selected_columns.columns, axis=1)
+    return df_new
     
 def _clean_week(df_dict):
     for k , df in df_dict.items():
-        duplicated_columns = set()
-        
-        for col in df.columns[1:]:
-            df[col] = df[col].astype(int)
-            if '_' in col:
-                duplicated_columns.add(col.split('_')[0])
-                
-        df_new = df.copy()
-        
-        for col in duplicated_columns:
-            # Use the filter method to select columns
-            selected_columns = df_new.filter(like=col)
-            
-            # Sum the selected columns and create a new column for the sum
-            df_new[col] = selected_columns.sum(axis=1)
-
-            # Drop the original columns
-            df_new = df_new.drop(selected_columns.columns, axis=1)
-        df_dict[k] = df_new
+        df_dict[k] = clean_df(df)
     return df_dict
                 
 def _aggregate_data(df_dict):
@@ -103,7 +105,8 @@ def get_champions(df_dict):
     student_result = {}
     df_dict_clean = _clean_week(df_dict)
     agg_df = _aggregate_data(df_dict_clean)
-    return agg_df
+    agg_df_clean = _clean_df(agg_df)
+    return agg_df_clean
     
 
 

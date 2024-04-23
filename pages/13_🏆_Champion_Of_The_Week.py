@@ -16,9 +16,11 @@ st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')
 
-df_lst = _get_raw_chanpion()
-st.dataframe(df_lst['Sheet1'])
-# df_lst = ld.get_champions(df_lst)
+df_dict = _get_raw_chanpion()
+
+df_dict_clean = ld.get_champions(df_dict)
+st.dataframe(df_dict_clean['Copy of Sheet1'])
+st.dataframe(df_dict_clean['Sheet1'])
 # for i in df_lst:
 #     print(df_lst)
 # col1, col2, col3، col4, col5, col6 = st.columns(6)

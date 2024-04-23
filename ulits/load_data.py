@@ -63,8 +63,8 @@ def load_champian():
 
     return dataframes
     
-def clean_week(df_lst):
-    for idx , df in enumerate(df_lst):
+def clean_week(df_dict):
+    for k , df in df_dict.items():
         
         new_df = df.copy()
         duplicated_columns = set()
@@ -81,16 +81,17 @@ def clean_week(df_lst):
 
             # Drop the original columns
             df_new = df_new.drop(selected_columns.columns, axis=1)
-    return df_lst
+        df_dict[k] = df
+    return df_dict
                 
         
                 
         
     
-def get_champions(df_lst):
+def get_champions(df_dict):
     students_dict = {}
     student_result = {}
-    clean_week(df_lst)
+    return clean_week(df_dict)
 
 
 

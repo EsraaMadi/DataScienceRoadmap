@@ -66,7 +66,7 @@ def load_champian():
 def clean_week(df_dict):
     for k , df in df_dict.items():
         
-        new_df = df.copy()
+        df_new = df.copy()
         duplicated_columns = set()
         
         for col in df.columns:
@@ -81,7 +81,7 @@ def clean_week(df_dict):
 
             # Drop the original columns
             df_new = df_new.drop(selected_columns.columns, axis=1)
-        df_dict[k] = df
+        df_dict[k] = df_new
     return df_dict
                 
         

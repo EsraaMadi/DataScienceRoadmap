@@ -84,7 +84,7 @@ def _clean_df(df):
     
 def _clean_week(df_dict):
     for k , df in df_dict.items():
-        df_dict[k] = clean_df(df)
+        df_dict[k] = _clean_df(df)
     return df_dict
                 
 def _aggregate_data(df_dict):

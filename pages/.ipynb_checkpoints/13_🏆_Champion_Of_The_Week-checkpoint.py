@@ -16,8 +16,10 @@ st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')
 
-df = _get_raw_chanpion()
-print(df.shape)
+df_lst = _get_raw_chanpion()
+df_lst = get_champions(df_lst)
+for i in df_lst:
+    print(df_lst)
 # col1, col2, col3، col4, col5, col6 = st.columns(6)
 # col1.metric("Temperature", "70 °F", "1.2 °F")
 # col2.metric("Wind", "9 mph", "-8%")

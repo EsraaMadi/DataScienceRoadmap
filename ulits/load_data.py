@@ -53,17 +53,43 @@ def load_champian():
 
     # Loop through each worksheet in the spreadsheet
     for worksheet in sheet.worksheets():
-        
         data = worksheet.get_all_values()
         headers = data[10] 
         df = pd.DataFrame(data[11:], columns=headers)
-        # # Get all the records of the data
-        # data = worksheet.get_all_records()
-
-        # # Convert to a DataFrame
-        # df = pd.DataFrame(data)
-
         # Store the DataFrame in a dictionary with the worksheet title as the key
         dataframes[worksheet.title] = df
 
     return dataframes
+def clean_week(df_lst):
+    for idx , df in enumerate(df_lst):
+        
+        new_df = df.copy()
+        duplicated_columns = set()
+        
+        for col in df.columns:
+            if '_' in col:
+                duplicated_columns.add(col.split('_')[0])
+        for col in duplicated_columns:
+            # Use the filter method to select columns
+            selected_columns = df_new.filter(like=col)
+            
+            # Sum the selected columns and create a new column for the sum
+            df_new[col] = selected_columns.sum(axis=1)
+
+            # Drop the original columns
+            df_new = df_new.drop(selected_columns.columns, axis=1)
+    return df_lst
+                
+        
+                
+        
+    
+def get_champions(df_lst):
+    students_dict = {}
+    student_result = {}
+    clean_week(df_lst)
+
+
+
+
+    

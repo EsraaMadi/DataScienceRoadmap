@@ -93,6 +93,7 @@ def _aggregate_data(df_dict):
             agg_df = df
         else:
             agg_df.merge(df, on='Name', how='inner')
+        idx += 1
     return agg_df
             
         

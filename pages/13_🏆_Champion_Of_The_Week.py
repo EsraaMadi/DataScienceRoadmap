@@ -1,5 +1,11 @@
 import streamlit as st
+import ulits.load_data as ld
 st.set_page_config(layout='wide')
+
+@st.cache_data(show_spinner="Fetching roadmap...")
+def _get_raw_roadmap():
+    df = ld.load_roadmap('ChampionOfTheWeek template')
+    return df
 
 
 # show logo image
@@ -10,7 +16,8 @@ st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')
 
-# _, col2, _ = st.columns([0.15, 0.7, 0.15])
-# with col2:
-#     st.image("ulits/images/discord.png")
-#     st.markdown('#')
+df = _get_raw_roadmap()
+col1, col2, col3، col4, col5, col6 = st.columns(3)
+col1.metric("Temperature", "70 °F", "1.2 °F")
+col2.metric("Wind", "9 mph", "-8%")
+col3.metric("Humidity", "86%", "4%")

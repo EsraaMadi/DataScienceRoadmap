@@ -17,9 +17,16 @@ credentials_dict = {
   "universe_domain": st.secrets["universe_domain"]
 }
 
+def read_worksheet(worksheet):
+    # Get all the records of the data
+    data = worksheet.get_all_records()
+    
+    # Convert to a DataFrame
+    df = pd.DataFrame(data)
+    return df
 
 
-def load_roadmap():
+def load_roadmap(file_name, all_sheets=False):
     # Define the scope
     scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
     
@@ -30,14 +37,15 @@ def load_roadmap():
     client = gspread.authorize(creds)
     
     # Open the spreadhseet
-    sheet = client.open('Bootcamp TOC')
+    spreadsheet = client.open(file_name)
+    sheets = spreadsheet.worksheets()
+
+    df_sheets = []
+    for sheet in sheets:
+        df_sheets.append(read_worksheet(worksheet))
     
     # Get the first sheet of the Spreadsheet
-    worksheet = sheet.get_worksheet(0)
-    
-    # Get all the records of the data
-    data = worksheet.get_all_records()
-    
-    # Convert to a DataFrame
-    df = pd.DataFrame(data)
-    return df
+    if all_sheets:
+        return df_sheets
+    else:
+        return df_sheets[0]

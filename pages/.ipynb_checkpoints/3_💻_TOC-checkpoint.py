@@ -9,7 +9,7 @@ st.set_page_config(layout='wide')
 
 @st.cache_data(show_spinner="Fetching TOC...")
 def _get_raw_roadmap():
-    df = ld.load_roadmap()
+    df = ld.load_roadmap('Bootcamp TOC')
     return df
 
 def _filter_groups(today, df):

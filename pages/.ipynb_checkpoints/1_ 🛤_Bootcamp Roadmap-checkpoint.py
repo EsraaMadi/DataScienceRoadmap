@@ -142,8 +142,8 @@ st.write(
 )
 
 # Get today's date
-#today = datetime(2024, 4, 28).date()
-today = datetime.now().date()
+today = datetime(2024, 5, 15).date()
+# today = datetime.now().date()
 
 roadmap_df = _get_raw_roadmap()
 _draw_agenda(roadmap_df, today)

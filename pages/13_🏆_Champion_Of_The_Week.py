@@ -3,8 +3,8 @@ import ulits.load_data as ld
 st.set_page_config(layout='wide')
 
 @st.cache_data(show_spinner="Fetching roadmap...")
-def _get_raw_roadmap():
-    df = ld.load_roadmap('ChampionOfTheWeek template')
+def _get_raw_chanpion():
+    df = ld.load_champian('DS Bootcamp 6/Others/ChampionOfTheWeek template')
     return df
 
 
@@ -16,8 +16,8 @@ st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')
 
-# df = _get_raw_roadmap()
-# print(df.shape)
+df = _get_raw_chanpion(file_name)
+print(df.shape)
 # col1, col2, col3، col4, col5, col6 = st.columns(6)
 # col1.metric("Temperature", "70 °F", "1.2 °F")
 # col2.metric("Wind", "9 mph", "-8%")

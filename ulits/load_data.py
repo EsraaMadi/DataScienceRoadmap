@@ -17,20 +17,20 @@ credentials_dict = {
   "universe_domain": st.secrets["universe_domain"]
 }
 
+# Define the scope
+scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
+
+# Add credentials to the account
+creds = ServiceAccountCredentials.from_json_keyfile_dict(credentials_dict, scope)
+
+# Authorize the clientsheet 
+client = gspread.authorize(creds)
+
+# Open the spreadhseet
+sheet = client.open(file_name)
 
 
 def load_roadmap(file_name):
-    # Define the scope
-    scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
-    
-    # Add credentials to the account
-    creds = ServiceAccountCredentials.from_json_keyfile_dict(credentials_dict, scope)
-    
-    # Authorize the clientsheet 
-    client = gspread.authorize(creds)
-    
-    # Open the spreadhseet
-    sheet = client.open(file_name)
     
     # Get the first sheet of the Spreadsheet
     worksheet = sheet.get_worksheet(0)
@@ -41,3 +41,20 @@ def load_roadmap(file_name):
     # Convert to a DataFrame
     df = pd.DataFrame(data)
     return df
+
+def load_champian(file_name):
+    # Initialize a dictionary to hold dataframes
+    dataframes = {}
+
+    # Loop through each worksheet in the spreadsheet
+    for worksheet in sheet.worksheets():
+        # Get all the records of the data
+        data = worksheet.get_all_records()
+
+        # Convert to a DataFrame
+        df = pd.DataFrame(data)
+
+        # Store the DataFrame in a dictionary with the worksheet title as the key
+        dataframes[worksheet.title] = df
+
+    return dataframes

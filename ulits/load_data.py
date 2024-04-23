@@ -62,6 +62,7 @@ def load_champian():
         dataframes[worksheet.title] = df
 
     return dataframes
+    
 def clean_week(df_lst):
     for idx , df in enumerate(df_lst):
         

@@ -44,9 +44,9 @@ def load_roadmap(file_name):
     df = pd.DataFrame(data)
     return df
 
-def load_champian(file_name):
+def load_champian():
     # Open the spreadhseet
-    sheet = client.open(file_name)
+    sheet = client.open_by_key('19Ft_cQgzZu4V1xh_OtFfnLgGEPslqmHjP2z8yKcLG8w')
     
     # Initialize a dictionary to hold dataframes
     dataframes = {}

@@ -4,8 +4,8 @@ st.set_page_config(layout='wide')
 
 @st.cache_data(show_spinner="Fetching roadmap...")
 def _get_raw_chanpion():
-    df = ld.load_champian('DS Bootcamp 6/Others/ChampionOfTheWeek template')
-    return df
+    df_lst = ld.load_champian()
+    return df_lst
 
 
 # show logo image

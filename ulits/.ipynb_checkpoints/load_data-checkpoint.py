@@ -64,14 +64,15 @@ def load_champian():
     
 def clean_week(df_dict):
     for k , df in df_dict.items():
-        
-        df_new = df.copy()
         duplicated_columns = set()
         
         for col in df.columns[1:]:
             df[col] = df[col].astype(int)
             if '_' in col:
                 duplicated_columns.add(col.split('_')[0])
+                
+        df_new = df.copy()
+        
         for col in duplicated_columns:
             # Use the filter method to select columns
             selected_columns = df_new.filter(like=col)

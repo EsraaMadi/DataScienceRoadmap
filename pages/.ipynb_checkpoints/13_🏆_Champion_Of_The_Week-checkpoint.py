@@ -19,8 +19,8 @@ st.markdown('#')
 df_dict = _get_raw_chanpion()
 
 df_dict_clean = ld.get_champions(df_dict)
-st.dataframe(df_dict_clean['Copy of Sheet1'])
-st.dataframe(df_dict_clean['Sheet1'])
+st.dataframe(df_dict_clean)
+
 # for i in df_lst:
 #     print(df_lst)
 # col1, col2, col3، col4, col5, col6 = st.columns(6)

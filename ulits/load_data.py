@@ -62,7 +62,7 @@ def load_champian():
 
     return dataframes
     
-def clean_week(df_dict):
+def _clean_week(df_dict):
     for k , df in df_dict.items():
         duplicated_columns = set()
         
@@ -85,14 +85,25 @@ def clean_week(df_dict):
         df_dict[k] = df_new
     return df_dict
                 
-        
-                
+def _aggregate_data(df_dict):
+    idx = 0
+    agg_df = pd.DataFrame()
+    for k, df in df_dict.items():
+        if idx = 0:
+            agg_df = df
+        else:
+            agg_df.merge(df, on='Name', how='inner')
+    return agg_df
+            
         
     
 def get_champions(df_dict):
     students_dict = {}
     student_result = {}
-    return clean_week(df_dict)
+    df_dict_clean = _clean_week(df_dict)
+    agg_df = _aggregate_data(df_dict_clean)
+    return agg_df
+    
 
 
 

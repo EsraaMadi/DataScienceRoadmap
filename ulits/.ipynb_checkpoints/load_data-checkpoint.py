@@ -55,7 +55,7 @@ def load_champian():
     for worksheet in sheet.worksheets():
         data = worksheet.get_all_values()
         headers = data[10] 
-        df = pd.DataFrame(data[11:], columns=headers)
+        df = pd.DataFrame(data[11:, 1:], columns=headers)
         # Store the DataFrame in a dictionary with the worksheet title as the key
         dataframes[worksheet.title] = df
 

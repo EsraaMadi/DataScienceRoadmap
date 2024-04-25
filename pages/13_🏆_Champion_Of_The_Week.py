@@ -12,8 +12,8 @@ MATRIC_COLORS = {
     'Week Activity': "rgba(140, 46, 0, 0.2)",
     "Hackerrank": "rgba(251, 182, 66, 0.8)",
     "Career Coach": "rgba(221, 0, 129, 0.2)",
-    "Clean Code": "rgba(30, 0, 150, 0.2)",
-    "Best Submit": "rgba(221, 0, 129, 0.2)",
+    "Clean Code": "rgba(0, 120, 223, 0.2)",
+    "Best Submit": "rgba(0, 135, 107, 0.2)",
     "Help Others": "rgba(254, 241, 96, 0.6)",
 }
 
@@ -35,7 +35,7 @@ def _get_materic(cols):
         display_matrices.append((
         f'<span style="background-color: {item_color}; padding: 1px 6px; '
         "margin: 0 5px; display: inline; vertical-align: middle; "
-f"border-radius: 0.25rem; font-size: 0.75rem; font-weight: 400; "
+f"border-radius: 0.25rem; font-size: 1.5rem; font-weight: 400; "
 f'white-space: nowrap">{item_emojy} {name}'
 "</span>"))
     return display_matrices

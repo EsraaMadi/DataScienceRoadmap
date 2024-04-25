@@ -1,5 +1,6 @@
 import streamlit as st
 import ulits.load_data as ld
+import math
 st.set_page_config(layout='wide')
 
 # @st.cache_data(show_spinner="Fetching roadmap...")
@@ -59,14 +60,15 @@ st.dataframe(df_students)
 
 # first section
 st.write( """### 🏆 Champion Of The Week based on:""")
-cols = st.columns(len(df_students.columns[1:]))
-
+row_col_no = len(df_students.columns[1:])/2
+cols_row1 = st.columns(math.ceil(row_col_no)
+cols_row2 = st.columns(math.floor(row_col_no)
+                       
 display_matrices = _get_materic(df_students.columns[1:])
-for c, i in zip(cols,display_matrices):
-    html_code = f"{i}"
-    c.markdown(html_code, unsafe_allow_html=True)
-for col, name in zip(cols, df_students.columns[1:]):
-    col.metric(name, "14.2%", "")
+for c, i in zip(cols_row1,display_matrices):
+    c.markdown(f"{i}", unsafe_allow_html=True)
+for c, i in zip(cols_row2,display_matrices[len(cols_row1):]):
+    c.markdown(f"{i}", unsafe_allow_html=True)
     
 st.markdown('#')
 st.markdown('#')

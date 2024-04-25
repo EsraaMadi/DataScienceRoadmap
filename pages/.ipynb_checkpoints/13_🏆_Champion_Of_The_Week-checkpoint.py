@@ -112,9 +112,9 @@ st.write( """### Top in each:""")
 
 
 # Find the student with the highest grade in each course
-df_champian = df_champian.set_index('Name')
-l_row = st.columns(len(df_students.columns[1:]))
-for c, col in zip(l_row, df_students.columns[1:]):
-    max_total = df_students[col].max()  # Get the maximum grade in the course
-    top_student = df_students[col].idxmax()  # Get the student name with the maximum grade
+df_students_i = df_students.set_index('Name')
+l_row = st.columns(len(df_students_i.columns[1:]))
+for c, col in zip(l_row, df_students_i.columns[1:]):
+    max_total = df_students_i[col].max()  # Get the maximum grade in the course
+    top_student = df_students_i[col].idxmax()  # Get the student name with the maximum grade
     c.metric(col, top_student, int(max_total))

@@ -99,7 +99,7 @@ st.markdown('#')
 
 st.write( """### Top 10 in our class:""")
 top_10_df = df_champian.nlargest(10, 'total')
-top_10_df_sorted = top_5_df.sort_values(by='total', ascending=False)
+top_10_df_sorted = top_10_df.sort_values(by='total', ascending=False)
 fig = px.bar(top_10_df_sorted, x='Name', y='total')
 st.plotly_chart(fig, use_container_width=True)
 st.dataframe(top_10_df_sorted)

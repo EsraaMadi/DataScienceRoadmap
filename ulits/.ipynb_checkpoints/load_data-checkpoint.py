@@ -53,7 +53,7 @@ def load_champian():
 
     # Loop through each worksheet in the spreadsheet
     for worksheet in sheet.worksheets():
-        if [worksheet.title] != 'temp':
+        if 'Week' in [worksheet.title]:
             data = worksheet.get_all_values()
             headers = data[10]      
             data = [row[1:] for row in data[11:] if len(row[1])> 2] # delete first column 

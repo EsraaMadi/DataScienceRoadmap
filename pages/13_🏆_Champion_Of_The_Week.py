@@ -46,7 +46,7 @@ def _get_champian_name(name):
         f'<span style="background-color: rgba(0, 135, 107, 0.2); padding: 1px 6px; '
         "margin: 0 5px; display: inline; vertical-align: middle; "
 f"border-radius: 0.25rem; font-size: 3.0rem; font-weight: 400; "
-f'white-space: nowrap">{name}'
+f'white-space: nowrap">{name}🌟'
 "</span>")
 
 week_no = 3
@@ -63,8 +63,6 @@ df_dict = _get_raw_chanpion(week_no)
 
 # aggregate all weeks data in one datafram
 df_students = ld.get_champions(df_dict)
-df_students['total'] = df_students.iloc[:, 1:].sum(axis=1)
-#st.dataframe(df_students)
 
 # first section
 st.write( """### Based on:""")
@@ -84,7 +82,9 @@ st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')
 
-top_1_df = df_students.nlargest(1, 'total')
+df_champian = df_students.copy()
+df_champian['total'] = df_students.iloc[:, 1:].sum(axis=1)
+top_1_df = df_champian.nlargest(1, 'total')
 st.write( """### 🏆 Our Champion Of The Week is:""")
 name = top_1_df["Name"].values[0]
 st.markdown(f"{_get_champian_name(name)}", unsafe_allow_html=True)
@@ -97,7 +97,8 @@ st.markdown('#')
 st.markdown('#')
 
 st.write( """### Top 5 in our class:""")
-
+top_5_df = df_champian.nlargest(5, 'total')
+st.bar_chart(top_5_df[['Name', 'total']])
 st.markdown('#')
 st.markdown('#')
 st.markdown("""---""")

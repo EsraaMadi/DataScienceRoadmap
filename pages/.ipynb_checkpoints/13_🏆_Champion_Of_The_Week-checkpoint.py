@@ -38,6 +38,7 @@ def _get_materic(cols):
 f"border-radius: 0.25rem; font-size: 0.75rem; font-weight: 400; "
 f'white-space: nowrap">{item_emojy} {name}'
 "</span>"))
+    return display_matrices
 
 
 week_no = 3

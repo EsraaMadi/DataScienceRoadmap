@@ -109,13 +109,12 @@ st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')
 st.write( """### Top in each:""")
-df_champian = df_champian.set_index('Name')
+
 
 # Find the student with the highest grade in each course
-top_1_each = df_champian.idxmax()
-st.dataframe(top_1_each)
-st.write(top_1_each.shape[0])
-l_row = st.columns(7)
-                       
-for c, i, n in zip(l_row, top_1_each.index, top_1_each.values):
-    c.metric(i, n, "")
+df_champian = df_champian.set_index('Name')
+l_row = st.columns(len(df_students.columns[1:]))
+for c, col in zip(l_row, df_students.columns[1:]):
+    max_total = df_students['col'].max()  # Get the maximum grade in the course
+    top_student = df_students['col'].idxmax()  # Get the student name with the maximum grade
+    c.metric(col, top_student, max_total)

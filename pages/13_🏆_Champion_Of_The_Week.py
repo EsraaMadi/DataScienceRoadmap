@@ -61,8 +61,8 @@ st.dataframe(df_students)
 # first section
 st.write( """### 🏆 Champion Of The Week based on:""")
 row_col_no = len(df_students.columns[1:])/2
-cols_row1 = st.columns(math.ceil(row_col_no)
-cols_row2 = st.columns(math.floor(row_col_no)
+cols_row1 = st.columns(math.ceil(row_col_no))
+cols_row2 = st.columns(math.floor(row_col_no))
                        
 display_matrices = _get_materic(df_students.columns[1:])
 for c, i in zip(cols_row1,display_matrices):

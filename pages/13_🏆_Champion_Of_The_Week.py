@@ -47,7 +47,7 @@ def _get_champian_name(name):
         "margin: 0 5px; display: inline; vertical-align: middle; "
 f"border-radius: 0.25rem; font-size: 1.9rem; font-weight: 400; "
 f'white-space: nowrap">{name}'
-"</span>"))
+"</span>")
 
 week_no = 3
 # show logo image
@@ -64,7 +64,7 @@ df_dict = _get_raw_chanpion(week_no)
 # aggregate all weeks data in one datafram
 df_students = ld.get_champions(df_dict)
 df_students['total'] = df_students.iloc[:, 1:].sum(axis=1)
-st.dataframe(df_students)
+#st.dataframe(df_students)
 
 # first section
 st.write( """### 🏆 Champion Of The Week based on:""")

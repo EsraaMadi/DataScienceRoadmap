@@ -1,6 +1,7 @@
 import streamlit as st
 import ulits.load_data as ld
 import math
+import plotly.express as px
 st.set_page_config(layout='wide')
 
 # @st.cache_data(show_spinner="Fetching roadmap...")
@@ -99,13 +100,22 @@ st.markdown('#')
 st.write( """### Top 5 in our class:""")
 top_5_df = df_champian.nlargest(5, 'total')
 top_5_df_sorted = top_5_df.sort_values(by='total', ascending=False)
-#st.dataframe(top_5_df)
-st.bar_chart(top_5_df_sorted.set_index('Name')['total'])
+fig = px.bar(top_5_df_sorted, x='Name', y='total')
+st.plotly_chart(fig, use_container_width=True)
+st.dataframe(top_5_df_sorted)
+# st.bar_chart(top_5_df_sorted.set_index('Name')['total'])
 st.markdown('#')
 st.markdown('#')
 st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')
 
-st.write( """### Top 1 in each:""")
-
+# l_row1 = st.columns(math.ceil(row_col_no))
+# l_row2 = st.columns(math.floor(row_col_no))
+                       
+# for c, i in zip(cols_row1,display_matrices):
+#     c.markdown(f"{i}", unsafe_allow_html=True)
+# for c, i in zip(cols_row2,display_matrices[len(cols_row1):]):
+#     c.markdown(f"{i}", unsafe_allow_html=True)
+# st.write( """### Top 1 in each:""")
+# col1.metric("Temperature", "70 °F", "1.2 °F")

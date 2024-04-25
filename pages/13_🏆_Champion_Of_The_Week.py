@@ -45,7 +45,7 @@ def _get_champian_name(name):
     return (
         f'<span style="background-color: rgba(0, 135, 107, 0.2); padding: 1px 6px; '
         "margin: 0 5px; display: inline; vertical-align: middle; "
-f"border-radius: 0.25rem; font-size: 1.9rem; font-weight: 400; "
+f"border-radius: 0.25rem; font-size: 3.0rem; font-weight: 400; "
 f'white-space: nowrap">{name}'
 "</span>")
 
@@ -67,7 +67,7 @@ df_students['total'] = df_students.iloc[:, 1:].sum(axis=1)
 #st.dataframe(df_students)
 
 # first section
-st.write( """### 🏆 Champion Of The Week based on:""")
+st.write( """### Based on:""")
 row_col_no = len(df_students.columns[1:])/2
 cols_row1 = st.columns(math.ceil(row_col_no))
 cols_row2 = st.columns(math.floor(row_col_no))
@@ -85,7 +85,7 @@ st.markdown('#')
 st.markdown('#')
 
 top_1_df = df_students.nlargest(1, 'total')
-st.success(f'🏆 Our Champion Of The Week is :')
+st.write( """### 🏆 Our Champion Of The Week is:""")
 name = top_1_df["Name"].values[0]
 st.markdown(f"{_get_champian_name(name)}", unsafe_allow_html=True)
 st.balloons()

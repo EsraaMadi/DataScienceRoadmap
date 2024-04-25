@@ -53,14 +53,16 @@ def load_champian():
 
     # Loop through each worksheet in the spreadsheet
     for worksheet in sheet.worksheets():
-        data = worksheet.get_all_values()
-        headers = data[10]      
-        data = [row[1:] for row in data[11:] if len(row[1])> 2] # delete first column 
-        df = pd.DataFrame(data, columns=headers[1:])
-        # Store the DataFrame in a dictionary with the worksheet title as the key
-        dataframes[worksheet.title] = df
-
+        if [worksheet.title] != 'temp
+            data = worksheet.get_all_values()
+            headers = data[10]      
+            data = [row[1:] for row in data[11:] if len(row[1])> 2] # delete first column 
+            df = pd.DataFrame(data, columns=headers[1:])
+            # Store the DataFrame in a dictionary with the worksheet title as the key
+            dataframes[worksheet.title] = df
     return dataframes
+
+
 def _clean_df(df):
     duplicated_columns = set()
     

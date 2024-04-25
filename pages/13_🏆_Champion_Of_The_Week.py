@@ -78,7 +78,7 @@ st.markdown('#')
 st.markdown('#')
 
 top_1_df = df_students.nlargest(1, 'total')
-st.success(f'🏆 Our Champion Of The Week is :{top_1_df['Name'].values}')
+st.success(f'🏆 Our Champion Of The Week is :{top_1_df["Name"].values}')
 st.balloons()
 
 st.markdown('#')

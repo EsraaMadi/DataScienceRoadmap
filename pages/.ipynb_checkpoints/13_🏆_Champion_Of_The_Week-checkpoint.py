@@ -7,7 +7,7 @@ def _get_raw_chanpion():
     df_lst = ld.load_champian()
     return df_lst
 
-
+Week_no = 3
 # show logo image
 _, im_col, _ = st.columns([0.35, 0.3, 0.35])
 with im_col:
@@ -16,17 +16,16 @@ st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')
 
-df_dict = _get_raw_chanpion()
-# for k, v in df_dict.items():
-#     st.write(k)
-#     st.dataframe(v)
+# Get dictionery of each week
+df_dict = _get_raw_chanpion(Week_no)
 
+# aggregate all weeks data in one datafram
 df_students = ld.get_champions(df_dict)
 st.dataframe(df_students)
 
-# for col in df_students.columns[1:]:
-#     print(df_lst)
-# col1, col2, col3، col4, col5, col6 = st.columns(6)
-# col1.metric("Temperature", "70 °F", "1.2 °F")
+cols_lst = [st.columns(len(df_students.columns[1:]))]
+
+for idx, col in enumerate(df_students.columns[1:]):
+    cols_lst[idx].metric(col, "", "")
 # col2.metric("Wind", "9 mph", "-8%")
 # col3.metric("Humidity", "86%", "4%")

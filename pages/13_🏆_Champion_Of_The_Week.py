@@ -56,7 +56,7 @@ df_dict = _get_raw_chanpion(week_no)
 
 # aggregate all weeks data in one datafram
 df_students = ld.get_champions(df_dict)
-df_students['total'] = df_students.sum(axis=1)
+df_students['total'] = df_students.iloc[:, 1:].sum(axis=1)
 st.dataframe(df_students)
 
 # first section

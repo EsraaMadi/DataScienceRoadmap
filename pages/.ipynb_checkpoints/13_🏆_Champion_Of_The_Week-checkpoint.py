@@ -24,14 +24,34 @@ df_students = ld.get_champions(df_dict)
 st.dataframe(df_students)
 
 # first section
+st.write( """### 🏆 Champion Of The Week based on:""")
 cols = st.columns(len(df_students.columns[1:]))
-st.subheader ('🏆 Champion Of The Week based on:')
+
 for col, name in zip(cols, df_students.columns[1:]):
     col.metric(name, "14.2%", "")
+    
+st.markdown('#')
+st.markdown('#')
 st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')
 
-st.subheader ('🏆 Champion Of The Week based on:')
-
+st.success(f'🏆 Our Champion Of The Week is :')
 st.balloons()
+
+st.markdown('#')
+st.markdown('#')
+st.markdown("""---""")
+st.markdown('#')
+st.markdown('#')
+
+st.write( """### Top 5 in our class:""")
+
+st.markdown('#')
+st.markdown('#')
+st.markdown("""---""")
+st.markdown('#')
+st.markdown('#')
+
+st.write( """### Top 1 in each:""")
+

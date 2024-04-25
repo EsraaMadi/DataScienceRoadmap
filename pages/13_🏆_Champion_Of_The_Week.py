@@ -17,7 +17,8 @@ st.markdown('#')
 st.markdown('#')
 
 df_dict = _get_raw_chanpion()
-print(df_dict)
+for k, v in df_dict.items():
+    st.dataframe(v)
 
 # df_students = ld.get_champions(df_dict)
 # st.dataframe(df_dict_clean)

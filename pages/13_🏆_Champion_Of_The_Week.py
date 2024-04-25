@@ -102,25 +102,20 @@ top_10_df = df_champian.nlargest(10, 'total')
 top_10_df_sorted = top_10_df.sort_values(by='total', ascending=False)
 fig = px.bar(top_10_df_sorted, x='Name', y='total')
 st.plotly_chart(fig, use_container_width=True)
-st.dataframe(top_10_df_sorted)
+# st.dataframe(top_10_df_sorted)
 st.markdown('#')
 st.markdown('#')
 st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')
-
+st.write( """### Top in each:""")
 df_champian = df_champian.set_index('Name')
 
 # Find the student with the highest grade in each course
-top_10_= df_champian.idxmax()
-st.dataframe(top_10_)
+top_1_each = df_champian.idxmax()
+st.dataframe(top_1_each)
 
-# l_row1 = st.columns(math.ceil(row_col_no))
-# l_row2 = st.columns(math.floor(row_col_no))
+l_row = st.columns(row_col_no)
                        
-# for c, i in zip(cols_row1,display_matrices):
-#     c.markdown(f"{i}", unsafe_allow_html=True)
-# for c, i in zip(cols_row2,display_matrices[len(cols_row1):]):
-#     c.markdown(f"{i}", unsafe_allow_html=True)
-# st.write( """### Top 1 in each:""")
-# col1.metric("Temperature", "70 °F", "1.2 °F")
+for c, i, n in zip(l_row,top_1_each.index, top_1_each.values):
+    c.metric(i, n, "")

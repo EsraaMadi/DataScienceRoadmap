@@ -26,6 +26,6 @@ st.dataframe(df_students)
 cols = st.columns(len(df_students.columns[1:]))
 
 for col, name in zip(cols, df_students.columns[1:]):
-    cols_lst[idx].metric(col, "", "")
+    col.metric(name, "", "")
 # col2.metric("Wind", "9 mph", "-8%")
 # col3.metric("Humidity", "86%", "4%")

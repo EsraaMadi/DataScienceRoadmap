@@ -23,9 +23,9 @@ df_dict = _get_raw_chanpion(week_no)
 df_students = ld.get_champions(df_dict)
 st.dataframe(df_students)
 
-cols_lst = [st.columns(len(df_students.columns[1:]))]
+cols = st.columns(len(df_students.columns[1:]))
 
-for idx, col in enumerate(df_students.columns[1:]):
+for col, name in zip(cols, df_students.columns[1:]):
     cols_lst[idx].metric(col, "", "")
 # col2.metric("Wind", "9 mph", "-8%")
 # col3.metric("Humidity", "86%", "4%")

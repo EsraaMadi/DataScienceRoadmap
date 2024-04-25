@@ -115,7 +115,7 @@ df_champian = df_champian.set_index('Name')
 top_1_each = df_champian.idxmax()
 st.dataframe(top_1_each)
 
-l_row = st.columns(row_col_no)
+l_row = st.columns(len(df_students.columns[1:]))
                        
 for c, i, n in zip(l_row,top_1_each.index, top_1_each.values):
     c.metric(i, n, "")

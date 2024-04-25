@@ -41,6 +41,13 @@ f'white-space: nowrap">{item_emojy} {name}'
 "</span>"))
     return display_matrices
 
+def _get_champian_name(name):
+    return (
+        f'<span style="background-color: rgba(0, 135, 107, 0.2); padding: 1px 6px; '
+        "margin: 0 5px; display: inline; vertical-align: middle; "
+f"border-radius: 0.25rem; font-size: 1.9rem; font-weight: 400; "
+f'white-space: nowrap">{name}'
+"</span>"))
 
 week_no = 3
 # show logo image
@@ -78,7 +85,9 @@ st.markdown('#')
 st.markdown('#')
 
 top_1_df = df_students.nlargest(1, 'total')
-st.success(f'🏆 Our Champion Of The Week is :{top_1_df["Name"].values}')
+st.success(f'🏆 Our Champion Of The Week is :)
+name = top_1_df["Name"].values[0]
+st.markdown(f"{_get_champian_name(name)}", unsafe_allow_html=True)
 st.balloons()
 
 st.markdown('#')

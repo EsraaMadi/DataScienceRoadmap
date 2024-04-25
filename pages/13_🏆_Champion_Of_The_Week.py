@@ -114,7 +114,7 @@ df_champian = df_champian.set_index('Name')
 # Find the student with the highest grade in each course
 top_1_each = df_champian.idxmax()
 st.dataframe(top_1_each)
-
+st.write(top_1_each.shape[0])
 l_row = st.columns(7)
                        
 for c, i, n in zip(l_row, top_1_each.index, top_1_each.values):

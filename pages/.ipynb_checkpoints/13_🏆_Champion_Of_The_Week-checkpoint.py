@@ -18,6 +18,7 @@ st.markdown('#')
 
 df_dict = _get_raw_chanpion()
 for k, v in df_dict.items():
+    st.write(k)
     st.dataframe(v)
 
 # df_students = ld.get_champions(df_dict)

@@ -98,7 +98,7 @@ st.markdown('#')
 
 st.write( """### Top 5 in our class:""")
 top_5_df = df_champian.nlargest(5, 'total')
-st.bar_chart(top_5_df[['Name', 'total']])
+st.bar_chart(top_5_df[['Name', 'total']], x='Name', y='total')
 st.markdown('#')
 st.markdown('#')
 st.markdown("""---""")

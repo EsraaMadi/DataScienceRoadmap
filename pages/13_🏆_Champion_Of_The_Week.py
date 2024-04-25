@@ -23,33 +23,15 @@ df_dict = _get_raw_chanpion(week_no)
 df_students = ld.get_champions(df_dict)
 st.dataframe(df_students)
 
+# first section
 cols = st.columns(len(df_students.columns[1:]))
-
+st.subheader ('🏆 Champion Of The Week based on:')
 for col, name in zip(cols, df_students.columns[1:]):
-    col.metric(name, "", "")
-# col2.metric("Wind", "9 mph", "-8%")
-# col3.metric("Humidity", "86%", "4%")
+    col.metric(name, "14.2%", "")
+st.markdown("""---""")
+st.markdown('#')
+st.markdown('#')
+
+st.subheader ('🏆 Champion Of The Week based on:')
 
 st.balloons()
-
-import numpy as np
-
-st.title("Matrix Display in Streamlit")
-
-# Create a random matrix
-matrix_size = st.slider("Select the size of the matrix", min_value=2, max_value=10, value=5)
-matrix = np.random.randint(0, 10, size=(matrix_size, matrix_size))
-
-# Display the matrix
-st.write("Here is a random matrix:")
-st.dataframe(matrix)
-
-# Optional: Use matplotlib to display the matrix as a heatmap
-if st.checkbox("Show as heatmap"):
-    import matplotlib.pyplot as plt
-    fig, ax = plt.subplots()
-    ax.imshow(matrix, cmap='viridis')
-    for (i, j), val in np.ndenumerate(matrix):
-        ax.text(j, i, val, ha='center', va='center', color='white')
-    plt.title('Matrix Heatmap')
-    st.pyplot(fig)

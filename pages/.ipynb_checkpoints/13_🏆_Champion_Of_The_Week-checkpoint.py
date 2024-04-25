@@ -18,10 +18,10 @@ st.markdown('#')
 
 df_dict = _get_raw_chanpion()
 
-df_dict_clean = ld.get_champions(df_dict)
+df_students = ld.get_champions(df_dict)
 st.dataframe(df_dict_clean)
 
-# for i in df_lst:
+# for col in df_students.columns[1:]:
 #     print(df_lst)
 # col1, col2, col3، col4, col5, col6 = st.columns(6)
 # col1.metric("Temperature", "70 °F", "1.2 °F")

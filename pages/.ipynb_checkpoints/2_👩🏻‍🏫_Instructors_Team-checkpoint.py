@@ -13,7 +13,7 @@ st.markdown('#')
 st.write("## Lead Instructor:")
 _, col2, _ = st.columns([0.325, 0.35, 0.325])
 with col2:
-    st.info("""## 👩🏻‍🏫 Esraa Madhi
+    st.info("""## 👩🏻‍🏫 Eng. Esraa Madhi
     Data scientist | AI Educator
     """)
     st.image("ulits/images/Esraa.png")

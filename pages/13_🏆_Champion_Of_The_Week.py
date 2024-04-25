@@ -22,7 +22,7 @@ df_dict = _get_raw_chanpion()
 #     st.dataframe(v)
 
 df_students = ld.get_champions(df_dict)
-st.dataframe(df_dict_clean)
+st.dataframe(df_students)
 
 # for col in df_students.columns[1:]:
 #     print(df_lst)

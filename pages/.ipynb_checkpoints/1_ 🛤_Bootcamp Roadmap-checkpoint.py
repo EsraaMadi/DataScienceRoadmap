@@ -45,7 +45,7 @@ ITEMS_NUMBERS = {
 }
 
 
-@st.cache_data(show_spinner="Fetching roadmap...")
+# @st.cache_data(show_spinner="Fetching roadmap...")
 def _get_raw_roadmap():
     df = ld.load_roadmap('Bootcamp TOC')
     return df

@@ -5,7 +5,7 @@ import pandas as pd
 import ulits.load_data as ld
 
 STAGE_COLORS = {
-    "Side_session": "rgba(103, 36, 222, 0.2)",
+    "Side_session": "rgba(219, 245, 39, 0.8)",
     'Interactive Activity': "rgba(140, 46, 0, 0.2)",
     'Penguin Activity': "rgba(39, 172, 245, 0.8)",
     "Self Assessment": "rgba(251, 182, 66, 0.8)",

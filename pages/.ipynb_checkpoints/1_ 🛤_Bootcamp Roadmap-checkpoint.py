@@ -9,7 +9,7 @@ STAGE_COLORS = {
     'Interactive Activity': "rgba(140, 46, 0, 0.2)",
     'Penguin Activity': "rgba(240, 0, 130, 0.2)",
     "Self Assessment": "rgba(251, 182, 66, 0.8)",
-    'Week Activity':"rgba(1.2, 0, 129, 0.2)",,
+    'Week Activity':"rgba(1.2, 0, 129, 0.2)",
     "Hands-on_Session": "rgba(221, 0, 129, 0.2)",
     "Lab": "rgba(30, 0, 150, 0.2)",
     "Usecase": "rgba(221, 0, 129, 0.2)",

@@ -4,7 +4,6 @@ import streamlit as st
 import pandas as pd
 import ulits.load_data as ld
 
-st.set_page_config(page_title='DS Program',layout='wide', page_icon="ulits/images/Logos_Colored.png")
 
 STAGE_COLORS = {
     "Side_session": "rgba(219, 245, 39, 0.8)",
@@ -130,7 +129,7 @@ def _draw_agenda(df, today):
     with st.expander("Show coming days"):
         _draw_groups(time=2, groups=future_list)
     
-
+st.set_page_config(page_title='DS Program',layout='wide', page_icon="ulits/images/Logos_Colored.png")
 # show logo image
 _, im_col, _ = st.columns([0.35, 0.3, 0.35])
 with im_col:

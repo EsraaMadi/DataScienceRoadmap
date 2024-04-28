@@ -15,9 +15,5 @@ with col2:
     st.image("ulits/images/Github.png")
     st.markdown('#')
 
-_, col, _ = st.columns([0.45, 0.1, 0.45])
-with col:
-    st.markdown("""---""")
-    st.markdown('#')
     st.markdown('#')
     st.write("[Link](https://github.com/Tuwaiq-DS-ML-bootcamp-V-6)")

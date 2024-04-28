@@ -15,9 +15,5 @@ with col2:
     st.image("ulits/images/discord.png")
     st.markdown('#')
 
-_, col, _ = st.columns([0.45, 0.1, 0.45])
-with col:
-    st.markdown("""---""")
-    st.markdown('#')
     st.markdown('#')
     st.write("[Link](https://discord.tuwaiqadmin.com/invite/clvf6drr100nno43of4e1dep3)")

@@ -5,7 +5,7 @@ import ulits.load_data as ld
 import plotly.graph_objects as go
 
 
-st.set_page_config(page_title='DS Program',layout='wide', page_icon="ulits/images/Logos_Colored.png")
+st.set_page_config(page_title='DS Bootcamp',layout='wide', page_icon="ulits/images/Logos_Colored.png")
 
 @st.cache_data(show_spinner="Fetching TOC...")
 def _get_raw_roadmap():

@@ -2,7 +2,7 @@ import streamlit as st
 import ulits.load_data as ld
 import math
 import plotly.express as px
-st.set_page_config(page_title='DS Program',layout='wide', page_icon="ulits/images/Logos_Colored.png")
+st.set_page_config(page_title='DS Bootcamp',layout='wide', page_icon="ulits/images/Logos_Colored.png")
 
 @st.cache_data(show_spinner="Fetching roadmap...")
 def _get_raw_chanpion(week_no):

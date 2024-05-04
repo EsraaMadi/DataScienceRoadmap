@@ -4,6 +4,8 @@ import math
 import plotly.express as px
 st.set_page_config(page_title='DS Bootcamp',layout='wide', page_icon="ulits/images/Logos_Colored.png")
 
+week_no = 2
+
 @st.cache_data(show_spinner="Fetching roadmap...")
 def _get_raw_chanpion(week_no):
     df_lst = ld.load_champian(week_no)
@@ -50,7 +52,7 @@ f"border-radius: 0.25rem; font-size: 3.0rem; font-weight: 400; "
 f'white-space: nowrap">{name}🌟'
 "</span>")
 
-week_no = 3
+
 # show logo image
 _, im_col, _ = st.columns([0.35, 0.3, 0.35])
 with im_col:
@@ -83,38 +85,38 @@ st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')
 
-# df_champian = df_students.copy()
-# df_champian['total'] = df_students.iloc[:, 1:].sum(axis=1)
-# top_1_df = df_champian.nlargest(1, 'total')
-# st.write( """### 🏆 Our Champion Of The Week is:""")
-# name = top_1_df["Name"].values[0]
-# st.markdown(f"{_get_champian_name(name)}", unsafe_allow_html=True)
-# st.balloons()
+df_champian = df_students.copy()
+df_champian['total'] = df_students.iloc[:, 1:].sum(axis=1)
+top_1_df = df_champian.nlargest(1, 'total')
+st.write( """### 🏆 Our Champion Of The Week is:""")
+name = top_1_df["Name"].values[0]
+st.markdown(f"{_get_champian_name(name)}", unsafe_allow_html=True)
+st.balloons()
 
-# st.markdown('#')
-# st.markdown('#')
-# st.markdown("""---""")
-# st.markdown('#')
-# st.markdown('#')
+st.markdown('#')
+st.markdown('#')
+st.markdown("""---""")
+st.markdown('#')
+st.markdown('#')
 
-# st.write( """### Top 10 in our class:""")
-# top_10_df = df_champian.nlargest(10, 'total')
-# top_10_df_sorted = top_10_df.sort_values(by='total', ascending=False)
-# fig = px.bar(top_10_df_sorted, x='Name', y='total')
-# st.plotly_chart(fig, use_container_width=True)
-# # st.dataframe(top_10_df_sorted)
-# st.markdown('#')
-# st.markdown('#')
-# st.markdown("""---""")
-# st.markdown('#')
-# st.markdown('#')
-# st.write( """### Top in each:""")
+st.write( """### Top 10 in our class:""")
+top_10_df = df_champian.nlargest(10, 'total')
+top_10_df_sorted = top_10_df.sort_values(by='total', ascending=False)
+fig = px.bar(top_10_df_sorted, x='Name', y='total')
+st.plotly_chart(fig, use_container_width=True)
+# st.dataframe(top_10_df_sorted)
+st.markdown('#')
+st.markdown('#')
+st.markdown("""---""")
+st.markdown('#')
+st.markdown('#')
+st.write( """### Top in each:""")
 
 
-# # Find the student with the highest grade in each course
-# df_students_i = df_students.set_index('Name')
-# l_row = st.columns(len(df_students_i.columns[1:]))
-# for c, col in zip(l_row, df_students_i.columns[1:]):
-#     max_total = df_students_i[col].max()  # Get the maximum grade in the course
-#     top_student = df_students_i[col].idxmax()  # Get the student name with the maximum grade
-#     c.metric(col, top_student, int(max_total))
+# Find the student with the highest grade in each course
+df_students_i = df_students.set_index('Name')
+l_row = st.columns(len(df_students_i.columns[1:]))
+for c, col in zip(l_row, df_students_i.columns[1:]):
+    max_total = df_students_i[col].max()  # Get the maximum grade in the course
+    top_student = df_students_i[col].idxmax()  # Get the student name with the maximum grade
+    c.metric(col, top_student, int(max_total))

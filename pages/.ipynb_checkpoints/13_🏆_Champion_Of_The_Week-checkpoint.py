@@ -115,6 +115,7 @@ st.write( """### Top in each:""")
 
 
 # Find the student with the highest grade in each course
+df_students_i = df_students.set_index('Name')
 cols_row3 = st.columns(math.ceil(row_col_no))
 cols_row4 = st.columns(math.floor(row_col_no))
 

@@ -121,3 +121,17 @@ for c, col in zip(l_row, df_students_i.columns[1:]):
     max_total = df_students_i[col].max()  # Get the maximum grade in the course
     top_student = df_students_i[col].idxmax()  # Get the student name with the maximum grade
     c.metric(col, top_student, int(max_total))
+
+row_col_no = len(df_students.columns[1:])/2
+cols_row3 = st.columns(math.ceil(row_col_no))
+cols_row4 = st.columns(math.floor(row_col_no))
+
+display_matrices = _get_materic(df_students.columns[1:])
+for c, col in zip(cols_row3, df_students_i.columns[1:]):
+    max_total = df_students_i[col].max()  # Get the maximum grade in the course
+    top_student = df_students_i[col].idxmax()  # Get the student name with the maximum grade
+    c.metric(col, top_student, int(max_total))
+for c, col in zip(cols_row4, df_students_i.columns[1:]):
+    max_total = df_students_i[col].max()  # Get the maximum grade in the course
+    top_student = df_students_i[col].idxmax()  # Get the student name with the maximum grade
+    c.metric(col, top_student, int(max_total))

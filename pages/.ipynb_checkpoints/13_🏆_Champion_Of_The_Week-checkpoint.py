@@ -86,45 +86,45 @@ st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')
 
-# df_champian = df_students.copy()
-# df_champian['total'] = df_students.iloc[:, 1:].sum(axis=1)
-# top_1_df = df_champian.nlargest(1, 'total')
-# st.write( """### 🏆 Our Champion Of The Week is:""")
-# name = top_1_df["Name"].values[0]
-# st.markdown(f"{_get_champian_name(name)}", unsafe_allow_html=True)
-# st.balloons()
+df_champian = df_students.copy()
+df_champian['total'] = df_students.iloc[:, 1:].sum(axis=1)
+top_1_df = df_champian.nlargest(1, 'total')
+st.write( """### 🏆 Our Champion Of The Week is:""")
+name = top_1_df["Name"].values[0]
+st.markdown(f"{_get_champian_name(name)}", unsafe_allow_html=True)
+st.balloons()
 
-# st.markdown('#')
-# st.markdown('#')
-# st.markdown("""---""")
-# st.markdown('#')
-# st.markdown('#')
+st.markdown('#')
+st.markdown('#')
+st.markdown("""---""")
+st.markdown('#')
+st.markdown('#')
 
-# st.write( """### Top 10 in our class:""")
-# top_10_df = df_champian.nlargest(10, 'total')
-# top_10_df_sorted = top_10_df.sort_values(by='total', ascending=False)
-# fig = px.bar(top_10_df_sorted, x='Name', y='total')
-# st.plotly_chart(fig, use_container_width=True)
-# # st.dataframe(top_10_df_sorted)
-# st.markdown('#')
-# st.markdown('#')
-# st.markdown("""---""")
-# st.markdown('#')
-# st.markdown('#')
-# st.write( """### Top in each:""")
+st.write( """### Top 10 in our class:""")
+top_10_df = df_champian.nlargest(10, 'total')
+top_10_df_sorted = top_10_df.sort_values(by='total', ascending=False)
+fig = px.bar(top_10_df_sorted, x='Name', y='total')
+st.plotly_chart(fig, use_container_width=True)
+# st.dataframe(top_10_df_sorted)
+st.markdown('#')
+st.markdown('#')
+st.markdown("""---""")
+st.markdown('#')
+st.markdown('#')
+st.write( """### Top in each:""")
 
 
-# # Find the student with the highest grade in each course
-# df_students_i = df_students.set_index('Name')
-# cols_row3 = st.columns(math.ceil(row_col_no))
-# cols_row4 = st.columns(math.floor(row_col_no))
+# Find the student with the highest grade in each course
+df_students_i = df_students.set_index('Name')
+cols_row3 = st.columns(math.ceil(row_col_no))
+cols_row4 = st.columns(math.floor(row_col_no))
 
-# display_matrices = _get_materic(df_students.columns[1:])
-# for c, col in zip(cols_row3, df_students_i.columns[1:]):
-#     max_total = df_students_i[col].max()  # Get the maximum grade in the course
-#     top_student = df_students_i[col].idxmax()  # Get the student name with the maximum grade
-#     c.metric(col, top_student, int(max_total))
-# for c, col in zip(cols_row4, df_students_i.columns[1:]):
-#     max_total = df_students_i[col].max()  # Get the maximum grade in the course
-#     top_student = df_students_i[col].idxmax()  # Get the student name with the maximum grade
-#     c.metric(col, top_student, int(max_total))
+display_matrices = _get_materic(df_students.columns[1:])
+for c, col in zip(cols_row3, df_students_i.columns[1:]):
+    max_total = df_students_i[col].max()  # Get the maximum grade in the course
+    top_student = df_students_i[col].idxmax()  # Get the student name with the maximum grade
+    c.metric(col, top_student, int(max_total))
+for c, col in zip(cols_row4, df_students_i.columns[1:]):
+    max_total = df_students_i[col].max()  # Get the maximum grade in the course
+    top_student = df_students_i[col].idxmax()  # Get the student name with the maximum grade
+    c.metric(col, top_student, int(max_total))

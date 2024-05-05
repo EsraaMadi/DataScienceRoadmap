@@ -124,7 +124,7 @@ for c, col in zip(cols_row3, df_students_i.columns[1:]):
     max_total = df_students_i[col].max()  # Get the maximum grade in the course
     top_student = df_students_i[col].idxmax()  # Get the student name with the maximum grade
     c.metric(col, top_student, int(max_total))
-for c, col in zip(cols_row4, df_students_i.columns[1:]):
+for c, col in zip(cols_row4, df_students_i.columns[len(cols_row3):]):
     max_total = df_students_i[col].max()  # Get the maximum grade in the course
     top_student = df_students_i[col].idxmax()  # Get the student name with the maximum grade
     c.metric(col, top_student, int(max_total))

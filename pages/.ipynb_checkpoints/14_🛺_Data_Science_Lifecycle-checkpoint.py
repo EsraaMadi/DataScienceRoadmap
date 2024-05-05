@@ -14,3 +14,4 @@ st.markdown('#')
 # with col2:
 #     st.image("ulits/images/discord.png")
 #     st.markdown('#')
+st.image("ulits/images/DS_step.png")

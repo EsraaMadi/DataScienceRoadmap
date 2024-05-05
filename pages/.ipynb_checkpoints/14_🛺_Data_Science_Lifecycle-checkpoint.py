@@ -10,7 +10,7 @@ st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')
 
-_, col2, _ = st.columns([0.15, 0.7, 0.15])
+_, col2, _ = st.columns([0.2, 0.6, 0.2])
 with col2:
     st.image("ulits/images/DS_step.png")
 #     st.markdown('#')

@@ -12,6 +12,6 @@ st.markdown('#')
 
 _, col2, _ = st.columns([0.2, 0.6, 0.2])
 with col2:
-    st.image("ulits/images/DS_step.png")
+    st.image("ulits/images/DS_step.svg")
 #     st.markdown('#')
 #st.image("ulits/images/DS_step.png")

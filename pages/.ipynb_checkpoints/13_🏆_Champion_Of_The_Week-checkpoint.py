@@ -122,7 +122,8 @@ cols_row4 = st.columns(math.floor(row_col_no))
 
 for c, col in zip(cols_row3, df_students_i.columns):
     df_sort = df_students_i[col].sort_values(col)
-    cols_row3[0].bar_chart(df_sort[['Name', col]].head(5))
+    c.bar_chart(df_sort[['Name', col]].head(5))
+    break
 
 # display_matrices = _get_materic(df_students.columns[1:])
 # for c, col in zip(cols_row3, df_students_i.columns):

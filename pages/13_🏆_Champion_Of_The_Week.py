@@ -113,8 +113,10 @@ st.markdown('#')
 st.markdown('#')
 st.write( """### Top in each:""")
 
+
+
 lst_fig = []
-for c, col in zip(cols_row3, df_students.columns[1:]):
+for col in df_students.columns[1:]:
     top_5_df_sorted = df_students.sort_values(by=col, ascending=False).head(5)
     fig = px.bar(top_5_df_sorted, x='Name', y=col)
     lst_fig.append(fig)

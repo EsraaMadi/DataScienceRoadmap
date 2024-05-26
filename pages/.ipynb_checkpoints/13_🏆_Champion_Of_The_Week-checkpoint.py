@@ -121,7 +121,7 @@ cols_row4 = st.columns(math.floor(row_col_no))
 
 st.write(df_students.columns)
 for c, col in zip(cols_row3, df_students.columns[1:]):
-    df_sort = df_students_i[col].sort_values(by=col)
+    df_sort = df_students_i[col].sort_values(col)
     c.bar_chart(df_sort[['Name', col]].head(5))
     break
 

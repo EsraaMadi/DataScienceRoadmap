@@ -121,9 +121,14 @@ for col in df_students.columns[1:]:
     fig = px.bar(top_5_df_sorted, x='Name', y=col)
     lst_fig.append(fig)
 
-cols_row3 = st.columns(math.ceil(row_col_no))
-cols_row4 = st.columns(math.floor(row_col_no))
+row_no = len(lst_df)/2
+cols_row3 = st.columns(math.ceil(row_no))
+cols_row4 = st.columns(math.floor(row_no))
 
 for col, fig in zip(cols_row3, lst_fig):
+    with col:
+        st.plotly_chart(fig, use_container_width=True)
+
+for col, fig in zip(cols_row4, lst_fig[row_no:]):
     with col:
         st.plotly_chart(fig, use_container_width=True)

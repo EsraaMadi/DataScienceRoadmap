@@ -129,6 +129,6 @@ for col, fig in zip(cols_row3, lst_fig):
     with col:
         st.plotly_chart(fig, use_container_width=True)
 
-for col, fig in zip(cols_row4, lst_fig[row_no:]):
+for col, fig in zip(cols_row4, lst_fig[len(cols_row3):]):
     with col:
         st.plotly_chart(fig, use_container_width=True)

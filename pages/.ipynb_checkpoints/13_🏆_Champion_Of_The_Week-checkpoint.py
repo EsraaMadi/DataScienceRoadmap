@@ -125,13 +125,3 @@ cols_row4 = st.columns(math.floor(row_col_no))
 for col, fig in zip(cols_row3, lst_fig):
     with col:
         st.plotly_chart(fig, use_container_width=True)
-
-# display_matrices = _get_materic(df_students.columns[1:])
-# for c, col in zip(cols_row3, df_students_i.columns):
-#     max_total = df_students_i[col].max()  # Get the maximum grade in the course
-#     top_student = df_students_i[col].idxmax()  # Get the student name with the maximum grade
-#     c.metric(col, top_student, int(max_total))
-# for c, col in zip(cols_row4, df_students_i.columns[len(cols_row3):]):
-#     max_total = df_students_i[col].max()  # Get the maximum grade in the course
-#     top_student = df_students_i[col].idxmax()  # Get the student name with the maximum grade
-#     c.metric(col, top_student, int(max_total))

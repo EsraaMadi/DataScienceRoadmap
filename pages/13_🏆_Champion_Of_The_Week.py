@@ -121,7 +121,7 @@ for col in df_students.columns[1:]:
     fig = px.bar(top_5_df_sorted, x='Name', y=col)
     lst_fig.append(fig)
 
-row_no = len(lst_df)/2
+row_no = len(lst_fig)/2
 cols_row3 = st.columns(math.ceil(row_no))
 cols_row4 = st.columns(math.floor(row_no))
 

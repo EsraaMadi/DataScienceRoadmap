@@ -113,18 +113,18 @@ st.markdown('#')
 st.markdown('#')
 st.write( """### Top in each:""")
 
-
-# Find the student with the highest grade in each course
-df_students_i = df_students.set_index('Name')
-cols_row3 = st.columns(math.ceil(row_col_no))
-cols_row4 = st.columns(math.floor(row_col_no))
-
-st.write(df_students.columns)
+lst_fig = []
 for c, col in zip(cols_row3, df_students.columns[1:]):
     top_5_df_sorted = df_students.sort_values(by=col, ascending=False).head(5)
     fig = px.bar(top_5_df_sorted, x='Name', y=col)
-    st.plotly_chart(fig, use_container_width=True)
+    lst_fig.append(fig)
 
+cols_row3 = st.columns(math.ceil(row_col_no))
+cols_row4 = st.columns(math.floor(row_col_no))
+
+for col, fig in zip(cols_row3, lst_fig):
+    with col:
+        st.plotly_chart(fig, use_container_width=True)
 
 # display_matrices = _get_materic(df_students.columns[1:])
 # for c, col in zip(cols_row3, df_students_i.columns):

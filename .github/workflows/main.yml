@@ -26,11 +26,11 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: Dockerfile  # Specify the path to your Dockerfile
+          file: Custom_Docker/Dockerfile  # Specify the path to your Dockerfile
           push: true
           tags: esraamadhi/data_science_roadmap:latest
           build-args: |
             G_TYPE=${{ secrets.TYPE }}
 
       - name: Verify Docker image
-        run: docker run --rm esraamadhi/data_science_roadmap:latest python -c "print('Docker image ran successfully!')"
+        run: docker run --rm esraamadhi/data_science_roadmap:latest python Custom_Docker/verify_streamlit.py

@@ -4,19 +4,30 @@ from oauth2client.service_account import ServiceAccountCredentials
 import streamlit as st
 import os
 
-credentials_dict = {
-  "TYPE": os.getenv("TYPE"),
-  "PROJECT_ID": os.getenv("PROJECT_ID"),
-  "PRIVATE_KEY_ID": os.getenv("PRIVATE_KEY_ID"),
-  "PRIVATE_KEY": os.getenv("PRIVATE_KEY"),
-  "CLIENT_EMAIL": os.getenv("CLIENT_EMAIL"),
-  "CLIENT_ID": os.getenv("CLIENT_ID"),
-  "AUTH_URI": os.getenv("AUTH_URI"),
-  "TOKEN_URI": os.getenv("TOKEN_URI"),
-  "AUTH_PROVIDER_X509_CERT_URL": os.getenv("AUTH_PROVIDER_X509_CERT_URL"),
-  "CLIENT_X509_CERT_URL": os.getenv("CLIENT_X509_CERT_URL"),
-  "UNIVERSE_DOMAIN": os.getenv("UNIVERSE_DOMAIN")
-}
+# credentials_dict = {
+#   "TYPE": os.getenv("TYPE"),
+#   "PROJECT_ID": os.getenv("PROJECT_ID"),
+#   "PRIVATE_KEY_ID": os.getenv("PRIVATE_KEY_ID"),
+#   "PRIVATE_KEY": os.getenv("PRIVATE_KEY"),
+#   "CLIENT_EMAIL": os.getenv("CLIENT_EMAIL"),
+#   "CLIENT_ID": os.getenv("CLIENT_ID"),
+#   "AUTH_URI": os.getenv("AUTH_URI"),
+#   "TOKEN_URI": os.getenv("TOKEN_URI"),
+#   "AUTH_PROVIDER_X509_CERT_URL": os.getenv("AUTH_PROVIDER_X509_CERT_URL"),
+#   "CLIENT_X509_CERT_URL": os.getenv("CLIENT_X509_CERT_URL"),
+#   "UNIVERSE_DOMAIN": os.getenv("UNIVERSE_DOMAIN")
+# }
+
+
+# Read the secret JSON from the environment variable
+google_credentials_json = os.getenv('GOOGLE_CREDENTIALS')
+
+if google_credentials_json is None:
+    raise ValueError("No Google credentials found in environment variables.")
+
+# Parse the JSON string into a dictionary
+credentials_dict = json.loads(google_credentials_json)
+
 
 # Define the scope
 scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
@@ -110,9 +121,4 @@ def get_champions(df_dict):
     agg_df = _aggregate_data(df_dict_clean)
     agg_df_clean = _clean_df(agg_df)
     return agg_df_clean
-    
-
-
-
-
-    
+  

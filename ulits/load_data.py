@@ -15,7 +15,7 @@ credentials_dict = {
   "token_uri": os.environ["token_uri"],
   "auth_provider_x509_cert_url": os.environ["auth_provider_x509_cert_url"],
   "client_x509_cert_url": os.environ["client_x509_cert_url"],
-  "universe_domain": st.secrets["universe_domain"]
+  "universe_domain": os.environ["universe_domain"]
 }
 
 

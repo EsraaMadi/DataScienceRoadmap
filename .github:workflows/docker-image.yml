@@ -2,16 +2,15 @@ name: Build and Push Docker Image
 
 on:
   push:
-    branches:
-      - master  # Change this to your default branch
+
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
@@ -23,8 +22,9 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build and push Docker image
-        env:
-          TYPE: ${{ secrets.TYPE }}
-        run: |
-          docker build --build-arg TYPE=$TYPE -t my-python-app .
-          docker push my-python-app
+	uses: docker/build-push-action@v6
+        with:
+          platforms: linux/amd64,linux/arm64
+          tags: esraamadhi/DataScienceRoadmap:latest
+          secrets: |
+            "g_type=${{ secrets.TYPE }}"   

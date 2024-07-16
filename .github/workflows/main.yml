@@ -27,6 +27,7 @@ jobs:
         with:
           context: .
           file: Custom_Docker/Dockerfile  # Specify the path to your Dockerfile
+          platforms: linux/amd64,linux/arm64
           push: true
           tags: esraamadhi/data_science_roadmap:latest
           build-args: |

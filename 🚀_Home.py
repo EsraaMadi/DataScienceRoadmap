@@ -14,7 +14,7 @@ st.markdown('#')
 st.markdown('#')
 
 app_env = os.getenv('G_TYPE')
-st.write("HI SOOOOOOSOOOO"+app_env)
+st.write("HI SOOOOOOS"+app_env)
 
 # show arabic welcome message
 st.markdown("""<h4 style="text-align: right">      

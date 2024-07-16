@@ -1,7 +1,7 @@
 FROM python:3.9-slim
 
-RUN --mount=type=secret,id=g_type\
-  cat /run/secrets/g_type
+ARG G_TYPE
+ENV G_TYPE=$G_TYPE
 
 WORKDIR /app
 

@@ -33,4 +33,4 @@ jobs:
             G_TYPE=${{ secrets.TYPE }}
 
       - name: Verify Docker image
-        run: docker run --rm esraamadhi/DataScienceRoadmap:latest
+        run: docker run --rm esraamadhi/data_science_roadmap:latest

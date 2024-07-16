@@ -1,4 +1,7 @@
 import streamlit as st
+import os
+
+
 st.set_page_config(page_title='DS Bootcamp',layout='wide', page_icon="ulits/images/Logos_Colored.png")
 
 
@@ -10,6 +13,8 @@ st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')
 
+app_env = os.getenv('TYPE')
+st.write(app_env)
 
 # show arabic welcome message
 st.markdown("""<h4 style="text-align: right">      

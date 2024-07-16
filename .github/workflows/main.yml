@@ -28,7 +28,7 @@ jobs:
           context: .
           file: ../../Dockerfile  # Specify the path to your Dockerfile
           push: true
-          tags: esraamadhi/DataScienceRoadmap:latest
+          tags: esraamadhi/data_science_roadmap:latest
           build-args: |
             G_TYPE=${{ secrets.TYPE }}
 

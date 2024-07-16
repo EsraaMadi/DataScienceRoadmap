@@ -13,7 +13,7 @@ st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')
 
-app_env = os.getenv('TYPE')
+app_env = os.getenv('G_TYPE')
 st.write("HI SOOOOOOSOOOO"+app_env)
 
 # show arabic welcome message

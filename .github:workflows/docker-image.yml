@@ -26,5 +26,5 @@ jobs:
         env:
           TYPE: ${{ secrets.TYPE }}
         run: |
-          docker build --build-arg TYPE=${TYPE} -t my-python-app .
+          docker build --build-arg TYPE=$TYPE -t my-python-app .
           docker push my-python-app

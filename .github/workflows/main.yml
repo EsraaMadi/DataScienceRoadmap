@@ -42,4 +42,4 @@ jobs:
           push: true
           tags: esraamadhi/data_science_roadmap:latest
           build-args: |
-            GOOGLE_CREDENTIALS="$(cat decoded_secret.json)"
+            GOOGLE_CREDENTIALS=decoded_secret.json

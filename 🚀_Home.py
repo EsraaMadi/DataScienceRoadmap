@@ -8,7 +8,7 @@ st.set_page_config(page_title='DS Bootcamp',layout='wide', page_icon="ulits/imag
 # show logo image
 _, im_col, _ = st.columns([0.35, 0.3, 0.35])
 with im_col:
-    st.image("ulits/images/tuwaiq-academy-logo.svg")
+    st.image("ulits/images/tuwaiq-academy-logo.png")
 st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')
@@ -21,7 +21,7 @@ st.markdown("""<h4 style="text-align: right">
 
    
    <div style="text-align: right"> 
-   حيث تبدأ رحلتكم في عالم البيانات! نحن متحمسون لأن تنطلقوا في هذا المسار التحويلي، لفك أسرار البيانات الخفية وتحويل المعلومات إلى رؤى قابلة للتنفيذ. معًا، سنستكشف ونتعلم ونبتكر باستخدام أدوات وتقنيات رائدة ستشكل مستقبلكم كمحترفين في علم البيانات
+   حيث تبدأ رحلتكم في عالم البيانات! نحن متحمسون لأن تنطلقوا في هذا المسار التحويلي، لفك أسرار البيانات الخفية وتحويل المعلومات إلى رؤى قابلة للتنفيذ معًا، سنستكشف ونتعلم ونبتكر باستخدام أدوات وتقنيات رائدة ستشكل مستقبلكم كمحترفين في علم البيانات
     </div>
 """
                 , unsafe_allow_html=True)

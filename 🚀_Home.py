@@ -13,6 +13,11 @@ st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')
 
+google_credentials_json = os.getenv('GOOGLE_CREDENTIALS')
+
+st.write('Data')
+st.write(google_credentials_json)
+
 # show arabic welcome message
 st.markdown("""<h4 style="text-align: right">      
    🚀 مرحبا بك في معسكر علم البيانات وتعلم الآلة 

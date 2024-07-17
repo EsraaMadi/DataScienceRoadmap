@@ -7,8 +7,8 @@ _, im_col, _ = st.columns([0.35, 0.3, 0.35])
 with im_col:
     st.image("ulits/images/tuwaiq-academy-logo.png")
 st.markdown("""---""")
-st.markdown('#')
-st.markdown('#')
+# st.markdown('#')
+# st.markdown('#')
 
 st.write("## Lead Instructor:")
 _, col2, _ = st.columns([0.325, 0.35, 0.325])

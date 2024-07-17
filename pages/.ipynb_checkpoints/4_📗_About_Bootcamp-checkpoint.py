@@ -7,8 +7,8 @@ _, im_col, _ = st.columns([0.35, 0.3, 0.35])
 with im_col:
     st.image("ulits/images/tuwaiq-academy-logo.png")
 st.markdown("""---""")
-st.markdown('#')
-st.markdown('#')
+# st.markdown('#')
+# st.markdown('#')
 
 # show arabic welcome message
 st.markdown("""<h4 style="text-align: right">      
@@ -67,7 +67,7 @@ st.markdown("""<h4 style="text-align: right">
   <li>الإلمام والمعرفة المسبقة بمستوى ممتاز في لغة Python</li>
     <li>الإلمام والمعرفة المسبقة بالتعامل مع Git</li>
       <li>الإلمام والمعرفة المسبقة بأساسيات لغة SQL</li>
-        <li>إحضار جهاز لاب توب بنظام macOS أو Windows</li>
+        <li>جهاز لاب توب بنظام macOS أو Windows</li>
           <li>لغة إنجليزية متوسطة</li>
             <li>أن تكون حاصلًا على شهادة جامعية في أحد التخصصات التقنية أو الإحصاء</li>
               <li>الرغبة الصادقة في التعلم والمشاركة الفعالة طوال مدة المعسكر، والالتزام بإكمال الأعمال والمشاريع الموكلة</li>

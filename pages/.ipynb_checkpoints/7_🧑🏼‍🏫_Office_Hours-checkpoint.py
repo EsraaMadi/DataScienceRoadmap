@@ -7,8 +7,8 @@ _, im_col, _ = st.columns([0.35, 0.3, 0.35])
 with im_col:
     st.image("ulits/images/tuwaiq-academy-logo.png")
 st.markdown("""---""")
-st.markdown('#')
-st.markdown('#')
+# st.markdown('#')
+# st.markdown('#')
 
 # st.write("## Lead Instructor:")
 # _, col2, _ = st.columns([0.325, 0.35, 0.325])
@@ -20,7 +20,7 @@ st.markdown('#')
 #     st.markdown('#')
 #     st.markdown("""---""")
 
-st.write("## Teaching Assistant")
+# st.write("## Teaching Assistant")
 _, col1, _, col3, _ = st.columns([0.07, 0.33, 0.2, 0.33, 0.07])
 with col1:
     st.success("""## 👩🏻‍🏫 Refal Alboqami""")

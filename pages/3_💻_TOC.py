@@ -9,7 +9,7 @@ st.set_page_config(page_title='DS Bootcamp',layout='wide', page_icon="ulits/imag
 
 @st.cache_data(show_spinner="Fetching TOC...")
 def _get_raw_roadmap():
-    df = ld.load_roadmap('Bootcamp TOC')
+    df = ld.load_roadmap('Bootcamp Jul 2024 - TOC')
     return df
 
 def _filter_groups(today, df):
@@ -90,8 +90,8 @@ _, im_col, _ = st.columns([0.35, 0.3, 0.35])
 with im_col:
     st.image("ulits/images/tuwaiq-academy-logo.png")
 st.markdown("""---""")
-st.markdown('#')
-st.markdown('#')
+# st.markdown('#')
+# st.markdown('#')
 
 # show title of page
 st.write(

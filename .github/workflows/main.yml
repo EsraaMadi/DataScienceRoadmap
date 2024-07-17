@@ -22,10 +22,18 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
       - name: Decode JSON secret
         id: decode_secret
-        run: echo "${{ secrets.GOOGLE_CREDENTIALS }}" | jq -c '.' > decoded_secret.json
+        run: echo "${{ secrets.GOOGLE_CREDENTIALS }}" > decoded_secret.json
 
+      - name: Validate JSON file
+        run: |
+          cat decoded_secret.json
+          jq . decoded_secret.json
+ 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:

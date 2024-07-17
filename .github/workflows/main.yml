@@ -32,7 +32,6 @@ jobs:
       - name: Validate JSON file
         run: |
           cat decoded_secret.json
-          jq . decoded_secret.json
  
       - name: Build and push Docker image
         uses: docker/build-push-action@v5

@@ -23,6 +23,8 @@ import json
 # Read the secret JSON from the environment variable
 google_credentials_json = os.getenv('GOOGLE_CREDENTIALS')
 
+
+
 if google_credentials_json is None:
     raise ValueError("No Google credentials found in environment variables.")
 

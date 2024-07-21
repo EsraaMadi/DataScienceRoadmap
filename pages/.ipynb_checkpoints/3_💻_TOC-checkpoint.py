@@ -115,6 +115,7 @@ if make_choice == 'General Topics':
     toc_df = roadmap_df[roadmap_df['type']=='Main_session']
     toc_df.index = list(range(1,toc_df.shape[0]+1))
     toc_df = _filter_groups(today, toc_df)
+    st.dataframe(toc_df)
     toc_plot_df = toc_df[toc_df["Is Finished"]]
     toc_df = toc_df[['Title', 'Phase',"Is Finished"]]
     toc_df.columns = ['Lesson', 'Bootcamp Phase', "Is Finished"]

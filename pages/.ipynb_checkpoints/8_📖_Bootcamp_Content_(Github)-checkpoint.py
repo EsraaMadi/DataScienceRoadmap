@@ -16,4 +16,4 @@ with col2:
     st.markdown('#')
 
     st.markdown('#')
-    st.write("[Link](https://github.com/Tuwaiq-DS-ML-bootcamp-V-6)")
+    st.write("[Link](https://github.com/Tuwaiq-DS-ML-bootcamp-V-7)")

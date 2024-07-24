@@ -46,16 +46,16 @@ def load_roadmap(file_name):
     df = pd.DataFrame(data)
     return df
 
-def load_champian(week_no, file_name):
+def load_champian(week_no ):
     # Open the spreadhseet
-    sheet = client.open(file_name)
+    sheet = client.open_by_key('19Ft_cQgzZu4V1xh_OtFfnLgGEPslqmHjP2z8yKcLG8w')
     
     # Initialize a dictionary to hold dataframes
     dataframes = {}
 
     # Loop through each worksheet in the spreadsheet
     for worksheet in sheet.worksheets():
-        if 'Week' in worksheet.title and int(worksheet.title.split(' ')[1]) == week_no:
+        if 'Week' in worksheet.title and int(worksheet.title.split(' ')[1]) < week_no:
             data = worksheet.get_all_values()
             headers = data[10]      
             data = [row[1:] for row in data[11:] if len(row[1])> 2] # delete first column 

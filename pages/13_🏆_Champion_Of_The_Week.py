@@ -8,7 +8,7 @@ week_no = 1
 
 @st.cache_data(show_spinner="Fetching roadmap...")
 def _get_raw_chanpion(week_no):
-    df_lst = ld.load_champian(week_no, 'Bootcamp Jul 2024 - TOC')
+    df_lst = ld.load_champian(week_no)
     return df_lst
 
 MATRIC_COLORS = {

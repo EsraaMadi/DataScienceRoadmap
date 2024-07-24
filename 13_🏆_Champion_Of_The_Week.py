@@ -4,7 +4,7 @@ import math
 import plotly.express as px
 st.set_page_config(page_title='DS Bootcamp',layout='wide', page_icon="ulits/images/Logos_Colored.png")
 
-week_no = 0
+week_no = 1
 
 @st.cache_data(show_spinner="Fetching roadmap...")
 def _get_raw_chanpion(week_no):

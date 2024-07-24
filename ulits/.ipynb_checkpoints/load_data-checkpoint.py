@@ -55,7 +55,7 @@ def load_champian(week_no ):
 
     # Loop through each worksheet in the spreadsheet
     for worksheet in sheet.worksheets():
-        if 'Week' in worksheet.title and int(worksheet.title.split(' ')[1]) == week_no:
+        if 'Week' in worksheet.title and int(worksheet.title.split(' ')[2]) == week_no:
             data = worksheet.get_all_values()
             headers = data[10]      
             data = [row[1:] for row in data[11:] if len(row[1])> 2] # delete first column 

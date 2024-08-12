@@ -54,14 +54,21 @@ def load_champian(week_no):
     dataframes = {}
 
     # Loop through each worksheet in the spreadsheet
+
+    max_week_no = 0
     for worksheet in sheet.worksheets():
-        if 'Week' in worksheet.title and int(worksheet.title.split(' ')[2]) == week_no:
-            data = worksheet.get_all_values()
-            headers = data[10]      
-            data = [row[1:] for row in data[11:] if len(row[1])> 2] # delete first column 
-            df = pd.DataFrame(data, columns=headers[1:])
-            # Store the DataFrame in a dictionary with the worksheet title as the key
-            dataframes[worksheet.title] = df
+        if 'Week' in worksheet.title:
+            week_number = int(worksheet.title.split(' ')[2])
+            if week_number > max_week_no:
+                max_week_no = week_number
+
+    if max_week_no > 0:
+        data = worksheet.get_all_values()
+        headers = data[10]      
+        data = [row[1:] for row in data[11:] if len(row[1])> 2] # delete first column 
+        df = pd.DataFrame(data, columns=headers[1:])
+        # Store the DataFrame in a dictionary with the worksheet title as the key
+        dataframes[worksheet.title] = df
     return dataframes
 
 

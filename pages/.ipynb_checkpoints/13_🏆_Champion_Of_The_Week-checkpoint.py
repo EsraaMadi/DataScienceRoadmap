@@ -6,15 +6,15 @@ from datetime import datetime
 
 st.set_page_config(page_title='DS Bootcamp',layout='wide', page_icon="ulits/images/Logos_Colored.png")
 
-start_date = datetime(2024, 7, 21).date()
-today = datetime.now().date()
+# start_date = datetime(2024, 7, 21).date()
+# today = datetime.now().date()
 
-# Calculate the difference in days
-days_difference = (today - start_date).days
+# # Calculate the difference in days
+# days_difference = (today - start_date).days
 
-# Calculate the week number
-week_no = days_difference // 7 + 1 
-week_no = week_no -1
+# # Calculate the week number
+# week_no = days_difference // 7 + 1 
+# week_no = week_no -1
 
 @st.cache_data(show_spinner="Fetching roadmap...")
 def _get_raw_chanpion(week_no):

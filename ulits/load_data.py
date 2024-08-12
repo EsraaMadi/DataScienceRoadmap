@@ -46,7 +46,7 @@ def load_roadmap(file_name):
     df = pd.DataFrame(data)
     return df
 
-def load_champian(week_no ):
+def load_champian(week_no):
     # Open the spreadhseet
     sheet = client.open_by_key('1WZFDx7IHvepqDLHFRcsfDaxBg-1UsSTpn40t1kVX1mg')
     

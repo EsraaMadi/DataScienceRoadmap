@@ -17,8 +17,8 @@ st.set_page_config(page_title='DS Bootcamp',layout='wide', page_icon="ulits/imag
 # week_no = week_no -1
 
 @st.cache_data(show_spinner="Fetching roadmap...")
-def _get_raw_chanpion(week_no):
-    df_lst = ld.load_champian(week_no)
+def _get_raw_chanpion():
+    df_lst = ld.load_champian()
     return df_lst
 
 MATRIC_COLORS = {
@@ -72,7 +72,7 @@ st.markdown('#')
 st.markdown('#')
 
 # Get dictionery of each week
-df_dict = _get_raw_chanpion(week_no)
+df_dict = _get_raw_chanpion()
 
 # aggregate all weeks data in one datafram
 df_students = ld.get_champions(df_dict)

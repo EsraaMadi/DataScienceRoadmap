@@ -9,7 +9,7 @@ st.set_page_config(page_title='DS Bootcamp',layout='wide', page_icon="ulits/imag
 
 @st.cache_data(show_spinner="Fetching TOC...")
 def _get_raw_roadmap():
-    df = ld.load_roadmap('Bootcamp Jul 2024 - TOC')
+    df = ld.load_roadmap('Bootcamp OCT 2024 - TOC')
     return df
 
 def _filter_groups(today, df):

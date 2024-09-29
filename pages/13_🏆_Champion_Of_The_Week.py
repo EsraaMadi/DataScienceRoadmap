@@ -76,7 +76,7 @@ df_dict = _get_raw_chanpion()
 
 # aggregate all weeks data in one datafram
 df_students = ld.get_champions(df_dict)
-# st.dataframe(df_students)
+st.dataframe(df_students)
 
 # first section
 st.write( """### Based on:""")

@@ -76,7 +76,7 @@ df_dict = _get_raw_chanpion()
 
 # aggregate all weeks data in one datafram
 df_students = ld.get_champions(df_dict)
-st.dataframe(df_students)
+# st.dataframe(df_students)
 
 # first section
 st.write( """### Based on:""")
@@ -96,49 +96,50 @@ st.markdown("""---""")
 st.markdown('#')
 st.markdown('#')
 
-df_champian = df_students.copy()
-df_champian['total'] = df_students.iloc[:, 1:].sum(axis=1)
-top_1_df = df_champian.nlargest(1, 'total')
-st.write( """### 🏆 Our Champion Of The Week is:""")
-name = top_1_df["Name"].values[0]
-st.markdown(f"{_get_champian_name(name)}", unsafe_allow_html=True)
-st.balloons()
-
-st.markdown('#')
-st.markdown('#')
-st.markdown("""---""")
-st.markdown('#')
-st.markdown('#')
-
-st.write( """### Top 10 in our class:""")
-top_10_df = df_champian.nlargest(10, 'total')
-top_10_df_sorted = top_10_df.sort_values(by='total', ascending=False)
-fig = px.bar(top_10_df_sorted, x='Name', y='total')
-st.plotly_chart(fig, use_container_width=True)
-# st.dataframe(top_10_df_sorted)
-st.markdown('#')
-st.markdown('#')
-st.markdown("""---""")
-st.markdown('#')
-st.markdown('#')
-st.write( """### Top in each:""")
-
-
-
-lst_fig = []
-for col in df_students.columns[1:]:
-    top_5_df_sorted = df_students.sort_values(by=col, ascending=False).head(5)
-    fig = px.bar(top_5_df_sorted, x='Name', y=col)
-    lst_fig.append(fig)
-
-row_no = len(lst_fig)/2
-cols_row3 = st.columns(math.ceil(row_no))
-cols_row4 = st.columns(math.floor(row_no))
-
-for col, fig in zip(cols_row3, lst_fig):
-    with col:
-        st.plotly_chart(fig, use_container_width=True)
-
-for col, fig in zip(cols_row4, lst_fig[len(cols_row3):]):
-    with col:
-        st.plotly_chart(fig, use_container_width=True)
+if df_students.shape[0] > 0 :
+    df_champian = df_students.copy()
+    df_champian['total'] = df_students.iloc[:, 1:].sum(axis=1)
+    top_1_df = df_champian.nlargest(1, 'total')
+    st.write( """### 🏆 Our Champion Of The Week is:""")
+    name = top_1_df["Name"].values[0]
+    st.markdown(f"{_get_champian_name(name)}", unsafe_allow_html=True)
+    st.balloons()
+    
+    st.markdown('#')
+    st.markdown('#')
+    st.markdown("""---""")
+    st.markdown('#')
+    st.markdown('#')
+    
+    st.write( """### Top 10 in our class:""")
+    top_10_df = df_champian.nlargest(10, 'total')
+    top_10_df_sorted = top_10_df.sort_values(by='total', ascending=False)
+    fig = px.bar(top_10_df_sorted, x='Name', y='total')
+    st.plotly_chart(fig, use_container_width=True)
+    # st.dataframe(top_10_df_sorted)
+    st.markdown('#')
+    st.markdown('#')
+    st.markdown("""---""")
+    st.markdown('#')
+    st.markdown('#')
+    st.write( """### Top in each:""")
+    
+    
+    
+    lst_fig = []
+    for col in df_students.columns[1:]:
+        top_5_df_sorted = df_students.sort_values(by=col, ascending=False).head(5)
+        fig = px.bar(top_5_df_sorted, x='Name', y=col)
+        lst_fig.append(fig)
+    
+    row_no = len(lst_fig)/2
+    cols_row3 = st.columns(math.ceil(row_no))
+    cols_row4 = st.columns(math.floor(row_no))
+    
+    for col, fig in zip(cols_row3, lst_fig):
+        with col:
+            st.plotly_chart(fig, use_container_width=True)
+    
+    for col, fig in zip(cols_row4, lst_fig[len(cols_row3):]):
+        with col:
+            st.plotly_chart(fig, use_container_width=True)

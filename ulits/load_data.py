@@ -66,7 +66,6 @@ def load_champian():
                 max_week_no = week_number
                 week_sheet = worksheet
 
-    print('---------------------------------', week_sheet)
     data = week_sheet.get_all_values()
     headers = data[10]      
     data = [row[1:] for row in data[11:] if len(row[1])> 2] # delete first column 

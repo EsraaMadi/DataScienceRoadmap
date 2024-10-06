@@ -16,4 +16,4 @@ with col2:
     st.markdown('#')
 
     st.markdown('#')
-    st.write("[Link](https://discord.tuwaiqadmin.com/invite/clyolgclh0001o47jzejhvd8d)")
+    st.write("[Link](https://discord.tuwaiqadmin.com/invite/cm1rgdy310005o46uy82xb5zy)")

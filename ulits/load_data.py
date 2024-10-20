@@ -60,7 +60,7 @@ def load_champian():
     for worksheet in sheet.worksheets():
         if 'temp' in worksheet.title and max_week_no == 0:
             week_sheet = worksheet
-        elif 'Week' in worksheet.title:
+        elif 'Champian Week' in worksheet.title:
             week_number = int(worksheet.title.split(' ')[2])
             if week_number > max_week_no:
                 max_week_no = week_number

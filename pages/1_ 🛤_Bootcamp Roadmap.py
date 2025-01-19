@@ -48,7 +48,7 @@ ITEMS_NUMBERS = {
 
 # @st.cache_data(show_spinner="Fetching roadmap...")
 def _get_raw_roadmap():
-    df = ld.load_roadmap('Bootcamp OCT 2024 - TOC')
+    df = ld.load_roadmap('Bootcamp Jan 2025 - TOC')
     return df
 
 def _get_item_tag(name):

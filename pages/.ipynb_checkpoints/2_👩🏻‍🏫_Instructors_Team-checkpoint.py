@@ -23,10 +23,10 @@ with col2:
 st.write("## Teaching Assistant")
 _, col1, _, col3, _ = st.columns([0.12, 0.28, 0.2, 0.28, 0.12])
 with col1:
-    st.success("""## 👩🏻‍🏫 Refal Alboqami
+    st.success("""## 🧑🏼‍🏫 Mohammed Alamri
     Data scientist
     """)
-    st.image("ulits/images/Refal.png")
+    st.image("ulits/images/Mohammed.png")
     st.markdown('#')
 with col3:
     st.success("""## 🧑🏼‍🏫 Yasser Almubaddil

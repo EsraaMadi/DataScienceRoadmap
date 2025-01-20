@@ -78,7 +78,7 @@ def drow_cards():
             text-align: center;
         }
         .flip-card-front {
-            background-image: url("https://drive.google.com/file/d/17VR5zeB2b2JJycVSf2dySfAIuJy3Pth-/preview");
+            background-image: url("https://cdn.tuwaiq.edu.sa/landing/images/logo/logo-noname.png");
             color: white;
         }
         .flip-card-back {

@@ -1,5 +1,6 @@
 import streamlit as st
 import os
+import ulits.flip_cards as fd
 
 
 st.set_page_config(page_title='DS Bootcamp',layout='wide', page_icon="ulits/images/Logos_Colored.png")
@@ -47,8 +48,7 @@ st.markdown('#')
 tab_student, tab_instractors = st.tabs(["طلاب معسكرنا", "مدربين معسكرنا"])
 
 with tab_student:
-    st.header("A cat")
-    st.image("https://static.streamlit.io/examples/cat.jpg", width=200)
+    fc.drow_cards()
 
 with tab_instractors:
         

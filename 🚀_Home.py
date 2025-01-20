@@ -1,6 +1,7 @@
 import streamlit as st
 import os
 import ulits.flip_cards as fc
+import ulits.instructors_team as it
 
 
 st.set_page_config(page_title='DS Bootcamp',layout='wide', page_icon="ulits/images/Logos_Colored.png")
@@ -52,30 +53,7 @@ with tab_student:
 
 with tab_instractors:
         
-    st.write("## Lead Instructor:")
-    _, col2, _ = st.columns([0.25, 0.5, 0.25])
-    with col2:
-        st.info("""## 👩🏻‍🏫 Eng. Esraa Madhi
-        Data scientist | AI Educator
-        """)
-        st.image("ulits/images/Esraa.png")
-        st.markdown('#')
-        st.markdown("""---""")
-    
-    st.write("## Teaching Assistant")
-    _, col1, _, col3, _ = st.columns([0.10, 0.30, 0.2, 0.28, 0.12])
-    with col1:
-        st.success("""## 🧑🏼‍🏫 Mohammed Alamri
-        Data scientist
-        """)
-        st.image("ulits/images/Mohammed.png")
-        st.markdown('#')
-    with col3:
-        st.success("""## 🧑🏼‍🏫 Yasser Almubaddil
-        Data scientist
-        """)
-        st.image("ulits/images/Yasser.png")
-        st.markdown('#')
+    it.get_instructor_team()
 
 
 

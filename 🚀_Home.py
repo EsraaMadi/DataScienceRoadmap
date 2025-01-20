@@ -63,7 +63,7 @@ with tab_instractors:
         st.markdown("""---""")
     
     st.write("## Teaching Assistant")
-    _, col1, _, col3, _ = st.columns([0.12, 0.28, 0.2, 0.28, 0.12])
+    _, col1, _, col3, _ = st.columns([0.10, 0.30, 0.2, 0.28, 0.12])
     with col1:
         st.success("""## 🧑🏼‍🏫 Mohammed Alamri
         Data scientist

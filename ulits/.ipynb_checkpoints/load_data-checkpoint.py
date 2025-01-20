@@ -130,7 +130,7 @@ def load_students_names():
     for worksheet in sheet.worksheets():
         if 'Partcipation' == worksheet.title:
             data = worksheet.get_all_values()
-            df = pd.DataFrame(data[6:])
+            df = pd.DataFrame(data[6:,0])
             return df
 
 

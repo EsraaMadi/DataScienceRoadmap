@@ -40,8 +40,9 @@ st.markdown("""<h4 style="text-align: left">
                 , unsafe_allow_html=True)
 
 
-col.markdown("""---""")
-
+st.markdown('#')
+st.markdown("""---""")
+st.markdown('#')
 
 tab1 = st.tabs(["طلابنا"])
 

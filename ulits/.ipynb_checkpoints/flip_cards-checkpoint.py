@@ -136,4 +136,4 @@ def drow_cards():
                 time.sleep(1)  # Wait for 1 second
                 if index > 0:
                     flip_card(index-1)
-                st.rerun()
+            st.rerun()

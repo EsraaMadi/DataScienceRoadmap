@@ -6,7 +6,7 @@ import random
 
 
 # Flip the next card automatically every second
-def auto_flip():
+def auto_flip(students):
     current_card = students[st.session_state.current_card]
     #print(st.session_state.current_card,students[st.session_state.current_card])
     st.session_state.flipped_cards[current_card] = not st.session_state.flipped_cards[current_card]
@@ -105,7 +105,7 @@ def drow_cards():
     
 
     # Trigger the automatic flip
-    auto_flip()
+    auto_flip(students)
     #time.sleep(1)  # Wait for 1 second
     
     # Display Cards in Rows with Proper Margins

@@ -2,13 +2,21 @@ import streamlit as st
 import time
 
 def drow_cards():
-    # Initialize session state for flip state of each card
-    if "flipped_cards" not in st.session_state:
-        st.session_state.flipped_cards = [False] * 25  # 30 unique cards
     
-    # Function to toggle flip state for a specific card
-    def flip_card(index):
-        st.session_state.flipped_cards[index] = not st.session_state.flipped_cards[index]
+    # Initialize session state for flip state of each card and the current flip index
+    if "flipped_cards" not in st.session_state:
+        st.session_state.flipped_cards = [False] * 30  # 30 unique cards
+    if "current_card" not in st.session_state:
+        st.session_state.current_card = 0  # Start with the first card
+    
+    import streamlit as st
+    import time
+    
+    # Initialize session state for flip state of each card and the current flip index
+    if "flipped_cards" not in st.session_state:
+        st.session_state.flipped_cards = [False] * 30  # 30 unique cards
+    if "current_card" not in st.session_state:
+        st.session_state.current_card = 0  # Start with the first card
     
     # CSS for flip effect and spacing with background image fix
     flip_css = """
@@ -75,6 +83,8 @@ def drow_cards():
     </style>
     """
     st.markdown(flip_css, unsafe_allow_html=True)
+    
+    # List of card texts for front and back
     cards = [
         ("1", "وش تسمع وانت رايح الدوام؟"),
         ("2", "وش تسمع وانت رايح الدوام"),
@@ -108,8 +118,18 @@ def drow_cards():
         ("30", "وش تسمع وانت رايح الدوام"),
     ]
     
+    # Flip the next card automatically every second
+    def auto_flip():
+        current_card = st.session_state.current_card
+        st.session_state.flipped_cards[current_card] = not st.session_state.flipped_cards[current_card]
+        st.session_state.current_card = (current_card + 1) % len(cards)  # Move to the next card in a loop
+    
+    # Trigger the automatic flip
+    auto_flip()
+    time.sleep(1)  # Wait for 1 second
+    
     # Display Cards in Rows with Proper Margins
-    for i in range(0, 25, 5):  # 5 cards per row
+    for i in range(0, 30, 5):  # 5 cards per row
         cols = st.columns(5)
         for j in range(5):
             index = i + j
@@ -133,7 +153,6 @@ def drow_cards():
                         </div>
                     </div>
                     """, unsafe_allow_html=True)
-                time.sleep(1)  # Wait for 1 second
-                if index > 0:
-                    flip_card(index-1)
-            st.rerun()
+    
+    # Rerun the Streamlit app to continuously update the UI
+    st.rerun()

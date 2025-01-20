@@ -8,7 +8,7 @@ if "flipped_cards" not in st.session_state:
 def flip_card(index):
     st.session_state.flipped_cards[index] = not st.session_state.flipped_cards[index]
 
-# CSS for flip effect and spacing with background image fix
+# CSS for flip effect and styling
 flip_css = """
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
@@ -28,11 +28,11 @@ flip_css = """
     }
     .flip-card {
         background-color: transparent;
-        width: 220px; /* Wider Cards */
+        width: 220px;
         height: 130px;
         perspective: 1000px;
-        margin: 10px; /* Adds spacing between cards */
-        cursor: pointer; /* Clickable */
+        margin: 10px;
+        cursor: pointer;
     }
     .flip-card-inner {
         position: relative;
@@ -53,8 +53,8 @@ flip_css = """
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 16px; /* Smaller Font */
-        font-family: 'Tajawal', sans-serif; /* Arabic Font */
+        font-size: 16px;
+        font-family: 'Tajawal', sans-serif;
         font-weight: bold;
         border-radius: 10px;
         padding: 10px;
@@ -117,9 +117,9 @@ for i in range(0, 30, 5):  # 5 cards per row
             front_text, back_text = cards[index]
             flip_class = "flipped" if st.session_state.flipped_cards[index] else ""
 
-            # Display Flip Card
+            # Display the flip card
             with cols[j]:
-                # Use a clickable container
+                # Create a clickable area for the card
                 click_area = st.empty()
                 click_area.markdown(f"""
                 <div class="flip-card-container" onclick="document.getElementById('card-{index}').click()">
@@ -139,4 +139,4 @@ for i in range(0, 30, 5):  # 5 cards per row
                 # Hidden Streamlit button to handle clicks
                 if click_area.button(f"Flip {index}", key=f"card-{index}"):
                     flip_card(index)
-                    st.experimental_rerun()
+                    st.experimental_set_query_params()  # Triggers a rerun

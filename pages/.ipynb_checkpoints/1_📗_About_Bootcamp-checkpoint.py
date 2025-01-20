@@ -22,7 +22,8 @@ tab_student, tab_instractors, tab_about, tab_certificate = st.tabs(["Students",
                                         "Certificate"])
 
 with tab_student:
-    fc.drow_cards()
+    students_list = ld.load_students_names()
+    fc.drow_cards(students_list)
 
 with tab_instractors:
     it.get_instructor_team()

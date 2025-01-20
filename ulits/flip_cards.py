@@ -14,7 +14,7 @@ def auto_flip(students):
 
 
 
-def drow_cards():
+def drow_cards(students):
 
 
 
@@ -22,7 +22,7 @@ def drow_cards():
 # Shuffle the student numbers randomly
 
     # List of card texts for front and back
-    cards = [ ("🧑🏼‍🎓", i) for i in ld.load_students_names()]
+    cards = [ ("🧑🏼‍🎓", i) for i in students]
 
     students = list(range(0, len(cards)))
     

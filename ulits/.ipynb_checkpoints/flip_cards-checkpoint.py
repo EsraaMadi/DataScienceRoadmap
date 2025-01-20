@@ -2,16 +2,7 @@ import streamlit as st
 import time
 
 def drow_cards():
-    
-    # Initialize session state for flip state of each card and the current flip index
-    if "flipped_cards" not in st.session_state:
-        st.session_state.flipped_cards = [False] * 30  # 30 unique cards
-    if "current_card" not in st.session_state:
-        st.session_state.current_card = 0  # Start with the first card
-    
-    import streamlit as st
-    import time
-    
+
     # Initialize session state for flip state of each card and the current flip index
     if "flipped_cards" not in st.session_state:
         st.session_state.flipped_cards = [False] * 30  # 30 unique cards

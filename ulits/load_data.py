@@ -122,11 +122,10 @@ def get_champions(df_dict):
     agg_df = _aggregate_data(df_dict_clean)
     agg_df_clean = _clean_df(agg_df)
     return agg_df_clean
-    
 
 def load_students_names():
     # Open the spreadhseet
-    sheet = client.open_by_key('g5TBpzzU5qboHF3UeF4KjH3P6Sd4E4_-Emm8wRkaBc')
+    sheet = client.open_by_key('17g5TBpzzU5qboHF3UeF4KjH3P6Sd4E4_-Emm8wRkaBc')
 
     for worksheet in sheet.worksheets():
         if 'Partcipation' == worksheet.title:

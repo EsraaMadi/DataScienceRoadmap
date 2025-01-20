@@ -1,12 +1,9 @@
 import streamlit as st
 import time
-
+import ulits.load_data as ld
 import random
 
-students = list(range(0, 25))
 
-# Shuffle the student numbers randomly
-random.shuffle(students)
 
 # Flip the next card automatically every second
 def auto_flip():
@@ -18,6 +15,19 @@ def auto_flip():
 
 
 def drow_cards():
+
+
+
+
+# Shuffle the student numbers randomly
+
+    # List of card texts for front and back
+    cards = [ ("🧑🏼‍🎓", i) for i in ld.load_students_names()]
+
+    students = list(range(0, len(cards)))
+    
+    random.shuffle(students)
+
     # Initialize session state for flip state of each card and the current flip index
     if "flipped_cards" not in st.session_state:
         st.session_state.flipped_cards = [False] * len(students)  # 25 unique cards
@@ -90,34 +100,8 @@ def drow_cards():
     """
     st.markdown(flip_css, unsafe_allow_html=True)
     
-    # List of card texts for front and back
-    cards = [
-        ("1", "وش تسمع وانت رايح الدوام؟"),
-        ("2", "وش تسمع وانت رايح الدوام"),
-        ("3", "وش تسمع وانت رايح الدوام"),
-        ("4", "وش تسمع وانت رايح الدوام"),
-        ("5", "وش تسمع وانت رايح الدوام"),
-        ("6", "وش تسمع وانت رايح الدوام"),
-        ("7", "وش تسمع وانت رايح الدوام"),
-        ("8", "وش تسمع وانت رايح الدوام"),
-        ("9", "وش تسمع وانت رايح الدوام"),
-        ("10", "وش تسمع وانت رايح الدوام"),
-        ("11", "وش تسمع وانت رايح الدوام"),
-        ("12", "وش تسمع وانت رايح الدوام"),
-        ("13", "وش تسمع وانت رايح الدوام"),
-        ("14", "وش تسمع وانت رايح الدوام"),
-        ("15", "وش تسمع وانت رايح الدوام"),
-        ("16", "وش تسمع وانت رايح الدوام"),
-        ("17", "وش تسمع وانت رايح الدوام"),
-        ("18", "وش تسمع وانت رايح الدوام"),
-        ("19", "وش تسمع وانت رايح الدوام"),
-        ("20", "وش تسمع وانت رايح الدوام"),
-        ("21", "وش تسمع وانت رايح الدوام"),
-        ("22", "وش تسمع وانت رايح الدوام"),
-        ("23", "وش تسمع وانت رايح الدوام"),
-        ("24", "وش تسمع وانت رايح الدوام"),
-        ("25", "وش تسمع وانت رايح الدوام"),
-    ]
+
+        
     
 
     # Trigger the automatic flip

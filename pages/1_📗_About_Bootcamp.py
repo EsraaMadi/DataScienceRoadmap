@@ -1,7 +1,7 @@
 import streamlit as st
 import ulits.flip_cards as fc
 import ulits.instructors_team as it
-import ulits.load_data as ld
+
 
 
 
@@ -22,8 +22,7 @@ tab_student, tab_instractors, tab_about, tab_certificate = st.tabs(["Students",
                                         "Certificate"])
 
 with tab_student:
-    #fc.drow_cards()
-    st.dataframe(ld.load_students_names())
+    fc.drow_cards()
 
 with tab_instractors:
     it.get_instructor_team()

@@ -78,11 +78,11 @@ def drow_cards():
             text-align: center;
         }
         .flip-card-front {
-            background-image: url("https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg");
-            color: white;
+            background: #4f29b7;
+            color: #ededed;
         }
         .flip-card-back {
-            background: #FFD700;
+            background: #ededed;
             color: black;
             transform: rotateY(180deg);
         }

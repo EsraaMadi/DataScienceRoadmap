@@ -1,4 +1,5 @@
 import streamlit as st
+import time
 
 def drow_cards():
     # Initialize session state for flip state of each card
@@ -132,8 +133,8 @@ def drow_cards():
                         </div>
                     </div>
                     """, unsafe_allow_html=True)
-    
-                    # Button to flip the card (Ensures unique state for each)
-                    if st.button(f"Flip {index+1}", key=f"btn_{index}"):
-                        flip_card(index)
-                        st.rerun()  # Forces UI update to reflect state changes
+
+                    time.sleep(2)  # Wait for 1 second
+
+                    flip_card(index)
+                    st.rerun()  # Forces UI update to reflect state changes

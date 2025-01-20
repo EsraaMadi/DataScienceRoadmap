@@ -1,7 +1,6 @@
 import streamlit as st
 import os
-import ulits.flip_cards as fc
-import ulits.instructors_team as it
+
 
 
 st.set_page_config(page_title='DS Bootcamp',layout='wide', page_icon="ulits/images/Logos_Colored.png")
@@ -43,17 +42,7 @@ st.markdown("""<h4 style="text-align: left">
 
 
 st.markdown('#')
-st.markdown("""---""")
-st.markdown('#')
 
-tab_student, tab_instractors = st.tabs(["طلاب معسكرنا", "مدربين معسكرنا"])
-
-with tab_student:
-    fc.drow_cards()
-
-with tab_instractors:
-        
-    it.get_instructor_team()
 
 
 

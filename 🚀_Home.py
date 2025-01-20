@@ -1,7 +1,6 @@
 import streamlit as st
 import os
-import ulits.flip_cards as fc
-import ulits.instructors_team as it
+
 
 
 st.set_page_config(page_title='DS Bootcamp',layout='wide', page_icon="ulits/images/Logos_Colored.png")

@@ -13,38 +13,45 @@ st.markdown("""---""")
 # st.markdown('#')
 
 
-# show arabic welcome message
-st.markdown("""<h4 style="text-align: right">      
-   🚀 مرحبا بك في معسكر علم البيانات وتعلم الآلة 
-   </h4>
+col_ar, col_en, = st.columns()
 
-   
-   <div style="text-align: right"> 
-   حيث تبدأ رحلتكم في عالم البيانات! نحن متحمسون لأن تنطلقوا في هذا المسار التحويلي، لفك أسرار البيانات الخفية وتحويل المعلومات إلى رؤى قابلة للتنفيذ معًا، سنستكشف ونتعلم ونبتكر باستخدام أدوات وتقنيات رائدة ستشكل مستقبلكم كمحترفين في علم البيانات
-    </div>
-"""
-                , unsafe_allow_html=True)
+with col_ar:
+    # show arabic welcome message
+    st.markdown("""<h4 style="text-align: right">      
+       🚀 مرحبا بك في معسكر علم البيانات وتعلم الآلة 
+       </h4>
+    
+       
+       <div style="text-align: right"> 
+       حيث تبدأ رحلتكم في عالم البيانات! نحن متحمسون لأن تنطلقوا في هذا المسار التحويلي، لفك أسرار البيانات الخفية وتحويل المعلومات إلى رؤى قابلة للتنفيذ معًا، سنستكشف ونتعلم ونبتكر باستخدام أدوات وتقنيات رائدة ستشكل مستقبلكم كمحترفين في علم البيانات
+        </div>
+    """
+                    , unsafe_allow_html=True)
 
 st.markdown('#')
 
+with col_en:
 # show english welcome message
-
-st.markdown("""<h4 style="text-align: left">      
-   Welcome to Our Data Science Bootcamp! 🚀
-   </h4>
-
-   
-   <div style="text-align: left"> 
-   Where your journey into the world of data begins! We're thrilled to have you embark on this transformative path, unlocking the secrets hidden within data and turning information into actionable insights. Together, we will explore, learn, and create with the leading tools and techniques that will shape your future as a data science professional.
-    </div>
-"""
+    st.markdown("""<h4 style="text-align: left">      
+       Welcome to Our Data Science Bootcamp! 🚀
+       </h4>
+    
+       
+       <div style="text-align: left"> 
+       Where your journey into the world of data begins! We're thrilled to have you embark on this transformative path, unlocking the secrets hidden within data and turning information into actionable insights. Together, we will explore, learn, and create with the leading tools and techniques that will shape your future as a data science professional.
+        </div>
+    """
                 , unsafe_allow_html=True)
+
+
+col.markdown("""---""")
+
 
 tab1 = st.tabs(["طلابنا"])
 
 with tab1:
     st.header("A cat")
-    st.image("https://static.streamlit.io/examples/cat.jpg", width=200)
+    # st.image("https://static.streamlit.io/examples/cat.jpg", width=200)
 
 
 

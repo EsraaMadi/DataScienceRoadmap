@@ -1,6 +1,5 @@
 import streamlit as st
 import time
-import ulits.load_data as ld
 import random
 
 
@@ -14,7 +13,7 @@ def auto_flip(students):
 
 
 
-def drow_cards(students):
+def drow_cards(students_list):
 
 
 
@@ -22,7 +21,7 @@ def drow_cards(students):
 # Shuffle the student numbers randomly
 
     # List of card texts for front and back
-    cards = [ ("🧑🏼‍🎓", i) for i in students]
+    cards = [ ("🧑🏼‍🎓", i) for i in students_list]
 
     students = list(range(0, len(cards)))
     

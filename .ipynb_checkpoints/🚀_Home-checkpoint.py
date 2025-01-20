@@ -44,11 +44,38 @@ st.markdown('#')
 st.markdown("""---""")
 st.markdown('#')
 
-tab1 = st.tabs(["طلابنا"])
+tab_student, tab_instractors = st.tabs(["طلاب معسكرنا", "مدربين معسكرنا"])
 
-with tab1:
+with tab_student:
     st.header("A cat")
     st.image("https://static.streamlit.io/examples/cat.jpg", width=200)
+
+with tab_instractors:
+        
+    st.write("## Lead Instructor:")
+    _, col2, _ = st.columns([0.325, 0.35, 0.325])
+    with col2:
+        st.info("""## 👩🏻‍🏫 Eng. Esraa Madhi
+        Data scientist | AI Educator
+        """)
+        st.image("ulits/images/Esraa.png")
+        st.markdown('#')
+        st.markdown("""---""")
+    
+    st.write("## Teaching Assistant")
+    _, col1, _, col3, _ = st.columns([0.12, 0.28, 0.2, 0.28, 0.12])
+    with col1:
+        st.success("""## 🧑🏼‍🏫 Mohammed Alamri
+        Data scientist
+        """)
+        st.image("ulits/images/Mohammed.png")
+        st.markdown('#')
+    with col3:
+        st.success("""## 🧑🏼‍🏫 Yasser Almubaddil
+        Data scientist
+        """)
+        st.image("ulits/images/Yasser.png")
+        st.markdown('#')
 
 
 

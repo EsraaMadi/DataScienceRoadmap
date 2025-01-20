@@ -122,7 +122,7 @@ def drow_cards():
 
     # Trigger the automatic flip
     auto_flip()
-    time.sleep(1)  # Wait for 1 second
+    #time.sleep(1)  # Wait for 1 second
     
     # Display Cards in Rows with Proper Margins
     for i in range(0, 30, 5):  # 5 cards per row

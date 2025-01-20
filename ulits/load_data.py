@@ -124,7 +124,15 @@ def get_champions(df_dict):
     return agg_df_clean
     
 
+def load_students_names():
+    # Open the spreadhseet
+    sheet = client.open_by_key('g5TBpzzU5qboHF3UeF4KjH3P6Sd4E4_-Emm8wRkaBc')
 
+    for worksheet in sheet.worksheets():
+        if 'Partcipation' == worksheet.title:
+            data = worksheet.get_all_values()
+            df = pd.DataFrame(data)
+            return df
 
 
     

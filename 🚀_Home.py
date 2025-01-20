@@ -40,7 +40,11 @@ st.markdown("""<h4 style="text-align: left">
 """
                 , unsafe_allow_html=True)
 
+tab1 = st.tabs(["طلابنا"])
 
+with tab1:
+    st.header("A cat")
+    st.image("https://static.streamlit.io/examples/cat.jpg", width=200)
 
 
 

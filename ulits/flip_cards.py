@@ -4,7 +4,7 @@ import time
 def drow_cards():
     # Initialize session state for flip state of each card
     if "flipped_cards" not in st.session_state:
-        st.session_state.flipped_cards = [False] * 30  # 30 unique cards
+        st.session_state.flipped_cards = [True] + [False] * 24  # 30 unique cards
     
     # Function to toggle flip state for a specific card
     def flip_card(index):
@@ -109,7 +109,7 @@ def drow_cards():
     ]
     
     # Display Cards in Rows with Proper Margins
-    for i in range(0, 30, 5):  # 5 cards per row
+    for i in range(0, 25, 5):  # 5 cards per row
         cols = st.columns(5)
         for j in range(5):
             index = i + j
@@ -133,11 +133,7 @@ def drow_cards():
                         </div>
                     </div>
                     """, unsafe_allow_html=True)
-
-        
-
-                    #time.sleep(2)  # Wait for 1 second
-    for i in range(0,30):
-        flip_card(i)
-        st.rerun()
-                      # Forces UI update to reflect state changes
+                    time.sleep(1)  # Wait for 1 second
+                    if index > 0:
+                        flip_card(index-1)
+                    st.rerun()

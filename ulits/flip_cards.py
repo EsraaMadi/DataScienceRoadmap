@@ -31,7 +31,7 @@ def drow_cards():
     
         /* Background Image for the Streamlit App */
         .stApp {
-            background-image: url('https://i.pinimg.com/736x/45/f5/eb/45f5eb7f27b9101c490401259672ad0a.jpg');
+            background-image: url('https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;

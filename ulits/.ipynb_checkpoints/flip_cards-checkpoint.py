@@ -4,7 +4,7 @@ import time
 def drow_cards():
     # Initialize session state for flip state of each card
     if "flipped_cards" not in st.session_state:
-        st.session_state.flipped_cards = [True] + [False] * 24  # 30 unique cards
+        st.session_state.flipped_cards = [False] * 25  # 30 unique cards
     
     # Function to toggle flip state for a specific card
     def flip_card(index):

@@ -13,7 +13,7 @@ st.markdown("""---""")
 # st.markdown('#')
 
 
-col_ar, col_en, = st.columns()
+col_ar, col_en, = st.columns(2)
 
 with col_ar:
     # show arabic welcome message

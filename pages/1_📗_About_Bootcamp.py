@@ -10,7 +10,7 @@ st.set_page_config(page_title='DS Bootcamp',layout='wide', page_icon="ulits/imag
 _, im_col, _ = st.columns([0.35, 0.3, 0.35])
 with im_col:
     st.image("ulits/images/tuwaiq-academy-logo.png")
-st.markdown("""---""")
+#st.markdown("""---""")
 # st.markdown('#')
 # st.markdown('#')
 

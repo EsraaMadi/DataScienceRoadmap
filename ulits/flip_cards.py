@@ -78,7 +78,7 @@ def drow_cards():
             text-align: center;
         }
         .flip-card-front {
-            background-image: "ulits/images/card_logo.png";
+            background-image: url("/images/card_logo.png");
             color: white;
         }
         .flip-card-back {

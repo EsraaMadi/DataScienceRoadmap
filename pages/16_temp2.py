@@ -4,6 +4,10 @@ import streamlit as st
 if "flipped_cards" not in st.session_state:
     st.session_state.flipped_cards = [False] * 30  # 30 unique cards
 
+# Function to toggle the flip state of a card
+def flip_card(index):
+    st.session_state.flipped_cards[index] = not st.session_state.flipped_cards[index]
+
 # CSS for flip effect and spacing with background image fix
 flip_css = """
 <style>
@@ -70,19 +74,7 @@ flip_css = """
 """
 st.markdown(flip_css, unsafe_allow_html=True)
 
-# JavaScript to handle card flipping on click
-flip_js = """
-<script>
-    function flipCard(index) {
-        const flippedCards = JSON.parse(localStorage.getItem('flipped_cards')) || [];
-        flippedCards[index] = !flippedCards[index];
-        localStorage.setItem('flipped_cards', JSON.stringify(flippedCards));
-        document.dispatchEvent(new Event('updateCards'));  // Notify Streamlit to update
-    }
-</script>
-"""
-st.markdown(flip_js, unsafe_allow_html=True)
-
+# Card data (front and back text)
 cards = [
     ("1", "وش تسمع وانت رايح الدوام؟"),
     ("2", "وش تسمع وانت رايح الدوام"),
@@ -116,7 +108,7 @@ cards = [
     ("30", "وش تسمع وانت رايح الدوام"),
 ]
 
-# Display Cards in Rows with Proper Margins
+# Display cards in a grid format
 for i in range(0, 30, 5):  # 5 cards per row
     cols = st.columns(5)
     for j in range(5):
@@ -125,10 +117,12 @@ for i in range(0, 30, 5):  # 5 cards per row
             front_text, back_text = cards[index]
             flip_class = "flipped" if st.session_state.flipped_cards[index] else ""
 
-            # Display Flip Card inside a container for spacing
+            # Display Flip Card
             with cols[j]:
-                st.markdown(f"""
-                <div class="flip-card-container" onclick="flipCard({index})">
+                # Use a clickable container
+                click_area = st.empty()
+                click_area.markdown(f"""
+                <div class="flip-card-container" onclick="document.getElementById('card-{index}').click()">
                     <div class="flip-card {flip_class}">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
@@ -142,17 +136,7 @@ for i in range(0, 30, 5):  # 5 cards per row
                 </div>
                 """, unsafe_allow_html=True)
 
-# JavaScript to update Streamlit state when cards are flipped
-update_state_js = """
-<script>
-    document.addEventListener('updateCards', function () {
-        const flippedCards = JSON.parse(localStorage.getItem('flipped_cards')) || [];
-        fetch('/_st_update', {
-            method: 'POST',
-            body: JSON.stringify({ flipped_cards: flippedCards }),
-            headers: { 'Content-Type': 'application/json' }
-        }).then(() => location.reload());
-    });
-</script>
-"""
-st.markdown(update_state_js, unsafe_allow_html=True)
+                # Hidden Streamlit button to handle clicks
+                if click_area.button(f"Flip {index}", key=f"card-{index}"):
+                    flip_card(index)
+                    st.experimental_rerun()

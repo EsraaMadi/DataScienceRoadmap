@@ -139,4 +139,4 @@ for i in range(0, 30, 5):  # 5 cards per row
                 # Hidden Streamlit button to handle clicks
                 if click_area.button(f"Flip {index}", key=f"card-{index}"):
                     flip_card(index)
-                    st.experimental_set_query_params()  # Triggers a rerun
+                    st.query_params()  # Triggers a rerun

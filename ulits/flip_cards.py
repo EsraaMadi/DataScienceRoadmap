@@ -138,6 +138,6 @@ def drow_cards():
 
                     #time.sleep(2)  # Wait for 1 second
     for i in range(0,30):
-        flip_card(index)
+        flip_card(i)
         st.rerun()
                       # Forces UI update to reflect state changes

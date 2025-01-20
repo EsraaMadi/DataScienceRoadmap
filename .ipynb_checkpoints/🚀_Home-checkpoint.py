@@ -53,7 +53,7 @@ with tab_student:
 with tab_instractors:
         
     st.write("## Lead Instructor:")
-    _, col2, _ = st.columns([0.325, 0.35, 0.325])
+    _, col2, _ = st.columns([0.20, 0.60, 0.20])
     with col2:
         st.info("""## 👩🏻‍🏫 Eng. Esraa Madhi
         Data scientist | AI Educator

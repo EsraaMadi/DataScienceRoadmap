@@ -43,17 +43,7 @@ st.markdown("""<h4 style="text-align: left">
 
 
 st.markdown('#')
-st.markdown("""---""")
-st.markdown('#')
 
-tab_student, tab_instractors = st.tabs(["طلاب معسكرنا", "مدربين معسكرنا"])
-
-with tab_student:
-    fc.drow_cards()
-
-with tab_instractors:
-        
-    it.get_instructor_team()
 
 
 

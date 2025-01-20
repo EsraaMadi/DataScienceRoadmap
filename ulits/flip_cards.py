@@ -3,8 +3,7 @@ import time
 
 import random
 
-# List of student numbers (1 to 25)
-students = list(range(1, 26))
+students = list(range(0, 25))
 
 # Shuffle the student numbers randomly
 random.shuffle(students)
@@ -12,7 +11,7 @@ random.shuffle(students)
 # Flip the next card automatically every second
 def auto_flip():
     current_card = students[st.session_state.current_card]
-    print(st.session_state.current_card,students[st.session_state.current_card])
+    #print(st.session_state.current_card,students[st.session_state.current_card])
     st.session_state.flipped_cards[current_card] = not st.session_state.flipped_cards[current_card]
     st.session_state.current_card += 1
 
@@ -93,10 +92,10 @@ def drow_cards():
     
     # List of card texts for front and back
     cards = [
-        ("1", "وش تسمع وانت رايح الدوام؟"),
-        ("2", "وش تسمع وانت رايح الدوام"),
-        ("3", "وش تسمع وانت رايح الدوام"),
-        ("4", "وش تسمع وانت رايح الدوام"),
+        ("🧚🏼‍♀️", "وش تسمع وانت رايح الدوام؟"),
+        ("🧚🏼‍♀️", "وش تسمع وانت رايح الدوام"),
+        ("🧚🏼‍♀️", "وش تسمع وانت رايح الدوام"),
+        ("🧚🏼‍♀️", "وش تسمع وانت رايح الدوام"),
         ("5", "وش تسمع وانت رايح الدوام"),
         ("6", "وش تسمع وانت رايح الدوام"),
         ("7", "وش تسمع وانت رايح الدوام"),

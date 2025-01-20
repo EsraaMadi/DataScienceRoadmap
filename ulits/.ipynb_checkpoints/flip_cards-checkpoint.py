@@ -2,7 +2,6 @@ import streamlit as st
 import time
 
 def drow_cards():
-
     # Initialize session state for flip state of each card and the current flip index
     if "flipped_cards" not in st.session_state:
         st.session_state.flipped_cards = [False] * 30  # 30 unique cards
@@ -111,9 +110,10 @@ def drow_cards():
     
     # Flip the next card automatically every second
     def auto_flip():
-        current_card = st.session_state.current_card
-        st.session_state.flipped_cards[current_card] = not st.session_state.flipped_cards[current_card]
-        st.session_state.current_card = (current_card + 1) % len(cards)  # Move to the next card in a loop
+        if st.session_state.current_card < 30:
+            current_card = st.session_state.current_card
+            st.session_state.flipped_cards[current_card] = not st.session_state.flipped_cards[current_card]
+            st.session_state.current_card = (current_card + 1) % len(cards)  # Move to the next card in a loop
     
     # Trigger the automatic flip
     auto_flip()
@@ -144,6 +144,7 @@ def drow_cards():
                         </div>
                     </div>
                     """, unsafe_allow_html=True)
-    
-    # Rerun the Streamlit app to continuously update the UI
-    st.rerun()
+
+    if st.session_state.current_card < 30:
+        # Rerun the Streamlit app to continuously update the UI
+        st.rerun()

@@ -134,7 +134,7 @@ def drow_cards():
                     </div>
                     """, unsafe_allow_html=True)
 
-                    time.sleep(2)  # Wait for 1 second
+                    #time.sleep(2)  # Wait for 1 second
 
                     flip_card(index)
                     #st.rerun()  # Forces UI update to reflect state changes

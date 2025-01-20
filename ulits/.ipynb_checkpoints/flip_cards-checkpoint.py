@@ -78,7 +78,7 @@ def drow_cards():
             text-align: center;
         }
         .flip-card-front {
-            background-image: url("images/discord.png");
+            background-image: url("ulits/images/discord.png");
             color: white;
         }
         .flip-card-back {

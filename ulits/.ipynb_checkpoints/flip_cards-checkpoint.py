@@ -1,10 +1,26 @@
 import streamlit as st
 import time
 
+import random
+
+# List of student numbers (1 to 25)
+students = list(range(1, 26))
+
+# Shuffle the student numbers randomly
+random.shuffle(students)
+
+# Flip the next card automatically every second
+def auto_flip():
+    current_card = students[st.session_state.current_card]
+    st.session_state.flipped_cards[current_card] = not st.session_state.flipped_cards[current_card]
+    st.session_state.current_card += 1
+
+
+
 def drow_cards():
     # Initialize session state for flip state of each card and the current flip index
     if "flipped_cards" not in st.session_state:
-        st.session_state.flipped_cards = [False] * 30  # 30 unique cards
+        st.session_state.flipped_cards = [False] * 25  # 30 unique cards
     if "current_card" not in st.session_state:
         st.session_state.current_card = 0  # Start with the first card
     
@@ -101,20 +117,9 @@ def drow_cards():
         ("23", "وش تسمع وانت رايح الدوام"),
         ("24", "وش تسمع وانت رايح الدوام"),
         ("25", "وش تسمع وانت رايح الدوام"),
-        ("26", "وش تسمع وانت رايح الدوام"),
-        ("27", "وش تسمع وانت رايح الدوام"),
-        ("28", "وش تسمع وانت رايح الدوام"),
-        ("29", "وش تسمع وانت رايح الدوام"),
-        ("30", "وش تسمع وانت رايح الدوام"),
     ]
     
-    # Flip the next card automatically every second
-    def auto_flip():
-        if st.session_state.current_card < 30:
-            current_card = st.session_state.current_card
-            st.session_state.flipped_cards[current_card] = not st.session_state.flipped_cards[current_card]
-            st.session_state.current_card = (current_card + 1) % len(cards)  # Move to the next card in a loop
-    
+
     # Trigger the automatic flip
     auto_flip()
     time.sleep(1)  # Wait for 1 second

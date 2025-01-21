@@ -180,9 +180,9 @@ def get_roadmap_page():
         """
     )
 
-    _, im_col, _ = st.columns([0.15, 0.7, 0.15])
-    with im_col:
-        st.image("ulits/images/map.png")
+    # _, im_col, _ = st.columns([0.15, 0.7, 0.15])
+    # with im_col:
+    st.image("ulits/images/map.png")
     
     roadmap_df = _get_raw_roadmap()
     _draw_agenda(roadmap_df)

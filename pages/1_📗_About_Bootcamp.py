@@ -30,7 +30,7 @@ tab_student, tab_instractors, tab_about, tab_certificate, tab_assessment, tab_in
 css = '''
 <style>
     .stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"] p {
-    font-size:20px;
+    font-size:15px;
     }
 </style>
 '''

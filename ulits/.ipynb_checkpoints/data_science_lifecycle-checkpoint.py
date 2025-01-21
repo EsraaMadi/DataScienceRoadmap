@@ -8,10 +8,12 @@ import streamlit as st
 #     st.image("ulits/images/tuwaiq-academy-logo.png")
 # st.markdown("""---""")
 # # st.markdown('#')
-st.markdown('#')
 
-_, col2, _ = st.columns([0.2, 0.6, 0.2])
-with col2:
-    st.image("ulits/images/DS_step.svg")
-#     st.markdown('#')
-#st.image("ulits/images/DS_step.png")
+def get_ds_lifecycle():
+    st.markdown('#')
+    
+    _, col2, _ = st.columns([0.2, 0.6, 0.2])
+    with col2:
+        st.image("ulits/images/DS_step.svg")
+    #     st.markdown('#')
+    #st.image("ulits/images/DS_step.png")

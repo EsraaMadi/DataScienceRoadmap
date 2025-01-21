@@ -103,7 +103,7 @@ def get_toc():
     with s_col:
         st.markdown("""---""")
     st.markdown('#')
-    st.markdown('#')
+    # st.markdown('#')
     
     # show the first dropdown list
     roadmap_df = _get_raw_roadmap()

@@ -45,6 +45,19 @@ ITEMS_NUMBERS = {
     ,9: "9️⃣"
 }
 
+# Get today's date
+start_course_date = datetime(2025, 1, 26).date()
+today = datetime(2025, 2, 19).date()
+#today = datetime.now().date()
+
+def get_week_no(date):
+    # Calculate the difference in days between the two dates
+    difference_in_days = abs((date - start_course_date).days)
+    
+    # Convert the difference in days to weeks
+    week_no = difference_in_days // 7
+    return week_no
+
 
 # @st.cache_data(show_spinner="Fetching roadmap...")
 def _get_raw_roadmap():
@@ -69,20 +82,24 @@ def _format_date(date):
     formatted_date = date_object.strftime('%d %B %Y')
     return formatted_date
 
-def _filter_groups(today, groups):
+def _filter_groups(today, week_no , groups):
     history_list = []
+    current_week_list = []
     current_list = []
     future_list = []
 
     for i in groups:
         item_date = datetime.strptime(i[0][2], '%d/%m/%Y').date()
         if item_date < today:
+            item_week_no = get_week_no(item_date)
+            if item_week_no == week_no:
+                current_week_list.append(i)
             history_list.append(i)
         elif item_date == today:
             current_list.append(i)
         else:
             future_list.append(i)
-    return history_list, current_list, future_list
+    return history_list, current_list, future_list, current_week_list
 
 def _draw_groups(time, groups):
     week_no = 0
@@ -115,14 +132,21 @@ def _draw_groups(time, groups):
         st.markdown("""---""")
         
 
-def _draw_agenda(df, today):
+def _draw_agenda(df):
 
     groups_df = list(df.groupby(['#Week', '#Day', 'Date', 'Phase']))
 
-    history_list, current_list, future_list = _filter_groups(today, groups_df)
+    current_week_no = get_week_no(today,  start_course_date)
 
-    with st.expander("Show past days"):
+    history_list, current_list, future_list, current_week_list = _filter_groups(today,
+                                                                                current_week_no , 
+                                                                                groups_df)
+
+    with st.expander("Show All Previous Days"):
         _draw_groups(time=0, groups=history_list)
+
+    with st.expander("Show This Week"):
+        _draw_groups(time=0, groups=current_week_list)
         
     _draw_groups(time=1, groups=current_list)
 
@@ -149,9 +173,5 @@ def get_roadmap_page():
         """
     )
     
-    # Get today's date
-    # today = datetime(2024, 5, 15).date()
-    today = datetime.now().date()
-    
     roadmap_df = _get_raw_roadmap()
-    _draw_agenda(roadmap_df, today)
+    _draw_agenda(roadmap_df)

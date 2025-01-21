@@ -2,35 +2,26 @@ import streamlit as st
 import time
 import random
 
-# List of card texts for front and back
-cards = [ ("🧑🏼‍🎓", i) for i in st.session_state.students_list]
-students = list(range(0, len(cards)))
-random.shuffle(students)
-print(students)
-
-
+def prepare_cards():
+    # List of card texts for front and back
+    cards = [ ("🧑🏼‍🎓", i) for i in st.session_state.students_list]
+    st.session_state.students = list(range(0, len(cards)))
+    random.shuffle(st.session_state.students)
+    print(st.session_state.students)
 
 # Flip the next card automatically every second
 def auto_flip():
-    current_card = students[st.session_state.current_card]
-    print(st.session_state.current_card,students[st.session_state.current_card])
+    current_card = st.session_state.students[st.session_state.current_card]
+    print(st.session_state.current_card,st.session_state.students[st.session_state.current_card])
     st.session_state.flipped_cards[current_card] = not st.session_state.flipped_cards[current_card]
     st.session_state.current_card += 1
 
 
 
 def drow_cards():
-
-
-
-
-# Shuffle the student numbers randomly
-
-
-
     # Initialize session state for flip state of each card and the current flip index
     if "flipped_cards" not in st.session_state:
-        st.session_state.flipped_cards = [False] * len(students)  # 25 unique cards
+        st.session_state.flipped_cards = [False] * len(st.session_state.students)  # 25 unique cards
     if "current_card" not in st.session_state:
         st.session_state.current_card = 0  # Start with the first card
     
@@ -109,7 +100,7 @@ def drow_cards():
     #time.sleep(1)  # Wait for 1 second
     
     # Display Cards in Rows with Proper Margins
-    for i in range(0, len(students), 5):  # 5 cards per row
+    for i in range(0, len(st.session_state.students), 5):  # 5 cards per row
         cols = st.columns(5)
         for j in range(5):
             index = i + j
@@ -134,6 +125,6 @@ def drow_cards():
                     </div>
                     """, unsafe_allow_html=True)
 
-    if st.session_state.current_card < len(students):
+    if st.session_state.current_card < len(st.session_state.students):
         # Rerun the Streamlit app to continuously update the UI
         st.rerun()

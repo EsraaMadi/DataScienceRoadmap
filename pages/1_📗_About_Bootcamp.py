@@ -25,6 +25,7 @@ with tab_student:
     students_list = ld.load_students_names()
     if "flipped_cards" not in st.session_state:
         st.session_state.students_list = students_list
+        fc.prepare_cards()
     fc.drow_cards()
 
 with tab_instractors:

@@ -8,7 +8,7 @@ def git_wifi():
     #     st.image("ulits/images/tuwaiq-academy-logo.png")
     # st.markdown("""---""")
     # st.markdown('#')
-    # st.markdown('#')
+    st.markdown('#')
     
     _, col2, _ = st.columns([0.4, 0.2, 0.4])
     with col2:

@@ -26,6 +26,7 @@ def drow_cards(students_list):
     students = list(range(0, len(cards)))
     
     random.shuffle(students)
+    print(students)
 
     # Initialize session state for flip state of each card and the current flip index
     if "flipped_cards" not in st.session_state:

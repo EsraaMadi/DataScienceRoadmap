@@ -1,7 +1,7 @@
 import streamlit as st
 import time
 
-def get_emoji(geder):
+def get_emoji(gender):
     if gender =='Male':
         return "🧑🏼‍🎓"
     else:

@@ -1,5 +1,6 @@
 import streamlit as st
 import ulits.data_science_lifecycle as ds
+import ulits.toc as toc
 
 
 
@@ -27,7 +28,7 @@ with tab_road_map:
     pass
 
 with tab_toc:
-    pass
+    toc.get_toc()
 
 with tab_ds:
     ds.get_ds_lifecycle()

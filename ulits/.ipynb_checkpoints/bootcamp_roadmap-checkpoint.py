@@ -146,7 +146,7 @@ def _draw_agenda(df):
                                                                                 current_week_no , 
                                                                                 groups_df)
 
-    with st.expander("Show All Previous Days"):
+    with st.expander("Show All Days Before"):
         _draw_groups(time=0, groups=history_list)
 
     with st.expander("Show Last Week"):

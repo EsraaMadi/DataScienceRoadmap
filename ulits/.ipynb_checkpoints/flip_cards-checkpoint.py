@@ -134,6 +134,6 @@ def drow_cards(students_list):
                     </div>
                     """, unsafe_allow_html=True)
 
-    if st.session_state.current_card < len(students):
+    #if st.session_state.current_card < len(students):
         # Rerun the Streamlit app to continuously update the UI
-        st.rerun()
+        #st.rerun()

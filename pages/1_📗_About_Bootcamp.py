@@ -2,6 +2,7 @@ import streamlit as st
 import ulits.flip_cards as fc
 import ulits.instructors_team as it
 import ulits.load_data as ld
+import random
 
 
 

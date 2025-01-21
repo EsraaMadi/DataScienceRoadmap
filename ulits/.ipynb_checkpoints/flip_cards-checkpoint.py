@@ -136,4 +136,4 @@ def drow_cards(students_list):
 
     #if st.session_state.current_card < len(students):
         # Rerun the Streamlit app to continuously update the UI
-        #st.rerun()
+        st.rerun()

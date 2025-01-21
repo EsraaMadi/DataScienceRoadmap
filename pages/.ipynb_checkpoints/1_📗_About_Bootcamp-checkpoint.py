@@ -3,6 +3,7 @@ import ulits.flip_cards as fc
 import ulits.instructors_team as it
 import ulits.load_data as ld
 import ulits.bootcamp_overview as bo
+import ulits.bootcamp_certificate as bc
 import random
 
 
@@ -47,6 +48,9 @@ with tab_instractors:
 
 with tab_about:
     bo.get_bootcamp_overview()
+
+with tab_certificate:
+    bc.get_certificate()
     
 
 

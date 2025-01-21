@@ -10,7 +10,7 @@ import streamlit as st
 
 
 def get_assessment():
-    st.markdown('#')
+    # st.markdown('#')
     st.markdown('#')
     # show arabic welcome message
     st.markdown("""<h4 style="text-align: center">      

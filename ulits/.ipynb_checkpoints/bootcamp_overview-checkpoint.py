@@ -10,7 +10,7 @@ import streamlit as st
 
 
 def get_bootcamp_overview():
-    st.markdown('#')
+    # st.markdown('#')
     st.markdown('#')
     # show arabic welcome message
     st.markdown(

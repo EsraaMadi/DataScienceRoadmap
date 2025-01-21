@@ -9,7 +9,7 @@ import streamlit as st
 # st.markdown("""---""")
 
 def get_map():
-    st.markdown('#')
+    # st.markdown('#')
     st.markdown('#')
     # show arabic welcome message
     st.markdown("""<h5 style="text-align: center">      
@@ -28,11 +28,11 @@ def get_map():
         st.info(' استراحة الرجال في الدور الأرضي ممر  A 👨🏼', icon="🛋️")
         st.info(' استراحة النساء في الدور الأرضي ممر  A 👩🏼', icon="🛋️")
         st.markdown('#')
-        st.markdown('#')
+        # st.markdown('#')
     _, col, _ = st.columns([0.45, 0.1, 0.45])
     with col:
         st.markdown("""---""")
-        st.markdown('#')
+        # st.markdown('#')
         st.markdown('#')
         st.write("[خريطة المبنى](https://github.com/Tuwaiq-DS-ML-bootcamp-V-6/Others/blob/main/Building_Map.pdf)")
         

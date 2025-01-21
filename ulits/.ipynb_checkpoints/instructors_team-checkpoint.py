@@ -10,7 +10,7 @@ import streamlit as st
 
 
 def get_instructor_team():
-    st.markdown('#')
+    # st.markdown('#')
     st.markdown('#')
     st.write("## Lead Instructor:")
     _, col2, _ = st.columns([0.325, 0.35, 0.325])

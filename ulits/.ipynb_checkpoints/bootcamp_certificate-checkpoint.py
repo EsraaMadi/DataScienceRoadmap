@@ -9,7 +9,7 @@ import streamlit as st
 
 
 def get_certificate():
-    st.markdown('#')
+    # st.markdown('#')
     st.markdown('#')
     # show arabic welcome message
     st.markdown("""<h5 style="text-align: center">      

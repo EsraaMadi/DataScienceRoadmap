@@ -2,10 +2,16 @@ import streamlit as st
 import time
 import random
 
+# List of card texts for front and back
+cards = [ ("🧑🏼‍🎓", i) for i in st.session_state.students_list]
+students = list(range(0, len(cards)))
+random.shuffle(students)
+print(students)
+
 
 
 # Flip the next card automatically every second
-def auto_flip(students):
+def auto_flip():
     current_card = students[st.session_state.current_card]
     print(st.session_state.current_card,students[st.session_state.current_card])
     st.session_state.flipped_cards[current_card] = not st.session_state.flipped_cards[current_card]
@@ -13,20 +19,14 @@ def auto_flip(students):
 
 
 
-def drow_cards(students_list):
+def drow_cards():
 
 
 
 
 # Shuffle the student numbers randomly
 
-    # List of card texts for front and back
-    cards = [ ("🧑🏼‍🎓", i) for i in students_list]
 
-    students = list(range(0, len(cards)))
-    
-    random.shuffle(students)
-    print(students)
 
     # Initialize session state for flip state of each card and the current flip index
     if "flipped_cards" not in st.session_state:
@@ -105,7 +105,7 @@ def drow_cards(students_list):
     
 
     # Trigger the automatic flip
-    auto_flip(students)
+    auto_flip()
     #time.sleep(1)  # Wait for 1 second
     
     # Display Cards in Rows with Proper Margins
@@ -134,6 +134,6 @@ def drow_cards(students_list):
                     </div>
                     """, unsafe_allow_html=True)
 
-    #if st.session_state.current_card < len(students):
+    if st.session_state.current_card < len(students):
         # Rerun the Streamlit app to continuously update the UI
         st.rerun()

@@ -23,7 +23,9 @@ tab_student, tab_instractors, tab_about, tab_certificate = st.tabs(["Students",
 
 with tab_student:
     students_list = ld.load_students_names()
-    fc.drow_cards(students_list)
+    if "flipped_cards" not in st.session_state:
+        st.session_state.students_list = students_list
+    fc.drow_cards()
 
 with tab_instractors:
     it.get_instructor_team()

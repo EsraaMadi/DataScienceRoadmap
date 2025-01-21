@@ -16,7 +16,6 @@ def auto_flip():
     st.session_state.current_card += 1
 
 
-@st.cache_data(show_spinner="Fetching data..")
 def drow_cards():
     # Initialize session state for flip state of each card and the current flip index
     if "flipped_cards" not in st.session_state:

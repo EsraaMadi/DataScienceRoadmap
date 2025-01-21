@@ -74,6 +74,7 @@ def drow_cards():
             text-align: center;
         }
         .flip-card-front {
+            background-image: url("https://img.icons8.com/?size=100&id=UfCns4MsppxW&format=png&color=000000");
             background: #4f29b7;
             color: #ededed;
         }

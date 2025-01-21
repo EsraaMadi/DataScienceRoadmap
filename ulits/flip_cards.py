@@ -65,7 +65,7 @@ def drow_cards():
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 16px; /* Smaller Font */
+            font-size: 30px; /* Smaller Font */
             font-family: 'Tajawal', sans-serif; /* Arabic Font */
             font-weight: bold;
             border-radius: 10px;

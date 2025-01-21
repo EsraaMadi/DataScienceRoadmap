@@ -3,12 +3,12 @@ import streamlit as st
 
 
 def get_discord():
-    # show logo image
-    _, im_col, _ = st.columns([0.35, 0.3, 0.35])
-    with im_col:
-        st.image("ulits/images/tuwaiq-academy-logo.png")
-    st.markdown("""---""")
-    st.markdown('#')
+    # # show logo image
+    # _, im_col, _ = st.columns([0.35, 0.3, 0.35])
+    # with im_col:
+    #     st.image("ulits/images/tuwaiq-academy-logo.png")
+    # st.markdown("""---""")
+    # st.markdown('#')
     # st.markdown('#')
     
     _, col2, _ = st.columns([0.15, 0.7, 0.15])

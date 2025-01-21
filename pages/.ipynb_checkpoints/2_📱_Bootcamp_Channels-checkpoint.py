@@ -13,7 +13,7 @@ _, im_col, _ = st.columns([0.35, 0.3, 0.35])
 with im_col:
     st.image("ulits/images/tuwaiq-academy-logo.png")
 
-tab_discord, tab_github, tab_wifi = st.tabs(["📱 Discord Channel", " 📖 Github","📶 Wi-Fi Access"])
+tab_discord, tab_github, tab_wifi = st.tabs(["📺 Discord Channel", " 📖 Github","📶 Wi-Fi Access"])
 
 css = '''
 <style>

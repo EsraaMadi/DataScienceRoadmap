@@ -18,10 +18,10 @@ with im_col:
 # st.markdown('#')
 # st.markdown('#')
 
-tab_student, tab_instractors, tab_about, tab_certificate = st.tabs(["Students",
-                                        "Trainers",
-                                        "Bootcamp Overview",
-                                        "Certificate"])
+tab_student, tab_instractors, tab_about, tab_certificate = st.tabs(["🧑🏼‍🎓 Students  ",
+                                        "👩🏻‍🏫 Trainers  ",
+                                        "🎯 Bootcamp Overview  ",
+                                        "📕 Certificate  "])
 
 
 with tab_student:

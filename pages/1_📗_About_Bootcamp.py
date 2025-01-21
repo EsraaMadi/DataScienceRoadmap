@@ -23,6 +23,15 @@ tab_student, tab_instractors, tab_about, tab_certificate = st.tabs(["🧑🏼‍
                                         "🎯 Bootcamp Overview  ",
                                         "📕 Certificate  "])
 
+css = '''
+<style>
+    .stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"] p {
+    font-size:1rem;
+    }
+</style>
+'''
+
+st.markdown(css, unsafe_allow_html=True)
 
 with tab_student:
     students_list = ld.load_students_names()
@@ -41,12 +50,3 @@ with tab_about:
     
 
 
-css = '''
-<style>
-    .stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"] p {
-    font-size:2rem;
-    }
-</style>
-'''
-
-st.markdown(css, unsafe_allow_html=True)

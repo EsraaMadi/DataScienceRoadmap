@@ -112,12 +112,13 @@ def _draw_groups(time, groups):
         if week_no < i[0][0]:
             week_no = i[0][0]
             phase = i[0][3]
+            unit = i[0][4]
             if time == 0:
-                st.warning(f'## Week {week_no} 🗓 - {phase}')
+                st.warning(f'## Week {week_no} 🗓 - {phase} ({unit})')
             elif time == 1:
-                st.success(f'## Week {week_no} 🗓 - {phase}')
+                st.success(f'## Week {week_no} 🗓 - {phase}({unit})')
             else:
-                st.info(f'## Week {week_no} 🗓 - {phase}')
+                st.info(f'## Week {week_no} 🗓 - {phase} ({unit})')
         st.subheader(f'Day {i[0][1]} : {_format_date(i[0][2])}')
         item_count = 1
         for index, row in day_agenda_df.iterrows():
@@ -138,7 +139,7 @@ def _draw_groups(time, groups):
 
 def _draw_agenda(df):
 
-    groups_df = list(df.groupby(['#Week', '#Day', 'Date', 'Phase']))
+    groups_df = list(df.groupby(['#Week', '#Day', 'Date', 'Phase', 'Unit']))
 
     current_week_no = get_week_no(today)
 

@@ -57,7 +57,7 @@ def drow_cards():
         .flipped .flip-card-inner {
             transform: rotateY(180deg);
         }
-        .flip-card-front, .flip-card-back {
+        .flip-card-front {
             position: absolute;
             width: 100%;
             height: 100%;
@@ -65,7 +65,23 @@ def drow_cards():
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 30px; /* Smaller Font */
+            font-size: 60px; /* Smaller Font */
+            font-family: 'Tajawal', sans-serif; /* Arabic Font */
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px; /* Smaller Font */
             font-family: 'Tajawal', sans-serif; /* Arabic Font */
             font-weight: bold;
             border-radius: 10px;

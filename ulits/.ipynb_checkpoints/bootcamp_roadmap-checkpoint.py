@@ -47,7 +47,7 @@ ITEMS_NUMBERS = {
 
 # Get today's date
 start_course_date = datetime(2025, 1, 26).date()
-today = datetime(2025, 2, 16).date()
+today = datetime(2025, 2, 19).date()
 #today = datetime.now().date()
 
 def get_week_no(date):
@@ -84,6 +84,7 @@ def _format_date(date):
 
 def _filter_groups(today, week_no , groups):
     history_list = []
+    prev_week_list = []
     current_week_list = []
     current_list = []
     future_list = []
@@ -94,13 +95,15 @@ def _filter_groups(today, week_no , groups):
             item_week_no = get_week_no(item_date)
             if item_week_no == week_no:
                 current_week_list.append(i)
+            elif item_week_no == week_no-1:
+                prev_week_list.append(i)
             else:
                 history_list.append(i)
         elif item_date == today:
             current_list.append(i)
         else:
             future_list.append(i)
-    return history_list, current_list, future_list, current_week_list
+    return history_list, current_list, future_list, current_week_list, prev_week_list
 
 def _draw_groups(time, groups):
     week_no = 0
@@ -139,12 +142,15 @@ def _draw_agenda(df):
 
     current_week_no = get_week_no(today)
 
-    history_list, current_list, future_list, current_week_list = _filter_groups(today,
+    history_list, current_list, future_list, current_week_list, prev_week_list = _filter_groups(today,
                                                                                 current_week_no , 
                                                                                 groups_df)
 
     with st.expander("Show All Previous Days"):
         _draw_groups(time=0, groups=history_list)
+
+    with st.expander("Show Last Week"):
+        _draw_groups(time=0, groups=prev_week_list)
 
     with st.expander("Show This Week"):
         _draw_groups(time=0, groups=current_week_list)

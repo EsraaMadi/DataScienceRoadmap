@@ -24,10 +24,10 @@ def get_bootcamp_overview():
     
     st.markdown('#')
     st.markdown("""---""")
-    st.markdown("""<h4 style="text-align: right">      
+    st.markdown(
+        """<h4 style="text-align: right">      
     : يشمل هذا المعسكر مشاريع عملية تغطي الموضوعات الأساسية التالية
        </h4>
-    
        <ul dir="rtl">
       <li>مراحل دورة حياة مشروع البيانات، ابتداءً من تحديد المشكلة وصولاً إلى طرح التوصيات استنادًا إلى التحليلات </li>
       <li>أساسيات علم البيانات بما في ذلك جمع البيانات، تنظيفها, عرضها, والتحليل الاستكشافي لها. (Exploratory Data Analysis) </li>
@@ -42,7 +42,8 @@ def get_bootcamp_overview():
     st.markdown('#')
     st.markdown("""---""")
     
-    st.markdown("""<h4 style="text-align: right">      
+    st.markdown(
+        """<h4 style="text-align: right">      
     : الأهداف
        </h4>
     <ul dir="rtl">

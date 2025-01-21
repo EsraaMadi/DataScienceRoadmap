@@ -12,11 +12,10 @@ import streamlit as st
 
 def get_bootcamp_overview():
     # show arabic welcome message
-    st.markdown("""<h4 style="text-align: right">      
+    st.markdown(
+        """<h4 style="text-align: right">      
       : وصف المعسكر  
        </h4>
-    
-       
        <div style="text-align: right"> 
        يهدف معسكر علم البيانات وتعلم الآلة إلى التعرف على علم البيانات وكيفية التعامل مع أنواع البيانات المختلفة، يتخذ هذا المعسكر نهجًا تطبيقيًا يٌرَكز على تطوير المهارات العملية من خلال مشاريع واقعية يتعلم فيها المشاركون كيفية استخراج البيانات وتحليلها واستخدام التقنيات الحديثة في تعلم الآلة لبناء نماذج تنبؤية تحليلية تهدف لحل المشكلات العملية وتطوير الأعمال
         </div>
@@ -25,7 +24,6 @@ def get_bootcamp_overview():
     
     st.markdown('#')
     st.markdown("""---""")
-    
     st.markdown("""<h4 style="text-align: right">      
     : يشمل هذا المعسكر مشاريع عملية تغطي الموضوعات الأساسية التالية
        </h4>
@@ -56,7 +54,6 @@ def get_bootcamp_overview():
     </ul>
     """
                     , unsafe_allow_html=True)
-    
     
     st.markdown('#')
     st.markdown("""---""")

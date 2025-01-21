@@ -26,7 +26,7 @@ tab_student, tab_instractors, tab_about, tab_certificate = st.tabs(["🧑🏼‍
 css = '''
 <style>
     .stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"] p {
-    font-size:2rem;
+    font-size:30px;
     }
 </style>
 '''

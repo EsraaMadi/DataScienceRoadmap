@@ -1,7 +1,7 @@
 import streamlit as st
-import discord_channel as dc
-import bootcamp_github as bg
-import wi_fi_access as wi
+import ulits.discord_channel as dc
+import ulits.bootcamp_github as bg
+import ulits.wi_fi_access as wi
 
 
 

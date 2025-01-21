@@ -13,7 +13,7 @@ def get_github():
     
     _, col2, _ = st.columns([0.15, 0.7, 0.15])
     with col2:
-        st.image("ulits/images/github.png")
+        st.image("ulits/images/Github.png")
         st.markdown('#')
     
         st.markdown('#')

@@ -47,7 +47,7 @@ ITEMS_NUMBERS = {
 
 # Get today's date
 start_course_date = datetime(2025, 1, 26).date()
-today = datetime(2025, 2, 19).date()
+today = datetime(2025, 2, 16).date()
 #today = datetime.now().date()
 
 def get_week_no(date):

@@ -7,10 +7,11 @@ import streamlit as st
 # with im_col:
 #     st.image("ulits/images/tuwaiq-academy-logo.png")
 # st.markdown("""---""")
-# # st.markdown('#')
-# # st.markdown('#')
+
 
 def get_instructor_team():
+    st.markdown('#')
+    st.markdown('#')
     st.write("## Lead Instructor:")
     _, col2, _ = st.columns([0.325, 0.35, 0.325])
     with col2:

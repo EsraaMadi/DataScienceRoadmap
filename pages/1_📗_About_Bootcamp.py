@@ -5,6 +5,8 @@ import ulits.load_data as ld
 import ulits.bootcamp_overview as bo
 import ulits.bootcamp_certificate as bc
 import ulits.bootcamp_assessment as bs
+import ulits.important_instructions as ii
+import ulits.facility_map as fm
 import random
 
 
@@ -20,12 +22,10 @@ with im_col:
 # st.markdown('#')
 # st.markdown('#')
 
-tab_student, tab_instractors, tab_about, tab_certificate, tab_assessment = st.tabs(["🧑🏼‍🎓 Students",
+tab_student, tab_instractors, tab_about, tab_certificate, tab_assessment, tab_instructions, tab_map = st.tabs(["🧑🏼‍🎓 Students",
                                         "👩🏻‍🏫 Trainers",
                                         "🎯 Bootcamp Overview",
-                                        "📕 Bootcamp Certificate",
-                                                                    "📉 Bootcamp Assessment"
-                                                                   ])
+                                        "📕 Bootcamp Certificate","📉 Bootcamp Assessment", "⚠️ Important Instructions", " 🗺️ Facility Map"])
 
 css = '''
 <style>
@@ -57,6 +57,12 @@ with tab_certificate:
 
 with tab_assessment:
     bs.get_assessment()
+
+with tab_instructions:
+    ii.get_instructions()
+    
+with tab_map:
+    fm.get_map()
     
 
 

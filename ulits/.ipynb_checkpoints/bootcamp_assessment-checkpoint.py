@@ -7,10 +7,11 @@ import streamlit as st
 # with im_col:
 #     st.image("ulits/images/tuwaiq-academy-logo.png")
 # st.markdown("""---""")
-# st.markdown('#')
-st.markdown('#')
+
 
 def get_assessment():
+    st.markdown('#')
+    st.markdown('#')
     # show arabic welcome message
     st.markdown("""<h4 style="text-align: center">      
       آلية التقييم 

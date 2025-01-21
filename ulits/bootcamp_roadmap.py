@@ -114,12 +114,12 @@ def _draw_groups(time, groups):
             phase = i[0][3]
             unit = i[0][4]
             if time == 0:
-                st.warning(f'## Week {week_no} 🗓 - {phase} ({unit})')
+                st.warning(f'## Week {week_no} 🗓 - {phase}')
             elif time == 1:
-                st.success(f'## Week {week_no} 🗓 - {phase}({unit})')
+                st.success(f'## Week {week_no} 🗓 - {phase}')
             else:
-                st.info(f'## Week {week_no} 🗓 - {phase} ({unit})')
-        st.subheader(f'Day {i[0][1]} : {_format_date(i[0][2])}')
+                st.info(f'## Week {week_no} 🗓 - {phase}')
+        st.subheader(f'Day {i[0][1]} : {_format_date(i[0][2])} - ({unit})')
         item_count = 1
         for index, row in day_agenda_df.iterrows():
             st.write("")

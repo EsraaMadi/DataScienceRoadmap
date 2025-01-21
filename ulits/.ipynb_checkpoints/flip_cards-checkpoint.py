@@ -1,7 +1,11 @@
 import streamlit as st
 import time
 
-
+def get_emoji(geder):
+    if gender =='Male':
+        return "🧑🏼‍🎓"
+    else:
+        return "👩🏼‍🎓"
 
 
 # Flip the next card automatically every second

@@ -130,7 +130,7 @@ def load_students_names():
     for worksheet in sheet.worksheets():
         if 'Partcipation' == worksheet.title:
             data = worksheet.get_all_values()
-            student_names = [row[0] for row in data if len(row[0]) > 0]
+            student_names = [[row[0], row[1]] for row in data if len(row[0]) > 0]
             return student_names[1:]
 
 

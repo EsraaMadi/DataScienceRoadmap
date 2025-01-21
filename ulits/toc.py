@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 
 @st.cache_data(show_spinner="Fetching TOC...")
 def _get_raw_roadmap():
-    df = ld.load_roadmap('Bootcamp OCT 2024 - TOC')
+    df = ld.load_roadmap('Bootcamp Jan 2025 - TOC')
     return df
 
 def _filter_groups(today, df):
@@ -85,13 +85,13 @@ def get_toc():
     today = datetime.now().date()
     # today = datetime(2024, 5, 15).date()
     
-    # show logo image
-    _, im_col, _ = st.columns([0.35, 0.3, 0.35])
-    with im_col:
-        st.image("ulits/images/tuwaiq-academy-logo.png")
-    st.markdown("""---""")
+    # # show logo image
+    # _, im_col, _ = st.columns([0.35, 0.3, 0.35])
+    # with im_col:
+    #     st.image("ulits/images/tuwaiq-academy-logo.png")
+    # st.markdown("""---""")
     # st.markdown('#')
-    # st.markdown('#')
+    st.markdown('#')
     
     # show title of page
     st.write(

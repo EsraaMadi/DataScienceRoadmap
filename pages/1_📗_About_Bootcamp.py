@@ -2,6 +2,7 @@ import streamlit as st
 import ulits.flip_cards as fc
 import ulits.instructors_team as it
 import ulits.load_data as ld
+import ulits.bootcamp_overview as bo
 import random
 
 
@@ -34,3 +35,18 @@ with tab_student:
 
 with tab_instractors:
     it.get_instructor_team()
+
+with tab_about:
+    bo.get_bootcamp_overview()
+    
+
+
+css = '''
+<style>
+    .stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"] p {
+    font-size:2rem;
+    }
+</style>
+'''
+
+st.markdown(css, unsafe_allow_html=True)

@@ -1,6 +1,7 @@
 import streamlit as st
 import ulits.data_science_lifecycle as ds
 import ulits.toc as toc
+import ulits.bootcamp_roadmap as br
 
 
 
@@ -25,7 +26,7 @@ css = '''
 st.markdown(css, unsafe_allow_html=True)
 
 with tab_road_map:
-    pass
+    brget_roadmap_page()
 
 with tab_toc:
     toc.get_toc()

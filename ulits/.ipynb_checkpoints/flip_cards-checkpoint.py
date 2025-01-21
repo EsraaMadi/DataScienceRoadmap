@@ -30,7 +30,6 @@ def drow_cards():
     
         /* Background Image for the Streamlit App */
         .stApp {
-            background-image: url('https://i.pinimg.com/736x/45/f5/eb/45f5eb7f27b9101c490401259672ad0a.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -93,7 +92,6 @@ def drow_cards():
             text-align: center;
         }
         .flip-card-front {
-            background-image: url("https://img.icons8.com/?size=100&id=UfCns4MsppxW&format=png&color=000000");
             background: #4f29b7;
             color: #ededed;
         }

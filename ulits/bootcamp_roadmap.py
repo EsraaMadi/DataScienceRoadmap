@@ -94,7 +94,8 @@ def _filter_groups(today, week_no , groups):
             item_week_no = get_week_no(item_date)
             if item_week_no == week_no:
                 current_week_list.append(i)
-            history_list.append(i)
+            else:
+                history_list.append(i)
         elif item_date == today:
             current_list.append(i)
         else:

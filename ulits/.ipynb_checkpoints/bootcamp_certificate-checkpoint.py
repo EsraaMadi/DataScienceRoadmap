@@ -6,8 +6,8 @@ import streamlit as st
 # with im_col:
 #     st.image("ulits/images/tuwaiq-academy-logo.png")
 # st.markdown("""---""")
-# # st.markdown('#')
 # st.markdown('#')
+st.markdown('#')
 
 def get_certificate():
     # show arabic welcome message

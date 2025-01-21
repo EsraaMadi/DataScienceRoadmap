@@ -8,7 +8,7 @@ import streamlit as st
 #     st.image("ulits/images/tuwaiq-academy-logo.png")
 # st.markdown("""---""")
 # st.markdown('#')
-# st.markdown('#')
+st.markdown('#')
 
 def get_bootcamp_overview():
     # show arabic welcome message

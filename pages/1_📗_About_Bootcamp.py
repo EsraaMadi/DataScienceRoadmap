@@ -26,7 +26,8 @@ tab_student, tab_instractors, tab_about, tab_certificate = st.tabs(["Students",
 with tab_student:
     students_list = ld.load_students_names()
     if "flipped_cards" not in st.session_state:
-        st.session_state.cards = [ (fc.get_emoji(i[1]), i[0]) for i in students_list]
+        st.session_state.cards = [ (fc.get_emoji(i[1]),
+                                    fc.get_emoji(i[1])+" "+ i[0]) for i in students_list]
         card_flip_order = list(range(0, len(st.session_state.cards)))
         random.shuffle(card_flip_order)
         st.session_state.card_flip_order = card_flip_order

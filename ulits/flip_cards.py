@@ -99,7 +99,7 @@ def drow_cards():
         cols = st.columns(5)
         for j in range(5):
             index = i + j
-            if index < len(cards):
+            if index < len(st.session_state.cards):
                 front_text, back_text = st.session_state.cards[index]
                 flip_class = "flipped" if st.session_state.flipped_cards[index] else ""
     

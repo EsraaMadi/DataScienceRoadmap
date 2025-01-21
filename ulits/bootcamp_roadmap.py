@@ -179,6 +179,10 @@ def get_roadmap_page():
         Dive into our daily plan tailored for this bootcamp. You'll find a series of in-depth lessons, hands-on activities, collaborative projects, insightful talks from industry experts, as well as practical lab that we're eagerly tackling or anticipating. Approach each day with an open mind—there's always something new to uncover in the depths of data!
         """
     )
+
+    _, im_col, _ = st.columns([0.15, 0.7, 0.15])
+    with im_col:
+        st.image("ulits/images/map.png")
     
     roadmap_df = _get_raw_roadmap()
     _draw_agenda(roadmap_df)

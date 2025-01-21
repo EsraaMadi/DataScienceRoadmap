@@ -1,6 +1,6 @@
 import streamlit as st
 import time
-import random
+
 
 
 
@@ -16,7 +16,7 @@ def auto_flip():
 def drow_cards():
     # Initialize session state for flip state of each card and the current flip index
     if "flipped_cards" not in st.session_state:
-        st.session_state.flipped_cards = [False] * len(st.session_state.students)  # 25 unique cards
+        st.session_state.flipped_cards = [False] * len(st.session_state.cards)  # 25 unique cards
     if "current_card" not in st.session_state:
         st.session_state.current_card = 0  # Start with the first card
     

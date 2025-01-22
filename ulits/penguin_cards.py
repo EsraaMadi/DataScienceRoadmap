@@ -85,6 +85,7 @@ def get_cards():
         front_lst = list(df_cards['Week num'])
         back_lst = list(df_cards['Name'])
         for i , f, b in zip(range(min(3, 7 - row)), front_lst , back_lst ):
+            st.write(f,b)
             index = row + i
             flip_class = "flipped" if st.session_state.flipped_cards[index] else ""
     

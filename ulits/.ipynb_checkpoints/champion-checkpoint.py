@@ -119,15 +119,15 @@ def get_champion():
         hide_index=True,
     )
 
-    #st.dataframe(all_df)
-    st.data_editor(
-    all_df[['Rank']],
-    column_config={
-        "Rank": st.column_config.ImageColumn(
-            "Preview Image", help="Streamlit app preview screenshots"
-        )
-    },
-        hide_index=True,)
+    st.dataframe(all_df)
+    # st.data_editor(
+    # all_df[['Rank']],
+    # column_config={
+    #     "Rank": st.column_config.ImageColumn(
+    #         "Preview Image", help="Streamlit app preview screenshots"
+    #     )
+    # },
+    #     hide_index=True,)
         
     
     if df_students.shape[0] > 0 :

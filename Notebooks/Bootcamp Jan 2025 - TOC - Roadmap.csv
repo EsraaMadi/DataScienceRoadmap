@@ -1,0 +1,886 @@
+#Week,#Day,Date,seq,Code,Sub_Course_Name,Title,Description,More_Details (main points),Objective,type,general_type,Original Link (Drive/Dropbox/External),Shorten Link (if need),Display_link (github/Others),Previous Bootcamp Display Links,Phase,Skill,DS_step,Unit
+1,1,26/1/2025,1,DS001,Bootcamp Setup and Introduction,Intro to Bootcamp,"
+- Welcome from the Instructors
+- Bootcamp Overview
+- Objectives & Goals
+- Prerequisites
+- Evaluation Criteria
+- Wi-Fi Access
+- Facility Map
+- Table of Contents (Topics & GitHub Repository)
+- Discord Community
+- Office hours","- Opening word ( cheering words + show how we selected them from a big crowd + introduce myself and my experince)
+- program page -> brows with students the pages related to bootcamp setup, (ignore the pages related to content and agenda)","- Engaging students from the outset by providing an introduction to the bootcamp.
+- Giving the students a clear understanding of what to expect in the bootcamp.
+- Clarifying the roles, responsibilities, and expected outcomes for students.",Side_session,Session,https://www.dropbox.com/scl/fi/s9typ23wuvgnfpe3glxnq/DS001-Program_page_NOT-UPLOAD.png?rlkey=f0slf89t36xac6azesdnewpex&st=1011sc6a&dl=0,,,https://datascienceroadmap-tuwaiq-academy.streamlit.app/Bootcamp_Roadmap,Preparation Phase,-,-,Unit 1: Programming Fundamentals
+1,1,26/1/2025,2,DS002,Bootcamp Setup and Introduction,Ice-breaker Exercise,To warm up the atmosphere and encourage participants to mingle and know each other,"- Jar game 
+- Names tags","- Set a positive tone for the bootcamp where students feel comfortable engaging with one another.
+- Encourage open communication.",Penguin Activity,Activity,https://docs.google.com/presentation/d/17OEqrFV9fi5fEuApOABEaalYhfKttsZfHN8v2yTEkFs/edit#slide=id.g2ed57f7c38b_0_0,https://www.dropbox.com/scl/fi/gj8qrv6srpbdotnpxbemv/Cards.pdf?rlkey=snk2i41f384c2oxft0038wr2k&st=xtnd6dhq&dl=0,,,Preparation Phase,Soft Skills,-,Unit 1: Programming Fundamentals
+1,1,26/1/2025,3,DS003,Introduction to Data Science,Intro to Data Science ,"Provide a foundational overview of data science, including its core principles, methodologies, and applications.",- Go through the pdf ,"- Provide an overview of the course.
+- Understand the full data science lifecycle.
+- Communicate the relevance and significance of data science skills across various industries to motivate students and ignite their interest and engagement in the course.",Main_session,Session,"https://docs.google.com/presentation/d/1-M9eKukbVzuNSqPcPWxGgsuQ8sRcagIO/edit?usp=sharing&ouid=112945808715343234162&rtpof=true&sd=true
+
+https://docs.google.com/presentation/d/1UDN5z5IHAb9MjpwbYrV4elNJIBVwHpgQdZXZWcD3Utk/edit?usp=sharing",,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-1/blob/main/Data%20Science%20Introduction.pdf,Preparation Phase,Data Science Methodology & Literacy,Step 1: Defining the Problem Statement,Unit 1: Programming Fundamentals
+1,1,26/1/2025,4,DS001,Bootcamp Setup and Introduction,Bootcamp Roadmap,"Roadmap offers a clear and comprehensive guide through the vast landscape of data science learning,  taking students from the fundamentals of data to more advanced topics and data technologies.",show the program page again and take a look on content and agenda pages,"- Guide students through a structured learning journey.
+- Introduce students to a wide range of data science topics and technologies.",Side_session,Session,https://datascienceroadmap-tuwaiq-academy.streamlit.app/Bootcamp_Roadmap,,,https://datascienceroadmap-tuwaiq-academy.streamlit.app/Bootcamp_Roadmap,Preparation Phase,-,-,Unit 1: Programming Fundamentals
+1,1,26/1/2025,5,DS005,Bootcamp Setup and Introduction,Setup and Installation Guide,A guide provides an overview of essential tools for Python-based data science,"Go through the pdf and make sure all has needed tools installed, (if we faced a lot of installation problem, let them search at home and ask again tomorrow, Git is only the must becase next day lesson","- Prepare students with the essential skills and knowledge to successfully set up and install Python tools and GitHub, enabling them to create, manage, and share their projects effectively.",Side_session,Session,https://www.dropbox.com/scl/fi/g805x3q2qitkeiqw0xpeo/6-Essential-Tools-for-Data-Science-with-Python-Setup-and-Installation-Guide.paper?rlkey=b8t01iddxdagvy2nfyxkjq586&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-1/blob/main/6-Essential_Tools_for_Data_Science_with_Python_Setup%20and%20Installation%20Guide.pdf,Preparation Phase,Software engineering,-,Unit 1: Programming Fundamentals
+1,1,26/1/2025,6,DS006,Bootcamp Setup and Introduction,Student Information Form,,they should fill it ( on class if has time left or on home),,Side_session,Session,https://forms.gle/KbXmGX1RKJcGm6Bb7,,,https://forms.gle/KbXmGX1RKJcGm6Bb7,Preparation Phase,-,-,Unit 1: Programming Fundamentals
+1,2,27/1/2025,1,DS007,Real-World Insights from a Data Science Expert,What data scientists say over world?,Let's spend the next 15 minutes reviewing what data scientists around the world are saying about the field and learning from their insights.,,"- Understand Diverse Perspectives
+- Learn About Real-World Applications
+- Inspire Critical Thinking and Innovation
+- Boosting Analytical Discussions",Penguin Activity,Activity,https://www.linkedin.com/posts/svpino_theres-a-massive-gap-between-what-books-activity-7157398151757205504-JpoM/?utm_source=share&utm_medium=member_ios,,,https://shorturl.at/xzHTV,Preparation Phase,Data Science Methodology & Literacy,Step 4: Exploratory Data Analysis,Unit 1: Programming Fundamentals
+1,2,27/1/2025,2,DS008,"Command Line 101, Git 101",CLI & Version Control with Git,A Beginner's Guide to CLI and Version Control and Collaboration in Data Science,"- Explain CLI pdf
+- Do hands on on terminal (explain commands in the same time of hands on)
+- Do first activity (one should answer from each line group)
+- Explain git pdf ( start idea: how normal folder diffrentiate from git folder)
+- Do hands on on terminal (explain commands in the same time of hands on)
+- Do 2nd activity (one should answer from each line group)","- Understand the basics of Git for version control.
+- Learn how to set up Git and manage repositories.
+- Familiarize with GitHub for online code collaboration.
+- Practice basic Git commands and GitHub operations.
+- Explore branching, merging, and pull requests.
+- Apply best practices for commits and collaboration.",Main_session,Session,"https://www.dropbox.com/scl/fi/5kp04co2zetm8d73dcmt4/2-Command-Line-Interface-CLI.paper?rlkey=14gd2ahp28e1o0uxhr298qrgh&st=wgf9vk15&dl=0
+
+https://www.dropbox.com/scl/fi/a3o4quirb952urzz5snks/2-Git-Github.paper?rlkey=qu6jeo4p8pi8u19dyv2latjo9&st=smdabxq8&dl=0",,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-2,Preparation Phase,Software engineering,Step 8: Model Deployment,Unit 1: Programming Fundamentals
+1,2,27/1/2025,3,DS009,"Command Line 101, Git 101",Hands-on Session,Students will apply the concepts and techniques they've learned in the main session to real-world problems,,"- Enable students to transfer theoretical knowledge into practical skills.
+- Develop students' problem-solving abilities.
+- Prepare students for real-world challenges they may encounter in their future careers.",Hands-on_Session,Practical exercise,,,,,Preparation Phase,Software engineering,Step 8: Model Deployment,Unit 1: Programming Fundamentals
+1,2,27/1/2025,4,DS010,Command Line 101,Interactive activity 1 (CLI),"Involves dynamic engagement where students participate in discussions, quizzes, or collaborative problem-solving exercises.",individual on board or (one should answer from each group),"- Encourage students to actively engage with course content.
+- Stimulate students' critical thinking skills.
+- Develop students' communication skills by encouraging them to articulate their thoughts, ideas, and solutions.",Interactive Activity,Activity,https://www.dropbox.com/scl/fi/wqeuoatbhpaym1otbsmpk/4-5-Interactive-Practice-NOT-UPLOAD.paper?rlkey=q2e99bbpvy94eua0ygu5mukdg&st=ecvvvwlh&dl=0,https://cmdchallenge.com/#/hello_world,,https://cmdchallenge.com/#/hello_world,Preparation Phase,"Soft Skills, Software engineering",Step 8: Model Deployment,Unit 1: Programming Fundamentals
+1,2,27/1/2025,5,DS011,"Command Line 101, Git 101",CLI Lab,Provides a controlled environment where students can experiment with advanced data science tools and techniques under the guidance of the instructor or teaching assistants.,we should mention due date,"- Enable students to gain practical experience with advanced data science tools and techniques.
+- Offer a structured environment where students can delve into complex data science concepts and methodologies.
+- Offer personalized guidance and support to students, addressing queries, and offering assistance to overcome obstacles.",Lab,Practical exercise,https://www.dropbox.com/scl/fo/qxy1ghobesp3gc4q0yrez/AJ8UmAMsdU48XAx91Uo-rfQ?rlkey=21idhflpf116uico4dz1f5szt&st=ip858qrc&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-2/blob/main/CLI_Lab.pdf,Preparation Phase,Software engineering,Step 8: Model Deployment,Unit 1: Programming Fundamentals
+1,2,27/1/2025,6,DS012,Programming Fundamental  using Python,Programming Skills Evaluation,An evaluation crafted to determine a student's current level of programming skills in python prior to starting a data science program,they should do it and send screenshot of their result on discord as direct msg for TA,"- Determine students' current proficiency levels in Python.
+- Identify students' strengths and weaknesses in programming.
+- Engaging students in self-assessment and goal-setting processes.",Self Assessment,Assessment,https://assessment-v2.datacamp.com/coding-for-production-python?returnUrl=https://app.datacamp.com/learn/assessments,https://shorturl.at/Yubq2,,https://shorturl.at/Yubq2,Preparation Phase,Programming,-,Unit 1: Programming Fundamentals
+1,2,27/1/2025,7,DS019,"Command Line 101, Git 101",Git&Github - Lab,Provides a controlled environment where students can experiment with advanced data science tools and techniques under the guidance of the instructor or teaching assistants.,we should mention due date,"- Enable students to gain practical experience with advanced data science tools and techniques.
+- Offer a structured environment where students can delve into complex data science concepts and methodologies.
+- Offer personalized guidance and support to students, addressing queries, and offering assistance to overcome obstacles.",Lab,Practical exercise,https://www.dropbox.com/home/Esraa%20Madhi/DataScience%20%26%20MachineLearning%20Bootcamp%202024%20-%20Content/Week1/Practical/DS019-Lab(Git%26Github)?di=left_nav_browse,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-2/blob/main/Git_Labs.pdf,Preparation Phase,Software engineering,Step 8: Model Deployment,Unit 1: Programming Fundamentals
+1,3,28/1/2025,1,DS013,Real-World Insights from a Data Science Expert,What data scientists say over world?,Let's spend the next 15 minutes reviewing what data scientists around the world are saying about the field and learning from their insights.,,"- Understand Diverse Perspectives
+- Learn About Real-World Applications
+- Inspire Critical Thinking and Innovation
+- Boosting Analytical Discussions",Penguin Activity,Activity,https://www.linkedin.com/posts/andrew-jones-dsi_datascience-analytics-data-activity-7156287789955760128-2fBK/?utm_source=share&utm_medium=member_desktop,,,https://shorturl.at/gvKP2,Preparation Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 1: Programming Fundamentals
+1,3,28/1/2025,2,DS010,Git 101,Interactive activity 2 (Git),"Involves dynamic engagement where students participate in discussions, quizzes, or collaborative problem-solving exercises.",individual on board or (one should answer from each group),"- Encourage students to actively engage with course content.
+- Stimulate students' critical thinking skills.
+- Develop students' communication skills by encouraging them to articulate their thoughts, ideas, and solutions.",Interactive Activity,Activity,https://www.dropbox.com/scl/fi/wqeuoatbhpaym1otbsmpk/4-5-Interactive-Practice-NOT-UPLOAD.paper?rlkey=q2e99bbpvy94eua0ygu5mukdg&st=ecvvvwlh&dl=0,"https://www.w3schools.com/git/#:~:text=on%20the%20right%3A-,Git%20Exercises,-Test%20Yourself%20With",,https://shorturl.at/dloBZ,Preparation Phase,Software engineering,Step 8: Model Deployment,Unit 1: Programming Fundamentals
+1,3,28/1/2025,3,DS016,Programming Fundamental  using Python,Python fundamental (Hands-on Session 1),"Explore the core concepts of Python in this foundational lesson, where you'll learn syntax, control structures, and data handling.","- Explain ide from pdf 
+- Go through first column excersie in the pdf
+- Concepts 1-11
+- divide groups , give them 30 min , each group expain in 5 mins column 2 excersice for the same concepts
+- for the same groups give them concepts from 12 - 17 to explain tomorrow","- Introduce Python syntax and basic programming concepts.
+- Understand and implement Python's built-in data types.
+- Enhance Teamwork skills by working collaboratively in groups to foster communication and cooperation.
+- Develop Presentation Skills
+- Prepare students for real-world challenges they may encounter in their future careers.",Hands-on_Session,Practical exercise,https://www.dropbox.com/scl/fi/6pkxgfz3ncrm7grt5od1g/1-Python-fundamental-Hands-on-Session.paper?rlkey=m21wiecqf2pwgja7388uiovpq&st=4840axut&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-3/blob/main/DS016-_Python_fundamental_(Hands-on_Session).pdf,Preparation Phase,Programming,Step 3: Data Quality Checking and Remediation,Unit 1: Programming Fundamentals
+1,3,28/1/2025,4,DS017,Programming Fundamental  using Python,Interactive activity 1,"Involves dynamic engagement where students participate in discussions, quizzes, or collaborative problem-solving exercises.","group activity, column 2 , 3 in the pdf","- Encourage students to actively engage with course content.
+- Stimulate students' critical thinking skills.
+- Develop students' communication skills by encouraging them to articulate their thoughts, ideas, and solutions.",Interactive Activity,Activity,,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-3/blob/main/DS016-_Python_fundamental_(Hands-on_Session).pdf,Preparation Phase,"Programming, Soft Skills",Step 3: Data Quality Checking and Remediation,Unit 1: Programming Fundamentals
+1,3,28/1/2025,5,DS018,Programming Fundamental  using Python,Python Skills Evaluation,Test Your programming skills (Test 1 & Test 4),"individual, they should send a screenshot for TAs","- Enable students to evaluate their own Python programming skills through a comprehensive self-assessment, fostering self-awareness of their strengths and areas for improvement, and guiding their future learning paths.",Self Assessment,Assessment,https://www.tutorialsteacher.com/online-test/python-test,,,https://www.tutorialsteacher.com/online-test/python-test,Preparation Phase,Programming,Step 3: Data Quality Checking and Remediation,Unit 1: Programming Fundamentals
+1,3,28/1/2025,6,DS020,Programming Fundamental  using Python,Python - Lab 1,Provides a controlled environment where students can experiment with advanced data science tools and techniques under the guidance of the instructor or teaching assistants.,,"-  Learn to write Python programs to handle numerical and text data, using variables to store values and lists to organize data effectively.",Lab,Practical exercise,https://www.dropbox.com/scl/fo/jvijwo9nl6ehqbilnjhpl/AOEjJXSvNPsKwCA13fbwpC0?rlkey=7dcybn843bzylaadhjctwc5l7&st=whiftkuh&dl=0,https://www.dropbox.com/scl/fo/jvijwo9nl6ehqbilnjhpl/AOEjJXSvNPsKwCA13fbwpC0?rlkey=7dcybn843bzylaadhjctwc5l7&st=whiftkuh&dl=0,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-3/tree/main/Labs,Preparation Phase,Programming,Step 3: Data Quality Checking and Remediation,Unit 1: Programming Fundamentals
+1,4,29/1/2025,1,DS021,Programming Fundamental  using Python,Code Challenge,30-minute coding challenge to enhance students' Python programming skills,,"- Reinforce Python Syntax and Basics
+- Problem-Solving and Algorithmic Thinking
+- Practice with Control Structures
+- Enhance Debugging Skills",Penguin Activity,Activity,https://www.hackerrank.com/challenges/python-mutations/problem?isFullScreen=true,https://shorturl.at/lxEcm,,https://shorturl.at/lxEcm,Preparation Phase,Programming,Step 3: Data Quality Checking and Remediation,Unit 1: Programming Fundamentals
+1,4,29/1/2025,2,DS022,Programming Fundamental  using Python,Python fundamental (Hands-on Session 2),Build a strong base for advanced programming with hands-on usecase and practical examples,- each group explain his concept in 10 mins,"- Enhance Teamwork skills by working collaboratively in groups to foster communication and cooperation.
+- Develop Presentation Skills
+- Prepare students for real-world challenges they may encounter in their future careers.",Hands-on_Session,Practical exercise,"https://www.dropbox.com/scl/fi/6pkxgfz3ncrm7grt5od1g/1-Python-fundamental-Hands-on-Session.paper?rlkey=m21wiecqf2pwgja7388uiovpq&st=4840axut&dl=0
+
+https://www.dropbox.com/scl/fi/gw9inoh0j6sjowlf4sy5i/2-Essential-Tips-and-Tricks-for-Effective-Python-Programming.paper?rlkey=5432tvyicr8qeyrxnezrnbx2h&dl=0",,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-4,Preparation Phase,Programming,Step 3: Data Quality Checking and Remediation,Unit 1: Programming Fundamentals
+1,4,29/1/2025,3,DS023,Programming Fundamental  using Python,Project 1,Project introduction,- give them the rest of class to discuss the project,TBD,Usecase - Project,Usecases,https://www.dropbox.com/scl/fo/i95wtq1tzwyazcq98bt8i/ANYau8ds2-J3OgRqaPYcoxk?rlkey=wh1y8ea6an8cv31x5v4ja5bze&st=g0pvci5o&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Project_1_Python,Preparation Phase,Programming,Step 3: Data Quality Checking and Remediation,Unit 1: Programming Fundamentals
+1,4,29/1/2025,4,DS024,Programming Fundamental  using Python,Python - Lab 2,Provides a controlled environment where students can experiment with advanced data science tools and techniques under the guidance of the instructor or teaching assistants.,"lab 2.1
+lab 2.2","-  Learn to write Python programs to handle numerical and text data, using variables to store values and lists to organize data effectively.",Lab,Practical exercise,https://www.dropbox.com/scl/fo/byfl109ua8yc3frjidfko/AEoAVUKtLV1YsyBwpGFbRys?rlkey=o9nzu24tpwge86xecz94f90te&st=talp623m&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-4/tree/main/Labs,Preparation Phase,Programming,Step 3: Data Quality Checking and Remediation,Unit 1: Programming Fundamentals
+1,4,29/1/2025,5,DS018,Programming Fundamental  using Python,Python Skills Evaluation,Test Your programming skills (Test 6 & Test 7),"individual, they should send a screenshot for TAs","- Enable students to evaluate their own Python programming skills through a comprehensive self-assessment, fostering self-awareness of their strengths and areas for improvement, and guiding their future learning paths.",Self Assessment,Assessment,https://www.tutorialsteacher.com/online-test/python-test,,,https://www.tutorialsteacher.com/online-test/python-test,Preparation Phase,Programming,Step 3: Data Quality Checking and Remediation,Unit 1: Programming Fundamentals
+1,4,29/1/2025,6,DS015,Git 101,Hands-on Session - GitHub for Bootcamp’s Content (Labs & Lessons),,"Group Activity
+1- ask to implement step 1 with repo of Day 2
+2- ask to implement step 2 with add their solution of CLI lab
+3- ask to implement step 3 after i add a file",- Guide students.,Side_session,Session,https://docs.google.com/document/d/1JKY9Mhu9dYb5MWZdzH1LeikFZPzKFZUt/edit?usp=sharing&ouid=112296633982469490942&rtpof=true&sd=true,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-3/blob/main/3-_GitHub_for_Bootcamp%E2%80%99s_Content_(Labs%2C_Usecases_%26%20Lessons.pdf,Preparation Phase,Software engineering,Step 8: Model Deployment,Unit 1: Programming Fundamentals
+1,5,30/1/2025,1,DS026,Programming Fundamental  using Python,Code Challenge,30-minute coding challenge to enhance students' Python programming skills,,"- Reinforce Python Syntax and Basics
+- Problem-Solving and Algorithmic Thinking
+- Practice with Control Structures
+- Enhance Debugging Skills",Penguin Activity,Activity,https://www.hackerrank.com/challenges/list-comprehensions/problem?isFullScreen=true,,,https://shorturl.at/hu3k6,Preparation Phase,Programming,Step 3: Data Quality Checking and Remediation,Unit 1: Programming Fundamentals
+1,5,30/1/2025,2,DS027,Programming Fundamental  using Python,Python Day Exercise,Build a strong base for advanced programming with hands-on usecase and practical examples,,,Interactive Activity,Activity,https://www.dropbox.com/scl/fo/6ve7gxxjh8a4lr5d7fc0q/AD7JBOkVvs3MFZyC-8dMDjY?rlkey=glfuej7h7du163p8gcqadjb3k&st=i96sqe9n&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-5/blob/main/2-Python_Groups_Hands-on.ipynb,Preparation Phase,Programming,Step 3: Data Quality Checking and Remediation,Unit 1: Programming Fundamentals
+1,5,30/1/2025,3,DS028,Programming Fundamental  using Python,Python - Lab 3,Provides a controlled environment where students can experiment with advanced data science tools and techniques under the guidance of the instructor or teaching assistants.,Lab 3,"-  Learn to write Python programs to handle numerical and text data, using variables to store values and lists to organize data effectively.",Lab,Practical exercise,https://www.dropbox.com/scl/fo/xgvl88t9clt6nn25l184a/APo8p0a6Fcu_6azueDjZfco?rlkey=f3dpn44qz6xzpg2nw7ydjowxy&st=a0d1ix1v&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-5/blob/main/Labs/Python_Lab_3.ipynb,Preparation Phase,Programming,Step 3: Data Quality Checking and Remediation,Unit 1: Programming Fundamentals
+1,5,30/1/2025,4,DS012,Programming Fundamental  using Python,Programming Skills Evaluation,Test Your programming skills,"individual, they should send a screenshot for TAs","- Enable students to evaluate their own Python programming skills through a comprehensive self-assessment, fostering self-awareness of their strengths and areas for improvement, and guiding their future learning paths.",Self Assessment,Assessment,https://assessment-v2.datacamp.com/coding-for-production-python?returnUrl=https://app.datacamp.com/learn/assessments,,,https://shorturl.at/Yubq2,Preparation Phase,Programming,Step 3: Data Quality Checking and Remediation,Unit 1: Programming Fundamentals
+1,5,30/1/2025,5,DS030,Programming Fundamental  using Python,Week Activity,"Review the week's content, reinforcing understanding through interactive activity while encouraging teamwork and identifying areas for further review.",,"- Review the week's content, reinforcing understanding through interactive activity while encouraging teamwork and identifying areas for further review.",Week Activity,Activity,https://www.dropbox.com/scl/fi/jg3n17tdw3aqnr15fy9e5/Buzz.pptx?rlkey=q6p5atxl6uercjm69li0hys5d&st=17gaxys2&dl=0,https://shorturl.at/eSODF,,https://kahoot.it/,Preparation Phase,"Programming, Data Manipulation and Analysis (working with data)","Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis",Unit 1: Programming Fundamentals
+2,1,2/2/2025,2,DS023,Programming Fundamental  using Python,Project 1,Project Review: Each team will present for 5 minutes.,Project Review: Each team will present for 5 minutes.,"- Provide students with the opportunity to practice and improve their public speaking and presentation skills
+- Require students to think critically about their project, including its goals, methodology, results, and significance
+- Allow students to learn from each other’s projects, gaining insights into different approaches, challenges, and solutions
+- Give students a platform to showcase their hard work, progress, and achievements
+- Promote teamwork and collaboration
+- Teach students the importance of time management
+- nstill a sense of professionalism, as students must present their work in a clear, organized, and professional manner",Usecase - Project,Usecases,https://www.dropbox.com/scl/fo/i95wtq1tzwyazcq98bt8i/ANYau8ds2-J3OgRqaPYcoxk?rlkey=wh1y8ea6an8cv31x5v4ja5bze&st=pmpcdc5j&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Project_1_Python,Preparation Phase,Programming,Step 3: Data Quality Checking and Remediation,Unit 2: Data Analysis Fundamentals
+2,1,2/2/2025,3,DS034,Programming Fundamental  using Python,Team work assissment,Coonduct a survey to evaluate the collaboration within teams during the project and whether team members met each other expectations,,TBD,Self Assessment,Assessment,https://forms.gle/jDhs9y2NtbXJuqxe8,,,https://forms.gle/jDhs9y2NtbXJuqxe8,Preparation Phase,Soft Skills,- ,Unit 2: Data Analysis Fundamentals
+2,1,2/2/2025,4,DS035,Programming Fundamental  using Python,Python Libraries ,"Explore how Python packages and libraries streamline coding by reusing code, and learn about package repositories like PyPI and Anaconda that facilitate access to a vast range of tools for efficient development.",- explain the first pdf,"- Enable students to understand how Python packages and libraries streamline coding through code reuse and familiarize them with package repositories like PyPI and Anaconda, which provide access to a wide array of tools for efficient and effective development.",Main_session,Session,https://www.dropbox.com/scl/fi/egoqv51nxqqa1rwgo9a3r/2-Python-Libraries.paper?rlkey=haq93d61ova0r7cg1unrhwoq0&st=fxujp3a4&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-6/blob/main/DS035-_Python_Libraries.pdf,Preparation Phase,"Programming, Data Manipulation and Analysis (working with data)","Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis",Unit 2: Data Analysis Fundamentals
+2,1,2/2/2025,5,DS038,Programming Fundamental  using Python,Python Libraries (Numpy),This lesson gently guides you through the basics of NumPy arrays and equips you with the knowledge to perform efficient numerical operations.,explain Visual Intro to NumPy of jay + open jupyter notebook to apply the same concepts from Jay artical,"- Grasp the fundamentals of NumPy arrays and their attributes.
+- Learn simple array calculations and the power of vectorization.
+- Understand array indexing, slicing, and iteration.
+- Get acquainted with advanced array operations and data manipulation.",Main_session,Session,"https://www.dropbox.com/scl/fi/vb72mokkshuom468x1lyx/3-NumPy.paper?rlkey=q709s2ctdj9r5drwyrh70qabc&st=xt85u6s3&dl=0
+
+https://www.dropbox.com/scl/fi/d84h5a9fi4yue6q9wmnhr/5-Visual-Intro-to-NumPy.paper?rlkey=brpizo6wbbidjcvme7zggno2u&st=1hn6vf84&dl=0
+
+https://www.dropbox.com/scl/fi/2oq6nay8h5uyikr9xlfc1/5-N-Dimensional-Array.paper?rlkey=p22s34w2yc0ywddvmuldl6dru&st=jbdcvknj&dl=0",,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-6,Preparation Phase,"Programming, Data Manipulation and Analysis (working with data)","Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis",Unit 2: Data Analysis Fundamentals
+2,1,2/2/2025,6,DS039,Programming Fundamental  using Python,Numpy (Hands-on Session),Students will apply the concepts and techniques they've learned in the main session to real-world problems,,"- Enable students to transfer theoretical knowledge into practical skills.
+- Develop students' problem-solving abilities.
+- Prepare students for real-world challenges they may encounter in their future careers.",Hands-on_Session,Practical exercise,"https://www.dropbox.com/scl/fi/rtwf9wug2ek7ym4tu8gcr/6-Numpy_visual_tutorial_Solution.ipynb?rlkey=5rmoapar9fs1fr7o8s3lf9t2g&st=ru0t23wb&dl=0
+
+https://www.dropbox.com/scl/fi/yugr37rmjezjvteahel67/6-Numpy_visual_tutorial_NotUploaded.ipynb?rlkey=sblwbuu4zz8r630zjro3yqqz7&st=y31urg2z&dl=0",,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-6,Preparation Phase,"Programming, Data Manipulation and Analysis (working with data)","Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis",Unit 2: Data Analysis Fundamentals
+2,1,2/2/2025,7,DS031,Engagement Content,Week Champion Announcement,,,"- Encourage students to write clean, efficient, and well-documented code
+- Encourage students to help each other
+- Inspire students to continuously improve their skills and knowledge
+- Create an environment where students feel supported and encouraged to seek help and offer assistance
+- Instill the value of healthy competition where students strive to do their best while maintaining respect and support for their peers.",Side_session,Session,,,,,Preparation Phase,-,-,Unit 2: Data Analysis Fundamentals
+2,2,3/2/2025,1,DS037,Real-World Insights from a Data Science Expert,What data scientists say over world?,Let's spend the next 15 minutes reviewing what data scientists around the world are saying about the field and learning from their insights.,,"- Understand Diverse Perspectives
+- Learn About Real-World Applications
+- Inspire Critical Thinking and Innovation
+- Boosting Analytical Discussions",Penguin Activity,Activity,https://shorturl.at/yALSU,,,https://shorturl.at/yALSU,Preparation Phase,Data Science Methodology & Literacy,-,Unit 2: Data Analysis Fundamentals
+2,2,3/2/2025,2,DS040,Programming Fundamental  using Python,Interactive activity,White Board activity - 4 groups,"- Divide class to 4 groups and each group has a white board, there is a jar full with question , each team take question to write answer on the board , the winner is the team with largest number of correct answers","- Engage students in a collaborative and competitive activity to reinforce their Pandas knowledge and skills 
+- Enhancing their understanding and retention of key concepts through teamwork and active participation
+- Stimulate students' critical thinking skills
+- Develop students' communication skills by encouraging them to articulate their thoughts, ideas, and solutions",Interactive Activity,Activity,https://www.dropbox.com/scl/fi/vxibglvlql4h59u7nphsj/Interactive-Activity-Numpy.paper?rlkey=6x37o24tnn1l8tgabsy7nsovy&dl=0,,,,Preparation Phase,"Programming, Data Manipulation and Analysis (working with data)","Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis",Unit 2: Data Analysis Fundamentals
+2,2,3/2/2025,3,DS044,Programming Fundamental  using Python,Pandas,"This lesson introduces the key features of Pandas, helping you to manage data with confidence and ease.",- explain the pdf,"- Familiarize the students with Pandas Series and DataFrame data structures.
+- Develop skills in sorting, filtering, and transforming data.
+- Work through practical examples of data aggregation and grouping.
+- Gain experience with importing and exporting data in various formats.",Main_session,Session,https://www.dropbox.com/scl/fi/rluaye2rshqlp8f86llig/Pandas.paper?rlkey=diz2egrcwfpmkc29v70s6e67w&st=pa9otr89&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-7/blob/main/DS044-Pandas.pdf,Preparation Phase,"Programming, Data Manipulation and Analysis (working with data)","Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis",Unit 2: Data Analysis Fundamentals
+2,2,3/2/2025,4,DS045,Programming Fundamental  using Python,Pandas (Hands-on Session),,"- go through the note book and expain concepts 
+join , concat , filter - mask , map , apply , add column , lambda","- Enable students to understand and apply essential data manipulation concepts in Python through hands-on practice, focusing on techniques such as join, concat, filter (mask), map, apply, add column, and lambda functions, to effectively manage and analyze data.",Hands-on_Session,Practical exercise,https://www.dropbox.com/scl/fi/akd2inayi0c5h9e3i29ke/Pandas.ipynb?rlkey=rmsx3ggom4lsw3j1zfog1m6ky&st=9rfchbaz&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-7/blob/main/DS045-Pandas.ipynb,Preparation Phase,"Programming, Data Manipulation and Analysis (working with data)","Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis",Unit 2: Data Analysis Fundamentals
+2,2,3/2/2025,5,DS041,Programming Fundamental  using Python,Numpy Skills Evaluation,Test Your programming skills,"individual, they should send a screenshot for TAs","- Enable students to evaluate their own Python programming skills through a comprehensive self-assessment, fostering self-awareness of their strengths and areas for improvement, and guiding their future learning paths.",Self Assessment,Assessment,https://www.w3schools.com/python/numpy/exercise.asp,,,https://www.w3schools.com/python/numpy/exercise.asp,Preparation Phase,"Programming, Data Manipulation and Analysis (working with data)","Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis",Unit 2: Data Analysis Fundamentals
+2,2,3/2/2025,6,DS042,Programming Fundamental  using Python,Numpy - Lab,Provides a controlled environment where students can experiment with advanced data science tools and techniques under the guidance of the instructor or teaching assistants.,"lab 1
+lab2","- Introduce the students to the fundamental capabilities of Numpy in Lab 1, focusing on basic array manipulation, mathematical operations, and data handling techniques to lay a strong foundation for more advanced data analysis tasks using Numpy.
+",Lab,Practical exercise,https://www.dropbox.com/scl/fo/kvuappmq3o5x1eya43g27/AB3tUQ9yL6KHBYtQ3IhyJWc?rlkey=ejnlu72m88y0u7yt7o846re1a&st=o5dbez8z&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-7/tree/main/Labs,Preparation Phase,"Programming, Data Manipulation and Analysis (working with data)","Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis",Unit 2: Data Analysis Fundamentals
+2,3,4/2/2025,1,DS043,Programming Fundamental  using Python,Code Challenge,30-minute coding challenge to enhance students' Python programming skills,,"- Reinforce Python Syntax and Basics
+- Problem-Solving and Algorithmic Thinking
+- Practice with Control Structures
+- Enhance Debugging Skills",Penguin Activity,Activity,https://www.hackerrank.com/challenges/floor-ceil-and-rint/problem?isFullScreen=true,https://shorturl.at/zS3za,,https://shorturl.at/zS3za,Preparation Phase,Programming,Step 3: Data Quality Checking and Remediation,Unit 2: Data Analysis Fundamentals
+2,3,4/2/2025,2,DS046,Programming Fundamental  using Python,Interactive activity,White Board activity - 4 groups,"- Divide class to 4 groups and each group has a white board, there is a jar full with question , each team take question to write answer on the board , the winner is the team with largest number of correct answers","- Engage students in a collaborative and competitive activity to reinforce their Pandas knowledge and skills 
+- Enhancing their understanding and retention of key concepts through teamwork and active participation
+- Stimulate students' critical thinking skills
+- Develop students' communication skills by encouraging them to articulate their thoughts, ideas, and solutions",Interactive Activity,Activity,https://www.dropbox.com/scl/fi/h5bjl6arafsermcygpn7i/Interactive-Activity_NOT_UPLOADED.paper?rlkey=1b79uxzab7udrf58o61hx9iew&st=1nb870vt&dl=0,,,,Preparation Phase,"Programming, Data Manipulation and Analysis (working with data)","Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis",Unit 2: Data Analysis Fundamentals
+2,3,4/2/2025,3,DS047,Programming Fundamental  using Python,Pandas - Lab,,,"- Strengthen students understanding and proficiency with the Pandas library in Python by providing a comprehensive assignment that covers data manipulation, analysis, and visualization using real-world datasets.",Lab,Practical exercise,https://www.dropbox.com/scl/fo/3z4jt0tj4ivy0vpqgy1cv/AD1wpS_I3qzH8D4K-zk1fpo?rlkey=3mc9s554hbv7y6zd1208uvugh&st=v7qwn6au&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-8/tree/main/Labs,Preparation Phase,"Programming, Data Manipulation and Analysis (working with data)","Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis",Unit 2: Data Analysis Fundamentals
+2,4,5/2/2025,1,DS048,Real-World Insights from a Data Science Expert,What data scientists say over world?,Let's spend the next 15 minutes reviewing what data scientists around the world are saying about the field and learning from their insights.,,"- Understand Diverse Perspectives
+- Learn About Real-World Applications
+- Inspire Critical Thinking and Innovation
+- Boosting Analytical Discussions",Penguin Activity,Activity,https://www.linkedin.com/feed/update/urn:li:activity:7220236768204189697?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7220236768204189697%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29,https://shorturl.at/7jqOt,,https://shorturl.at/7jqOt,Usecases Phase,Data Manipulation and Analysis (working with data),"Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis",Unit 2: Data Analysis Fundamentals
+2,4,5/2/2025,2,DS049,Data Analysis for Beginners,Exploratory data analysis (EDA),"Dive into the essentials of Exploratory Data Analysis, refining your ability to uncover patterns and insights from raw data through statistical techniques and visualization.","- explain pdf , main concepts (what EDA, EDA output, EDA steps) ","- Understand EDA concepts and techniques.
+- Apply descriptive statistics for data summary.
+- Utilize visualization tools for data exploration.
+- Formulate hypotheses from data insights.",Main_session,Session,"https://www.dropbox.com/scl/fi/91ab5png9rjufgj3iz2il/3-EDA-Data-Quality-Check-1.paper?rlkey=l433vaxzrc01470wjjtg9p2ie&st=h77x5tit&dl=0
+
+https://www.dropbox.com/scl/fi/ysdgge2qn9omtsw5ih20z/3-Exploratory-Data-Analysis-EDA-2.paper?rlkey=u6tvtb0wz7odxrpkqdpszqsro&st=pzpdgleb&dl=0",,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-9,Usecases Phase,Data Manipulation and Analysis (working with data),"Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis",Unit 2: Data Analysis Fundamentals
+2,4,5/2/2025,3,DS050,Data Analysis for Beginners,Usecases Concepts,Every data project serves as a use case to address problems and answer essential questions through the analysis of data,"- explaine usecase concept
+- go though usecase1 card",- Explaining the Use case concept,Side_session,Session,https://www.dropbox.com/scl/fo/r605dk08hjcob8xmkzyir/AIcGKVxIUYcABoHP_ZJnOd8?rlkey=1loz5dnr1kgaggi3pafve7mt3&st=yxi18kkd&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-1/blob/main/Usecase_1.pdf,Usecases Phase,Data Manipulation and Analysis (working with data),"Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis",Unit 2: Data Analysis Fundamentals
+2,4,5/2/2025,4,DS051,Data Analysis for Beginners,Usecase 1 ,Conduct hands-on EDA (Data Profiling and Cleaning) with real datasets,"- go through data profiling
+- show how 7 dim (do check in profiling and then go to cleaning to correct errors)","- Provide students with practical experience in exploratory data analysis (EDA) by performing univariate non-graphical analysis and detecting and cleaning outliers using real Riyadh marathon datasets, enhancing their ability to extract meaningful insights and prepare data for further analysis.",Usecase,Usecases,https://www.dropbox.com/scl/fo/r605dk08hjcob8xmkzyir/AIcGKVxIUYcABoHP_ZJnOd8?rlkey=1loz5dnr1kgaggi3pafve7mt3&st=yxi18kkd&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-1/blob/main/Usecase_1.pdf,Usecases Phase,Data Manipulation and Analysis (working with data),"Step 1: Defining the Problem Statement, Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis",Unit 2: Data Analysis Fundamentals
+2,4,5/2/2025,5,DS053,Data Analysis for Beginners,Usecase 2 - Lab,Implement the EDA (Data Profiling and Cleaning) process on a real-world use case,,"- familiarize students with data profiling, cleaning, and initial exploration techniques using world happiness score dataset to derive insights and prepare data for further analysis.",Usecase - Lab,Usecases,https://www.dropbox.com/scl/fo/2zqrhizkt43gd59094yql/AEuzlux0E1r1V5RorkBBW3M?rlkey=q2c715gcrr588c3rzwdzz5mxu&st=oybopn1g&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-2,Usecases Phase,Data Manipulation and Analysis (working with data),"Step 1: Defining the Problem Statement, Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis",Unit 2: Data Analysis Fundamentals
+2,5,6/2/2025,1,DS054,Real-World Insights from a Data Science Expert,What data scientists say over world?,Let's spend the next 15 minutes reviewing what data scientists around the world are saying about the field and learning from their insights.,,"- Understand Diverse Perspectives
+- Learn About Real-World Applications
+- Inspire Critical Thinking and Innovation
+- Boosting Analytical Discussions",Penguin Activity,Activity,https://www.linkedin.com/feed/update/urn:li:activity:7161405824509132800/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7161405824509132800%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29,,,https://shorturl.at/IO6YY,Usecases Phase,Data Science Methodology & Literacy,Step 4: Exploratory Data Analysis,Unit 2: Data Analysis Fundamentals
+2,5,6/2/2025,2,DS053,Data Analysis for Beginners,Usecase 2 - Lab,15 minutes allocated to address questions from students experiencing difficulties with their lab assignments,,"- Provide targeted assistance to students facing challenges with their lab assignment within a 15-minute session, aiming to clarify concepts, resolve specific issues, and ensure students can progress effectively with their coursework.",Usecase - Lab,Usecases,https://www.dropbox.com/scl/fo/2zqrhizkt43gd59094yql/AEuzlux0E1r1V5RorkBBW3M?rlkey=q2c715gcrr588c3rzwdzz5mxu&st=oybopn1g&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-2,Usecases Phase,Data Manipulation and Analysis (working with data),"Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis",Unit 2: Data Analysis Fundamentals
+2,5,6/2/2025,3,DS051,Data Analysis for Beginners,Usecase 1 ,Conduct hands-on EDA (Univariate Graphical Analysis) with real datasets,,"- Provide students with practical experience in exploratory data analysis (EDA) by performing univariate non-graphical analysis and detecting and cleaning outliers using real Riyadh marathon datasets, enhancing their ability to extract meaningful insights and prepare data for further analysis.",Usecase,Usecases,https://www.dropbox.com/scl/fo/r605dk08hjcob8xmkzyir/AIcGKVxIUYcABoHP_ZJnOd8?rlkey=1loz5dnr1kgaggi3pafve7mt3&st=yxi18kkd&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-1/blob/main/Usecase_1.pdf,Usecases Phase,"Data visualization, Data Manipulation and Analysis (working with data)","Step 4: Exploratory Data Analysis, Step 7: Communicating Results",Unit 2: Data Analysis Fundamentals
+2,5,6/2/2025,4,DS052,Data Analysis for Beginners,Interactive activity,White Board activity - 4 groups,,"- Engage students in a collaborative and competitive activity to reinforce their Pandas knowledge and skills 
+- Enhancing their understanding and retention of key concepts through teamwork and active participation 
+- Stimulate students' critical thinking skills 
+- Develop students' communication skills by encouraging them to articulate their thoughts, ideas, and solutions",Interactive Activity,Activity,https://www.dropbox.com/scl/fi/67ccbvu4r4p1g6irw033p/5-Interactive-activity-_NOTUPLOADED.paper?rlkey=vsg9k99mfu6p2j1mu9269cxm7&st=3qc5i02f&dl=0,,,,Usecases Phase,Data Manipulation and Analysis (working with data),"Step 1: Defining the Problem Statement, Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis",Unit 2: Data Analysis Fundamentals
+2,5,6/2/2025,5,DS057,Data Analysis for Beginners,Usecase 3 - Project 2 ,Introduction to a project that applies the EDA (Data Profiling and Cleaning) process on a real-world use case.,,"- conduct EDA on a dataset that ranks universities worldwide. Through this analysis, we aim to gain insights into the factors that contribute to university rankings, understand the distribution of rankings across different regions and countries, and identify any patterns or trends that may influence these rankings.",Usecase - Project,Usecases,https://www.dropbox.com/scl/fo/ux7m9ed5zz20tgg4oypf8/AIpgd1i9UQsD0SFvXrskK8c?rlkey=xweqn3apffipbnf1fd9bpnj9n&st=06q39z4l&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-3-Project-2/blob/main/Usecase_3_-_(Project_2).pdf,Usecases Phase,"Statistics , Data visualization, Data Manipulation and Analysis (working with data)","Step 1: Defining the Problem Statement, Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis, Step 7: Communicating Results",Unit 2: Data Analysis Fundamentals
+2,5,6/2/2025,6,DS058,Data Analysis for Beginners,Week Activity,"Review the week's content, reinforcing understanding through interactive activity while encouraging teamwork and identifying areas for further review.",,"- Review the week's content, reinforcing understanding through interactive activity while encouraging teamwork and identifying areas for further review.",Week Activity,Activity,https://www.dropbox.com/home/Esraa%20Madhi/DataScience%20%26%20MachineLearning%20Bootcamp%202024%20-%20Content/Week2/Theory?di=left_nav_browse&preview=DS058-Week+Activity+-+Numpy%2C+Pandas+%26+EDA.pdf,,,Kahoot.it,Usecases Phase,"Statistics , Data visualization, Data Manipulation and Analysis (working with data)","Step 1: Defining the Problem Statement, Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis, Step 7: Communicating Results",Unit 2: Data Analysis Fundamentals
+3,1,9/2/2025,1,,Programming Fundamental  using Python,Code Challenge,30-minute coding challenge to enhance students' Python programming skills,Group teams,"- Reinforce Python Syntax and Basics
+- Problem-Solving and Algorithmic Thinking
+- Practice with Control Structures
+- Enhance Debugging Skills
+- Boosting Collaborative Learning
+",Penguin Activity,Activity,https://www.hackerrank.com/challenges/re-sub-regex-substitution/problem?isFullScreen=true,https://shorturl.at/iFvEY,,https://shorturl.at/iFvEY,Usecases Phase,Programming,Step 3: Data Quality Checking and Remediation,Unit 2: Data Analysis Fundamentals
+3,1,9/2/2025,2,DS031,Engagement Content,Week Champion Announcement,,,"- Encourage students to write clean, efficient, and well-documented code
+- Encourage students to help each other
+- Inspire students to continuously improve their skills and knowledge
+- Create an environment where students feel supported and encouraged to seek help and offer assistance
+- Instill the value of healthy competition where students strive to do their best while maintaining respect and support for their peers.",Side_session,Session,https://datascienceroadmap-tuwaiq-academy.streamlit.app/Champion_Of_The_Week,,,https://datascienceroadmap-tuwaiq-academy.streamlit.app/Champion_Of_The_Week,Usecases Phase,-,-,Unit 2: Data Analysis Fundamentals
+3,1,9/2/2025,3,DS053,Data Analysis for Beginners,Usecase 2 - Lab,15 minutes allocated to address questions from students experiencing difficulties with their lab assignments,,"- Provide targeted assistance to students facing challenges with their lab assignment within a 15-minute session, aiming to clarify concepts, resolve specific issues, and ensure students can progress effectively with their coursework.",Usecase - Lab,Usecases,https://www.dropbox.com/scl/fo/2zqrhizkt43gd59094yql/AEuzlux0E1r1V5RorkBBW3M?rlkey=q2c715gcrr588c3rzwdzz5mxu&st=oybopn1g&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-2,Usecases Phase,"Data visualization, Data Manipulation and Analysis (working with data)","Step 4: Exploratory Data Analysis, Step 7: Communicating Results",Unit 2: Data Analysis Fundamentals
+3,1,9/2/2025,4,DS060,Data Analysis for Beginners,Data Visualisation ,Explore the various types of data visualization charts and how to effectively use them to communicate information clearly and efficiently.,"- when reach part of 7th dimention (Accurecy) after finishing cleaning typs, the part of detecting outliers , we should stop to take the basic chart first
+- here you should say that with accurcy , will go through 3 steps : profiling -> cleaning -> univariate analysis
+- just explain the first section in the pdf ( chat type)
+- go to section (univariate analysis) and do some charts , dont explain any thing about univariate analysis","- Grasp the significance of data visualization.
+- Recognize different chart types and their specific uses.
+- Choose the most suitable chart for a given dataset.",Main_session,Session,https://www.dropbox.com/scl/fi/11ddwijfe6we22j6kkx4c/3-Data-Visualization-1.paper?rlkey=mdd7ye46r30k63nc0dfvdovcp&st=dtvesuae&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-11/blob/main/DS060-Data_Visualization_1.pdf,Usecases Phase,"Data visualization, Data Manipulation and Analysis (working with data)","Step 4: Exploratory Data Analysis, Step 7: Communicating Results",Unit 2: Data Analysis Fundamentals
+3,1,9/2/2025,5,DS051,Intro to Statistics,Usecase 1 ,Conduct hands-on EDA (Univariate Non Graphical Analysis + Detecting & cleaning outliers) with real datasets,,"- Provide students with practical experience in exploratory data analysis (EDA) by performing univariate non-graphical analysis and detecting and cleaning outliers using real Riyadh marathon datasets, enhancing their ability to extract meaningful insights and prepare data for further analysis.",Usecase,Usecases,https://www.dropbox.com/scl/fo/r605dk08hjcob8xmkzyir/AIcGKVxIUYcABoHP_ZJnOd8?rlkey=1loz5dnr1kgaggi3pafve7mt3&st=yxi18kkd&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-1/blob/main/Usecase_1.pdf,Usecases Phase,"Statistics, Data Manipulation and Analysis (working with data)",Step 4: Exploratory Data Analysis,Unit 2: Data Analysis Fundamentals
+3,1,9/2/2025,6,DS061,Data Analysis for Beginners,Interactive activity,,,"- Engage students in a collaborative and competitive activity to reinforce their Pandas knowledge and skills 
+- Enhancing their understanding and retention of key concepts through teamwork and active participation 
+- Stimulate students' critical thinking skills 
+- Develop students' communication skills by encouraging them to articulate their thoughts, ideas, and solutions",Interactive Activity,Activity,https://www.dropbox.com/scl/fi/rbojfeyypn0dvqriqwzdz/DS061-EDA-Interactive-activity-NOTUPLOADED.paper?rlkey=268ge5k7m0x5vauohzeiyaj1a&st=i5u96njh&dl=0,,,,Usecases Phase,"Data visualization, Data Manipulation and Analysis (working with data)","Step 4: Exploratory Data Analysis, Step 7: Communicating Results",Unit 2: Data Analysis Fundamentals
+3,2,10/2/2025,1,DS062,Intro to Statistics,Statistics Fundamental for Analysts.,Learn the foundational principles of statistics,"- still for accurecy we need some stats, go through stat 1 pdf and stats 3 pdf on the board, then link it with outlier concept 
+- when finish expain on board , go. through univariate analysis in the notebook and visulize every thing and get stats insights and ooutlier insights
+- go back to outlier section in accurecy and explain the methods and show th code but dont delete outlier ","- Understand the basic concepts of descriptive and inferential statistics.
+- Learn to organize and summarize data through charts, graphs, and measures of central tendency.",Main_session,Session,"https://www.dropbox.com/scl/fi/pj1sedpb11puzjs9w3tv0/3-Statistics-1.paper?rlkey=brvgr7kvkwe1jjzs7wtf9yplz&st=qoaw2v4l&dl=0
+
+https://www.dropbox.com/scl/fi/uh8er3trtgqkk746sn5g0/3-Statistics-3.paper?rlkey=r4jlg6ots1pgjd0v7nx1ewn3x&st=e10l35gz&dl=0
+",,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-12,Usecases Phase,"Statistics, Data Manipulation and Analysis (working with data)",Step 4: Exploratory Data Analysis,Unit 2: Data Analysis Fundamentals
+3,2,10/2/2025,2,DS051,Data Analysis for Beginners,Usecase 1 ,Conduct hands-on EDA (Multivariate Analysis) with real datasets,Statistics 2+ ,"- Conduct a comprehensive multivariate analysis on a real-world dataset. This session will focus on exploring relationships between multiple variables, identifying patterns, and deriving statistical insights to understand the dataset more deeply.",Usecase,Usecases,https://www.dropbox.com/scl/fo/r605dk08hjcob8xmkzyir/AIcGKVxIUYcABoHP_ZJnOd8?rlkey=1loz5dnr1kgaggi3pafve7mt3&st=yxi18kkd&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-1/blob/main/Usecase_1.pdf,Usecases Phase,"Data visualization, Data Manipulation and Analysis (working with data)",Step 4: Exploratory Data Analysis,Unit 2: Data Analysis Fundamentals
+3,2,10/2/2025,3,DS053,Data Analysis for Beginners,Usecase 2 - Lab,15 minutes allocated to address questions from students experiencing difficulties with their lab assignments,,"- Provide targeted assistance to students facing challenges with their lab assignment within a 15-minute session, aiming to clarify concepts, resolve specific issues, and ensure students can progress effectively with their coursework.",Usecase - Lab,Usecases,https://www.dropbox.com/scl/fo/2zqrhizkt43gd59094yql/AEuzlux0E1r1V5RorkBBW3M?rlkey=q2c715gcrr588c3rzwdzz5mxu&st=oybopn1g&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-2,Usecases Phase,"Statistics, Data Manipulation and Analysis (working with data)",Step 4: Exploratory Data Analysis,Unit 2: Data Analysis Fundamentals
+3,2,10/2/2025,4,DS063,Data Analysis for Beginners,Interactive activity,,,"- Engage students in a collaborative and competitive activity to reinforce their Pandas knowledge and skills 
+- Enhancing their understanding and retention of key concepts through teamwork and active participation 
+- Stimulate students' critical thinking skills 
+- Develop students' communication skills by encouraging them to articulate their thoughts, ideas, and solutions",Interactive Activity,Activity,https://www.dropbox.com/scl/fi/yoifk5qrzhf8dabb6mecm/DS063-Statistics-Interactive-activity-NOTUPLOADED.paper?rlkey=wbyd5yxmgf37cwymi90o39dfn&st=qiun1hhb&dl=0,,,,Usecases Phase,"Data visualization, Data Manipulation and Analysis (working with data)","Step 4: Exploratory Data Analysis, Step 7: Communicating Results",Unit 2: Data Analysis Fundamentals
+3,3,11/2/2025,1,DS064,Data Analysis for Beginners,Multivariate Analysis,Dive into the complexities of examining patterns and relationships in data involving multiple variables through multivariate analysis techniques.,"- go through stats 2 pdf 
+- go through multivariate section on notebook
+- answer usecase questions",- Understand the fundamental principles and methods used in multivariate statistical analysis.,Main_session,Session,"https://www.dropbox.com/scl/fi/48h7yn9zp1i09nae84rrs/3-Statistics-2.paper?rlkey=cefz5njoq4vbdqn0jzz0bx5a3&st=a6an69z2&dl=0
+
+https://www.dropbox.com/scl/fi/v97i74ay6gttjqzas2dg1/3-Statistics-4.paper?rlkey=hl0v4l2dy1y4v362c12b1utqj&st=avty15g7&dl=0",,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-13,Usecases Phase,"Data visualization, Data Manipulation and Analysis (working with data)",Step 4: Exploratory Data Analysis,Unit 2: Data Analysis Fundamentals
+3,3,11/2/2025,2,DS051,Data Analysis for Beginners,Usecase 1 ,Conduct hands-on EDA (Multivariate Analysis) with real datasets,Statistics 2+ ,"- Conduct a comprehensive multivariate analysis on a real-world dataset. This session will focus on exploring relationships between multiple variables, identifying patterns, and deriving statistical insights to understand the dataset more deeply.",Usecase,Usecases,https://www.dropbox.com/scl/fo/r605dk08hjcob8xmkzyir/AIcGKVxIUYcABoHP_ZJnOd8?rlkey=1loz5dnr1kgaggi3pafve7mt3&st=yxi18kkd&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-1/blob/main/Usecase_1.pdf,Usecases Phase,"Data visualization, Data Manipulation and Analysis (working with data)",Step 4: Exploratory Data Analysis,Unit 2: Data Analysis Fundamentals
+3,3,11/2/2025,3,DS053,Data Analysis for Beginners,Usecase 2 - Lab,15 minutes allocated to address questions from students experiencing difficulties with their lab assignments,,"- Provide targeted assistance to students facing challenges with their lab assignment within a 15-minute session, aiming to clarify concepts, resolve specific issues, and ensure students can progress effectively with their coursework.",Usecase - Lab,Usecases,https://www.dropbox.com/scl/fo/2zqrhizkt43gd59094yql/AEuzlux0E1r1V5RorkBBW3M?rlkey=q2c715gcrr588c3rzwdzz5mxu&st=oybopn1g&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-2,Usecases Phase,"Statistics, Data Manipulation and Analysis (working with data)",Step 4: Exploratory Data Analysis,Unit 2: Data Analysis Fundamentals
+3,3,11/2/2025,4,DS057,Data Analysis for Beginners,Usecase 3 - Project 2,Project Review: Each team will present for 10 minutes.,"Each presentation would be evaluate on the following:
+1- teamwork , leader affect
+2- Showing material ( readme or presentation, graph quality)
+3- presentation begining (team + problem + objective + intro)
+4- presentation middle ( datastory telling + Quailty of insights + problem solving mind)
+5- presentation end (Answer question + recommendation)
+(there is a sheet in TA work)","- Provide students with the opportunity to practice and improve their public speaking and presentation skills
+- Require students to think critically about their project, including its goals, methodology, results, and significance
+- Allow students to learn from each other’s projects, gaining insights into different approaches, challenges, and solutions
+- Give students a platform to showcase their hard work, progress, and achievements
+- Promote teamwork and collaboration
+- Teach students the importance of time management
+- nstill a sense of professionalism, as students must present their work in a clear, organized, and professional manner",Usecase - Project,Usecases,https://www.dropbox.com/scl/fo/ux7m9ed5zz20tgg4oypf8/AIpgd1i9UQsD0SFvXrskK8c?rlkey=xweqn3apffipbnf1fd9bpnj9n&st=06q39z4l&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-3-Project-2,Usecases Phase,"Statistics , Data visualization, Data Manipulation and Analysis (working with data)","Step 1: Defining the Problem Statement, Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis, Step 7: Communicating Results",Unit 2: Data Analysis Fundamentals
+3,4,12/2/2025,1,DS034,Data Analysis for Beginners,Team work assissment,Coonduct a survey to evaluate the collaboration within teams during the project and whether team members met each other expectations,,TBD,Self Assessment,Assessment,https://forms.gle/kWNXqd5wyL3kyjiG8,,,https://forms.gle/kWNXqd5wyL3kyjiG8,Usecases Phase,Soft Skills,- ,Unit 2: Data Analysis Fundamentals
+3,4,12/2/2025,2,DS065,Data Analysis for Beginners,Advanced tools for EDA,Explore some advanced tools to perform EDA on dataset,"- Go through the pdf 
+- introduce uc 4 and select groups
+- work time
+- present 10 mins for each group
+- do evaluation",- familiarize participants with advanced tools and techniques for EDA through hands-on exploration of a used cars dataset. Participants will gain proficiency in utilizing specialized libraries and methods to uncover deeper insights into the dataset's characteristics and variables.,Main_session,Session,https://www.dropbox.com/scl/fi/ggu28ualyofrs6vmoyxiy/2-Advanced-EDA.paper?rlkey=cy23o7je5ykfmkj4pizn17zuu&st=onvjpp3o&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-14/blob/main/DS065-Advanced_EDA.pdf,Usecases Phase,"Statistics , Data visualization, Data Manipulation and Analysis (working with data)","Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis, Step 7: Communicating Results",Unit 2: Data Analysis Fundamentals
+3,4,12/2/2025,2,DS066,Data Analysis for Beginners,Usecase Day - Usecase 4,"Spend the entire day working in groups to perform advanced exploratory data analysis on actual datasets, followed by group presentations.","Evaluation will be conducted by the students themselves using a voting form based on the following criteria:
+
+Time management
+Quality of insights
+Teamwork
+Utilization of one or more tools
+Perform All EDA steps
+https://docs.google.com/forms/d/1v7wALhPqTTNtkqko3-dxzxHxBhxX8dZbi9s1CNqnBzQ/edit?ts=6641b9e3",,Usecase,Usecases,https://www.dropbox.com/scl/fo/d26r73a9f57y07ksy8sqy/ACUPElDZ3-xaIatv1UH_9IE?rlkey=kq7r270klu5yn1r0p61iqeqbp&st=eqnxfl18&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-4/blob/main/Usecase_4.pdf,Usecases Phase,"Statistics , Data visualization, Data Manipulation and Analysis (working with data)","Step 1: Defining the Problem Statement,  Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis, Step 7: Communicating Results",Unit 2: Data Analysis Fundamentals
+3,4,12/2/2025,3,DS067,Data Analysis for Beginners,Usecase 5 - Lab,Use Advanced tool for performing EDA (Data Profiling and Cleaning) process on a real-world use case,,"- Use advanced tools to perform Exploratory Data Analysis (EDA), including data profiling, cleaning and data visualization, on a dataset of Saudi job postings.",Usecase - Lab,Usecases,https://www.dropbox.com/scl/fo/mhir7to9uekdi8am6nc6a/ADT-nP4VhZCrqJPqbAYQMKI?rlkey=5qs8u7sulpwnaipnryz6mj49d&st=11jl3x6r&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-5/blob/main/Usecase_5_(Lab).pdf,Usecases Phase,"Statistics , Data visualization, Data Manipulation and Analysis (working with data)","Step 1: Defining the Problem Statement,  Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis, Step 7: Communicating Results",Unit 2: Data Analysis Fundamentals
+3,5,13/2/2025,1,DS068,Data Analysis for Beginners,Data storytelling,Explore the art and science of data storytelling,"- draw (data-> EDA(pandas, advanced)-> communcate result ( presentation, data story which is the lesson today-> deploy)
+- show them the roadmap of DS project in program page app
+- Go through the pdf
+- When you reach the example section: open some of data stories to show them
+- show how you can run stramlit app
+- show the deployment steps
+- ask them to work in the same groups yesterday to build their own stories
+- ask them to deliver general link in google form https://forms.gle/ujLjche1Z9gMWjX27","- Grasp the essentials of data storytelling and its importance in data communication.
+- Tailor data-driven stories to diverse audiences.",Main_session,Session,https://www.dropbox.com/scl/fi/z3k5nsebadi2tkx255w3w/2-Storytelling-1-How-to-Effectively-Tell-a-Story-With-Data.paper?rlkey=nsbxvkajm83lmg5eob0lr24w2&st=9inbx99b&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-15/blob/main/DS068-Storytelling_1_-_How_to_Effectively_Tell_a_S.pdf,Usecases Phase,"Data visualization, Data Manipulation and Analysis (working with data)","Step 4: Exploratory Data Analysis, Step 7: Communicating Results",Unit 2: Data Analysis Fundamentals
+3,5,13/2/2025,2,DS066,Data Analysis for Beginners,Usecase Day - Usecase 4,Build a data story using Streamlit framwork,,- Create an interactive data story using the Streamlit framework to analyze and present insights from a used cars dataset and building an attractive narrative.,Usecase,Usecases,https://www.dropbox.com/scl/fo/d26r73a9f57y07ksy8sqy/ACUPElDZ3-xaIatv1UH_9IE?rlkey=kq7r270klu5yn1r0p61iqeqbp&st=hegjt9kr&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-4/blob/main/Usecase_4.pdf,Usecases Phase,"Statistics , Data visualization, Data Manipulation and Analysis (working with data)","Step 1: Defining the Problem Statement,  Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis, Step 7: Communicating Results",Unit 2: Data Analysis Fundamentals
+3,5,13/2/2025,3,DS069,Data Analysis for Beginners,Data Story Deployment,Explore the process of deploying a data story to be publicly avaliable.,,- Create interactive web applications with Streamlit that interface with the data story,Main_session,Session,https://blog.streamlit.io/host-your-streamlit-app-for-free/,,,https://blog.streamlit.io/host-your-streamlit-app-for-free/,Usecases Phase,Software engineering,Step 8: Model Deployment,Unit 2: Data Analysis Fundamentals
+3,5,13/2/2025,4,DS070,Data Analysis for Beginners,Usecase 6 - Project 3 ,Introduction to a project that applies advanced tools of EDA (Data Profiling and Cleaning) process on a real-world use case.,,"- Provide students with the opportunity to practice and improve their public speaking and presentation skills
+- Require students to think critically about their project, including its goals, methodology, results, and significance
+- Allow students to learn from each other’s projects, gaining insights into different approaches, challenges, and solutions
+- Give students a platform to showcase their hard work, progress, and achievements
+- Promote teamwork and collaboration
+- Teach students the importance of time management
+- nstill a sense of professionalism, as students must present their work in a clear, organized, and professional manner
+",Usecase - Project,Usecases,https://www.dropbox.com/scl/fo/jcqc7wsv0xgxquh8zl0n4/AJ2kizlW5OlcRUcRp5ejJyU?rlkey=0a0uet19fk06g8g71s8azyrpe&st=wgdwrw59&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-6-Project-3/blob/main/Usecase_6_(Project_3).pdf,Usecases Phase,"Statistics , Data visualization, Data Manipulation and Analysis (working with data)","Step 1: Defining the Problem Statement, Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis, Step 7: Communicating Results",Unit 2: Data Analysis Fundamentals
+3,5,13/2/2025,5,DS067,Data Analysis for Beginners,Usecase 5 - Lab,15 minutes allocated to address questions from students experiencing difficulties with their lab assignments,,"- Provide targeted assistance to students facing challenges with their lab assignment within a 15-minute session, aiming to clarify concepts, resolve specific issues, and ensure students can progress effectively with their coursework.",Usecase - Lab,Usecases,https://www.dropbox.com/scl/fo/mhir7to9uekdi8am6nc6a/ADT-nP4VhZCrqJPqbAYQMKI?rlkey=5qs8u7sulpwnaipnryz6mj49d&st=11jl3x6r&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-5/blob/main/Usecase_5_(Lab).pdf,Usecases Phase,"Statistics , Data visualization, Data Manipulation and Analysis (working with data)","Step 1: Defining the Problem Statement,  Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis, Step 7: Communicating Results",Unit 2: Data Analysis Fundamentals
+3,5,13/2/2025,6,DS058,Data Analysis for Beginners,Week Activity,"Review the week's content, reinforcing understanding through interactive activity while encouraging teamwork and identifying areas for further review.",,"- Review the week's content, reinforcing understanding through interactive activity while encouraging teamwork and identifying areas for further review.",Week Activity,Activity,https://www.dropbox.com/home/Esraa%20Madhi/DataScience%20%26%20MachineLearning%20Bootcamp%202024%20-%20Content/Week2/Theory?di=left_nav_browse&preview=DS058-Week+Activity+-+Numpy%2C+Pandas+%26+EDA.pdf,,,Kahoot.it,Usecases Phase,"Statistics , Data visualization, Data Manipulation and Analysis (working with data)","Step 1: Defining the Problem Statement, Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis, Step 7: Communicating Results",Unit 2: Data Analysis Fundamentals
+4,1,16/2/2025,7,DS031,Engagement Content,Week Champion Announcement,,,"- Encourage students to write clean, efficient, and well-documented code
+- Encourage students to help each other
+- Inspire students to continuously improve their skills and knowledge
+- Create an environment where students feel supported and encouraged to seek help and offer assistance
+- Instill the value of healthy competition where students strive to do their best while maintaining respect and support for their peers.",Side_session,Session,https://datascienceroadmap-tuwaiq-academy.streamlit.app/Champion_Of_The_Week,,,https://datascienceroadmap-tuwaiq-academy.streamlit.app/Champion_Of_The_Week,Usecases Phase,-,-,Unit 3: Machine Learning 101
+4,1,16/2/2025,1,DS071,Real-World Insights from a Data Science Expert,What data scientists say over world?,Let's spend the next 15 minutes reviewing what data scientists around the world are saying about the field and learning from their insights.,,"- Understand Diverse Perspectives
+- Learn About Real-World Applications
+- Inspire Critical Thinking and Innovation
+- Boosting Analytical Discussions",Penguin Activity,Activity,https://www.linkedin.com/feed/update/urn:li:activity:7177766777563574272/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7177766777563574272%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29,,,https://shorturl.at/rhmXq,Usecases Phase,"Data visualization, Data Manipulation and Analysis (working with data)","Step 4: Exploratory Data Analysis, Step 7: Communicating Results",Unit 3: Machine Learning 101
+4,1,16/2/2025,2,DS072,Machine Learning 101,Intro to Machine Learning Models,Uncover the world of machine learning by exploring various models and algorithms that enable computers to learn from and make decisions based on data.,go through pdf,"- Understand different types of machine learning models (supervised and unsupervised).
+- Learn the foundational algorithms that drive these models.",Main_session,Session,https://www.dropbox.com/scl/fi/hpmjqu7h56p5hwo3slcy6/2-Intro-to-Machine-Learning-1.paper?rlkey=6lsg6jrpzde75lzjqcivk7ndg&st=et3p0nx4&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-16/blob/main/DS072-_Intro_to_Machine_Learning_1.pdf,Usecases Phase,Machine learning models,Step 5:  Building Machine Learning Models,Unit 3: Machine Learning 101
+4,1,16/2/2025,3,DS073,Machine Learning 101,Supervised ML - Regression models - Linear regression,Learn a fundamental statistical method for modeling the relationship between a dependent variable and one or more independent variables,go through pdf,- Grasp the concept and mathematical foundation of linear regression.,Main_session,Session,https://www.dropbox.com/scl/fi/4ki0lj7hi4r2amr4idsq1/3-Supervised-Regression-Models-Linear-Regression.paper?rlkey=hm81gur6589vnblpfbsnplvjo&st=dlxlb6f6&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-16/blob/main/DS073-_Supervised_Regression_Models_-_Linear_Regre.pdf,Usecases Phase,Machine learning models,Step 5:  Building Machine Learning Models,Unit 3: Machine Learning 101
+4,1,16/2/2025,4,DS070,Data Analysis for Beginners,Usecase 6 - Project 3 ,Project Review: Each team's data story will under go a 10-minute review conducted by the other students.,"- There are 5 teams
+- give the student a 10 min to read the story and vote for it and give grade and comment
+- after 10 min, display the comments for students
+- the students who write a note for all , will take partepication degree","- Require students to think critically about their project, including its goals, methodology, results, and significance
+- Allow students to learn from each other’s projects, gaining insights into different approaches, challenges, and solutions
+- Give students a platform to showcase their hard work, progress, and achievements
+- Promote teamwork and collaboration
+- nstill a sense of professionalism, as students must present their work in a clear, organized, and professional manner",Usecase - Project,Usecases,https://www.dropbox.com/scl/fo/jcqc7wsv0xgxquh8zl0n4/AJ2kizlW5OlcRUcRp5ejJyU?rlkey=0a0uet19fk06g8g71s8azyrpe&st=wgdwrw59&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-6-Project-3/blob/main/Usecase_6_(Project_3).pdf,Usecases Phase,"Statistics , Data visualization, Data Manipulation and Analysis (working with data)","Step 1: Defining the Problem Statement, Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis, Step 7: Communicating Results",Unit 3: Machine Learning 101
+4,2,17/2/2025,1,DS074,Programming Fundamental  using Python,Code Challenge,30-minute coding challenge to enhance students' Python programming skills,Group teams,"- Reinforce Python Syntax and Basics
+- Problem-Solving and Algorithmic Thinking
+- Practice with Control Structures
+- Enhance Debugging Skills
+- Boosting Collaborative Learning
+",Penguin Activity,Activity,https://www.hackerrank.com/challenges/map-and-lambda-expression/problem?isFullScreen=true,https://shorturl.at/Jq5Cf,,https://shorturl.at/Jq5Cf,Usecases Phase,Programming,Step 3: Data Quality Checking and Remediation,Unit 3: Machine Learning 101
+4,2,17/2/2025,2,DS075,Machine Learning 101,Usecase 4.1,Conduct hands-on Linear regression and feature engineering with real datasets,just go through the notebook without the pdf,"- conduct hands-on Linear Regression and Feature Engineering using a used cars dataset, enabling participants to understand and apply key concepts in predictive modeling and data preprocessing to real-world data.",Usecase,Usecases,https://www.dropbox.com/scl/fo/vpn14hcp0sfp52qvkivik/AGq7tQJ9K7an5ddDiDChCj0?rlkey=1l5gygnvcws1irdwuuo5fu7r7&st=65aopr59&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-4/blob/main/Usecase_4_1.pdf,Usecases Phase,"Data engineering, Machine learning models",Step 5:  Building Machine Learning Models,Unit 3: Machine Learning 101
+4,2,17/2/2025,3,DS076,Data Engineering for Beginners,Feature Engineering ,"Learn how to enhance your machine learning models by creating, selecting, and transforming features to improve performance and insights.",dont go through the pdf,"- Understand the importance of feature engineering in improving model accuracy.
+- Practice different techniques of feature engineering ",Main_session,Session,https://www.dropbox.com/scl/fi/u5ye5xocto7pcx5wkqpbu/4-Features-Engineering-Selection-all.paper?rlkey=h740daz1whmtvl4kmwu4etm19&st=mj01ixcu&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-17/blob/main/DS076-_Features_Engineering_%26_Selection_-all.pdf,Usecases Phase,"Data engineering, Machine learning models",Step 5:  Building Machine Learning Models,Unit 3: Machine Learning 101
+4,2,17/2/2025,4,DS077,Data Engineering for Beginners,Usecase 7 - Lab,Start Building machine learning models for real-world use cases.,,"- Start building machine learning models for football players' use cases, enabling the students to understand and apply predictive modeling techniques to real-world sports data. This project will focus on data preparation, feature engineering, and building machine learning models to predict player performance and other relevant metrics.",Usecase - Lab,Usecases,https://www.dropbox.com/scl/fo/gi3v64o2p75021zry1de1/AMqizQO1z--XJypaHDyOSUY?rlkey=nsbv521gucurvdatjfj8pitzd&st=sztffto5&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-7/blob/main/Usecase_7_-_(Lab).pdf,Usecases Phase,"Data engineering, Machine learning models",Step 5:  Building Machine Learning Models,Unit 3: Machine Learning 101
+4,2,17/2/2025,5,DS078,Machine Learning 101,Interactive activity,,,"- Engage students in a collaborative and competitive activity to reinforce their Pandas knowledge and skills 
+- Enhancing their understanding and retention of key concepts through teamwork and active participation 
+- Stimulate students' critical thinking skills 
+- Develop students' communication skills by encouraging them to articulate their thoughts, ideas, and solutions",Interactive Activity,Activity,https://www.dropbox.com/scl/fi/sfdtktzvhewljx80j1uc0/DS078-Intro-to-machine-learning-Interactive-Activity_NOT_UPLOADED.paper?rlkey=tofggmzzfqyrko35xc6ya5rhp&st=ndv4x0ug&dl=0,,,,Usecases Phase,"Data engineering, Machine learning models",Step 5:  Building Machine Learning Models,Unit 3: Machine Learning 101
+4,3,18/2/2025,1,DS079,Programming Fundamental  using Python,Code Challenge,30-minute coding challenge to enhance students' Python programming skills,Group teams,"- Reinforce Python Syntax and Basics
+- Problem-Solving and Algorithmic Thinking
+- Practice with Control Structures
+- Enhance Debugging Skills
+- Boosting Collaborative Learning
+",Penguin Activity,Activity,https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/problem?isFullScreen=true,https://shorturl.at/tKm1X,,https://shorturl.at/tKm1X,Usecases Phase,Programming,Step 3: Data Quality Checking and Remediation,Unit 3: Machine Learning 101
+4,3,18/2/2025,2,DS080,Machine Learning 101,Model evaluation 1 - Regression models,"Discover the critical aspects of evaluating regression models, focusing on diagnosing and addressing overfitting and underfitting.","- Review linear regression equation
+- Review the linear code
+- go through the pdf and on the same time apply each matrix on the code of uc4.1
+- for cross validation ,in the codeing part, tell them will practise on ridge lasso models later","- Discover different types of evaluation matrices 
+- Identify signs of overfitting and underfitting in machine learning models.",Main_session,Session,https://www.dropbox.com/scl/fi/p3ru6u67dja0cxy2j4a1r/4-Model-evaluation-1-Regression-models.paper?rlkey=2rerifgpkut3dfcqea57ig52u&st=ftuv9qbw&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-18/blob/main/DS080-_Model_evaluation_1_-_Regression_models.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+4,3,18/2/2025,3,DS081,Machine Learning 101,Model Optimization - Cross Validation and Hyperparameters Optimization ,Master the practices of cross-validation and hyperparameter optimization to enhance model performance and reliability.,,"- Utilize cross-validation techniques to assess model effectiveness.
+- Execute systematic hyperparameter tuning for optimal model performance.",Main_session,Session,https://www.dropbox.com/scl/fi/p3ru6u67dja0cxy2j4a1r/4-Model-evaluation-1-Regression-models.paper?rlkey=2rerifgpkut3dfcqea57ig52u&st=ftuv9qbw&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-18/blob/main/DS080-_Model_evaluation_1_-_Regression_models.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+4,3,18/2/2025,4,DS075,Machine Learning 101,Usecase 4.1,"Conduct hands-on (Model evaluation, Regularization, Cross validation) with real datasets",,,Usecase,Usecases,https://www.dropbox.com/scl/fo/vpn14hcp0sfp52qvkivik/AGq7tQJ9K7an5ddDiDChCj0?rlkey=1l5gygnvcws1irdwuuo5fu7r7&st=65aopr59&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-4/blob/main/Usecase_4_1.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+4,3,18/2/2025,5,DS077,Machine Learning 101,Usecase 7 - Lab,Building machine learning models for real-world use cases.,,"This project will focus on data preparation, feature engineering, and building machine learning models to predict player performance and other relevant metrics.",Usecase - Lab,Usecases,https://www.dropbox.com/scl/fo/gi3v64o2p75021zry1de1/AMqizQO1z--XJypaHDyOSUY?rlkey=nsbv521gucurvdatjfj8pitzd&st=sztffto5&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-7/blob/main/Usecase_7_-_(Lab).pdf,Usecases Phase,"Data engineering, Machine learning models",Step 5:  Building Machine Learning Models,Unit 3: Machine Learning 101
+4,3,18/2/2025,6,DS078,Machine Learning 101,Interactive activity,,,"- Engage students in a collaborative and competitive activity to reinforce their Pandas knowledge and skills 
+- Enhancing their understanding and retention of key concepts through teamwork and active participation 
+- Stimulate students' critical thinking skills 
+- Develop students' communication skills by encouraging them to articulate their thoughts, ideas, and solutions",Interactive Activity,Activity,,,,,Usecases Phase,"Data engineering, Machine learning models",Step 5:  Building Machine Learning Models,Unit 3: Machine Learning 101
+4,4,19/2/2025,1,DS083,Programming Fundamental  using Python,Code Challenge,30-minute coding challenge to enhance students' Python programming skills,Group teams,"- Reinforce Python Syntax and Basics
+- Problem-Solving and Algorithmic Thinking
+- Practice with Control Structures
+- Enhance Debugging Skills
+- Boosting Collaborative Learning
+",Penguin Activity,Activity,https://coderhub.sa/challenges/86000c8c-c148-4f21-9fb2-ad968ed53488/view?language=Python,https://shorturl.at/ZnziP,,https://shorturl.at/ZnziP,Usecases Phase,Programming,Step 3: Data Quality Checking and Remediation,Unit 3: Machine Learning 101
+4,4,19/2/2025,2,DS084,Machine Learning 101,Model Optimization -  Underfitting & Overfitting the Model,Examine regularization techniques that prevent overfitting by penalizing complexity in machine learning models.,"- go through the pdf
+- you can go through the same matrices code to compare test and train results",,Main_session,Session,https://www.dropbox.com/scl/fi/6cxo5lorfqkgotvffli4w/2-Underfitting-Overfitting-the-Model.paper?rlkey=biwcqqc0q2d9v6awknya240sm&st=iake3y0c&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-19/blob/main/DS084-_Underfitting_%26_Overfitting_the_Model.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+4,4,19/2/2025,3,DS085,Machine Learning 101,Model Optimization -  Model regularization - Ridge & Lasso model,Learn the principles of regularization and its role in model training.,,- Apply regularization methods like L1 (Lasso) and L2 (Ridge) to refine models.,Main_session,Session,https://www.dropbox.com/scl/fi/t6bc8fp8wy73nhrv10ir3/6-Supervised-Regression-Models-Linear-Regression-Ridge-lasso-model.paper?rlkey=hkql7n5a2cf5o62rjpn42b3ld&st=ewv4kebu&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-19/blob/main/DS085-_Supervised_Regression_Models_-_Linear_Regre.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+4,4,19/2/2025,4,DS075,Machine Learning 101,Usecase 4.1,"Conduct hands-on (Model evaluation, Regularization, Cross validation) with real datasets",,"- Model Evaluation
+- Regularization Techniques
+- Cross-Validation",Usecase,Usecases,https://www.dropbox.com/scl/fo/vpn14hcp0sfp52qvkivik/AGq7tQJ9K7an5ddDiDChCj0?rlkey=1l5gygnvcws1irdwuuo5fu7r7&st=65aopr59&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-4/blob/main/Usecase_4_1.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+4,4,19/2/2025,5,DS077,Machine Learning 101,Usecase 7 - Lab,Building machine learning models for real-world use cases.,,"This project will focus on data preparation, feature engineering, and building machine learning models to predict player performance and other relevant metrics.",Usecase - Lab,Usecases,https://www.dropbox.com/scl/fo/gi3v64o2p75021zry1de1/AMqizQO1z--XJypaHDyOSUY?rlkey=nsbv521gucurvdatjfj8pitzd&st=sztffto5&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-7/blob/main/Usecase_7_-_(Lab).pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+4,4,19/2/2025,7,DS086,Machine Learning 101,Interactive activity,,,,Interactive Activity,Activity,https://www.dropbox.com/scl/fi/ttz00qov8mdms0ecindp4/Interactive-activity-_-NOT-UPLOADED.paper?rlkey=5mc05lgvz4yuguvqlncmfkylf&dl=0,,,,Usecases Phase,"Data engineering, Machine learning models",Step 5:  Building Machine Learning Models,Unit 3: Machine Learning 101
+4,4,19/2/2025,8,DS087,Machine Learning 101,Project 4,Introduction to a project that applies the supervised machine learning model on a real-world use case.,Usecase 6.1 - Project 4 Or kaggle competition,,Usecase - Project,Usecases,https://www.kaggle.com/competitions/playground-series-s4e5/overview,,,https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+4,5,20/2/2025,1,DS088,Programming Fundamental  using Python,Code Challenge,30-minute coding challenge to enhance students' Python programming skills,Group teams,"- Reinforce Python Syntax and Basics
+- Problem-Solving and Algorithmic Thinking
+- Practice with Control Structures
+- Enhance Debugging Skills
+- Boosting Collaborative Learning
+",Penguin Activity,Activity,https://coderhub.sa/challenges/e35bb082-6cc1-4aa9-89f5-03077f5ab9f3/view?language=Python,https://shorturl.at/H9jOu,,https://shorturl.at/H9jOu,Usecases Phase,Programming,Step 3: Data Quality Checking and Remediation,Unit 3: Machine Learning 101
+4,5,20/2/2025,2,DS089,Machine Learning 101,Usecase 7.1 - Lab,Build Classification model with real datasets,,"- Understand Diverse Perspectives
+- Learn About Real-World Applications
+- Inspire Critical Thinking and Innovation
+- Enhance Networking and Community Awareness
+- Boosting Analytical Discussions",Usecase - Lab,Usecases,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-6/Use-cases-cards/blob/main/%E2%80%8F%E2%80%8FUsecase%207/Usecase_7_1_-_(Lab).pdf,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-7/blob/main/Usecase_7_1_-_(Lab).pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+4,5,20/2/2025,3,DS090,Machine Learning 101,Supervised ML -  Classification Models - Logistic regression ,"Explore logistic regression, a powerful statistical method used to model binary outcomes and predict categorical class memberships.",,"- Understand the theory and mathematical underpinnings of logistic regression.
+- Apply logistic regression to classification problems and interpret the outcomes",Main_session,Session,https://www.dropbox.com/scl/fi/hixyrrbugncx0j2b7e4mw/3-Supervised-Classification-Models-Logistic-Regression.paper?rlkey=a4tgojigh50raqf7i1gcwzdxz&st=i1u064ln&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-20/blob/main/3-_Supervised_Classification_Models_-_Logistic_Reg.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+4,5,20/2/2025,5,DS092,Machine Learning 101,Usecase 4.2,Build Classification model with real datasets,,,Usecase,Usecases,https://www.dropbox.com/scl/fo/75b8a9ib12v4lz9einom6/ABGoMq7CntwZGEk1zaBvNK0?rlkey=wcrwxj3t4rbmw66vc8cypwi8n&st=oby363kx&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-4/blob/main/Usecase_4_2.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+4,5,20/2/2025,6,DS093,Machine Learning 101,Week Activity,"Review the week's content, reinforcing understanding through interactive activity while encouraging teamwork and identifying areas for further review.",,"- Review the week's content, reinforcing understanding through interactive activity while encouraging teamwork and identifying areas for further review.",Week Activity,Activity,https://www.dropbox.com/scl/fi/qlmajdqog96gond95nkfy/DS093-Week-Activity-Machine-learning.pdf?rlkey=q71o1xqvsd8cf3sr81nts7ufu&st=628j4dlj&dl=0,,,https://kahoot.it/,Usecases Phase,"Statistics , Data visualization, Data Manipulation and Analysis (working with data)","Step 1: Defining the Problem Statement, Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis, Step 7: Communicating Results",Unit 3: Machine Learning 101
+5,1,23/2/2025,1,DS031,Engagement Content,Week Champion Announcement,,,"- Encourage students to write clean, efficient, and well-documented code 
+- Encourage students to help each other 
+- Inspire students to continuously improve their skills and knowledge 
+- Create an environment where students feel supported and encouraged to seek help and offer assistance 
+- Instill the value of healthy competition where students strive to do their best while maintaining respect and support for their peers.",Side_session,Session,https://datascienceroadmap-tuwaiq-academy.streamlit.app/Champion_Of_The_Week,,,https://datascienceroadmap-tuwaiq-academy.streamlit.app/Champion_Of_The_Week,Usecases Phase,-,-,Unit 3: Machine Learning 101
+5,1,23/2/2025,2,DS088,Programming Fundamental  using Python,Code Challenge,30-minute coding challenge to enhance students' Python programming skills,Group teams,"- Reinforce Python Syntax and Basics
+- Problem-Solving and Algorithmic Thinking
+- Practice with Control Structures
+- Enhance Debugging Skills
+- Boosting Collaborative Learning
+",Penguin Activity,Activity,https://coderhub.sa/challenges/3adf453a-35c1-4258-beaf-eae8393c4be0/view?language=Python,https://shorturl.at/ESmu8,,https://shorturl.at/ESmu8,Usecases Phase,Programming,Step 3: Data Quality Checking and Remediation,Unit 3: Machine Learning 101
+5,1,23/2/2025,3,DS091,Machine Learning 101,Model evaluation 2 - Classification models,"Discover the critical aspects of evaluating classification models, focusing on diagnosing and addressing overfitting and underfitting.",,,Main_session,Session,https://www.dropbox.com/scl/fi/1dav3f7h6fcawwcfxd2g5/4-Model-evaluation-2-Classification-models.paper?rlkey=hwmumqf2rokd52m4am5skk0oe&st=f2vmbzho&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-21/blob/main/2-_Model_evaluation_2_-_Classification_models.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+5,1,23/2/2025,4,DS095,Machine Learning 101,Lighting talk ,Exploring Lightning Talks: What They Are and How They Function,,"- Research recent advancements in machine learning algorithms.
+- Identify key features and innovations of new algorithms.
+- Understand how these advancements improve predictive accuracy.
+- Understand how these advancements enhance computational efficiency.
+- Practice public speaking and presentation skills
+- Distill thoughts to focus on main aspects
+- Improve Time Management
+- Learn from diverse topics and perspectives",Side_session,Session,"https://www.dropbox.com/scl/fi/381cx1fag9js1vb64clm6/Lightning-Talks-for-Data-Science-bootcamp.paper?rlkey=0ms193qzzkzizvo65buxdl3xx&dl=0
+
+
+https://docs.google.com/spreadsheets/d/1J3hBa87mQkbNkcf-vA2RsxAEPbAXLjcYKAz1VdRyZEc/edit?gid=0#gid=0",,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Lightning-talk/blob/main/Lightning_Talks_for_Data_Science_bootcamp.pdf,Usecases Phase,"Software engineering,
+Programming,
+Data Storage and Retrieval,
+Data Manipulation and Analysis (working with data),
+Statistics,
+Data visualization,
+Machine learning models","Step 1: Defining the Problem Statement,
+Step 2: Collecting Data,
+Step 3: Data Quality Checking and Remediation,
+Step 4: Exploratory Data Analysis,
+Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation,
+Step 7: Communicating Results,
+Step 8: Model Deployment",Unit 3: Machine Learning 101
+5,1,23/2/2025,5,DS092,Machine Learning 101,Usecase 4.2,Build Classification model with real datasets,,,Usecase,Usecases,https://www.dropbox.com/scl/fo/75b8a9ib12v4lz9einom6/ABGoMq7CntwZGEk1zaBvNK0?rlkey=wcrwxj3t4rbmw66vc8cypwi8n&st=i37by6ow&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-4/blob/main/Usecase_4_2.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+5,1,23/2/2025,6,DS089,Machine Learning 101,Usecase 7.1 - Lab,Let's spend the next 15 minutes reviewing what data scientists around the world are saying about the field and learning from their insights.,,"- Understand Diverse Perspectives
+- Learn About Real-World Applications
+- Inspire Critical Thinking and Innovation
+- Enhance Networking and Community Awareness
+- Boosting Analytical Discussions",Usecase - Lab,Usecases,https://www.dropbox.com/scl/fo/t5xwibwhxifuvw1hsk59q/ABcEvfL-uwKjU5j_AArGEHk?rlkey=me51d4jjdmzlxkjlvt8ygaiqv&st=rv76u3mz&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-7/blob/main/Usecase_7_1_-_(Lab).pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+5,1,23/2/2025,7,DS096,Machine Learning 101,Interactive activity,,,,Interactive Activity,Activity,https://www.dropbox.com/scl/fi/x1xe3vr34hmwttcbzomzp/Interactive-Activity_Recap-Lesson-NOT_UPLOADED.paper?rlkey=cf4skzlvnfzt9yd21du4smkbv&st=yf4extkx&dl=0,,,,Usecases Phase,"Data engineering, Machine learning models",Step 5:  Building Machine Learning Models,Unit 3: Machine Learning 101
+5,2,24/2/2025,1,DS097,Programming Fundamental  using Python,Concept Explanation Game,,2 student expain the same concept and vote for better explaniation,,Penguin Activity,Activity,,,,,Usecases Phase,Programming,Step 3: Data Quality Checking and Remediation,Unit 3: Machine Learning 101
+5,2,24/2/2025,2,DS098,Machine Learning 101,Supervised ML - Classification Models - Decision tree,"Investigate decision trees, a versatile and intuitive machine learning technique for classification and regression tasks.",,"- Comprehend the mechanics of how decision trees split data based on feature values.
+- Practice building, evaluating, and tuning decision trees for classification problems.",Main_session,Session,https://www.dropbox.com/scl/fi/bcbek5h27pti0cs1qgbx5/3-Supervised-Classification-Models-Decision-Trees.paper?rlkey=wf4gfbfzmjnnmuxw8j2014dnx&st=2bx6h246&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-22/blob/main/3-_Supervised_Classification_Models_-_Decision_Tre.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+5,2,24/2/2025,3,DS099,Machine Learning 101,Supervised ML -  Ensemble Models - Random Forest,Explore ensemble learning method that combines multiple decision trees to improve prediction accuracy and control overfitting.,,"- Comprehend how Random Forest aggregates decisions from a collection of trees to boost model performance.
+- Learn to train, tune, and evaluate Random Forest models on diverse datasets.",Main_session,Session,"https://www.dropbox.com/scl/fi/s1hspoi8xexmo06u4tz95/4-Ensamble-Models.paper?rlkey=8vdaxyw6obhxs2y0bblx601sj&st=5x60ilsg&dl=0
+
+https://www.dropbox.com/scl/fi/kvkp9nrze6okd87tw5hcz/4-Supervised-Classification-Models-Random-Forest.paper?rlkey=nzpxvvlixdbqgjbcsbpqnlbdh&st=4bq36dol&dl=0",,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-22,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+5,2,24/2/2025,4,DS092,Machine Learning 101,Usecase 4.2,Build Classification model with real datasets,,,Usecase,Usecases,https://www.dropbox.com/scl/fo/75b8a9ib12v4lz9einom6/ABGoMq7CntwZGEk1zaBvNK0?rlkey=wcrwxj3t4rbmw66vc8cypwi8n&st=i37by6ow&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-4/blob/main/Usecase_4_2.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+5,2,24/2/2025,5,DS089,Machine Learning 101,Usecase 7.1 - Lab,Let's spend the next 15 minutes reviewing what data scientists around the world are saying about the field and learning from their insights.,,"- Understand Diverse Perspectives
+- Learn About Real-World Applications
+- Inspire Critical Thinking and Innovation
+- Enhance Networking and Community Awareness
+- Boosting Analytical Discussions",Usecase - Lab,Usecases,https://www.dropbox.com/scl/fo/t5xwibwhxifuvw1hsk59q/ABcEvfL-uwKjU5j_AArGEHk?rlkey=me51d4jjdmzlxkjlvt8ygaiqv&st=rv76u3mz&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-7/blob/main/Usecase_7_1_-_(Lab).pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+5,3,25/2/2025,1,DS102,Real-World Insights from a Data Science Expert,What data scientists say over world?,Let's spend the next 15 minutes reviewing what data scientists around the world are saying about the field and learning from their insights.,,"- Understand Diverse Perspectives
+- Learn About Real-World Applications
+- Inspire Critical Thinking and Innovation
+- Enhance Networking and Community Awareness
+- Boosting Analytical Discussions",Penguin Activity,Activity,https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/RadarChart/index.html,,,https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/RadarChart/index.html,Usecases Phase,"Data Manipulation and Analysis (working with data), Machine learning models","Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis, Step 5:  Building Machine Learning Models, Step 6: Model Evaluation, Step 7: Communicating Results",Unit 3: Machine Learning 101
+5,3,25/2/2025,2,DS101,Machine Learning 101,Supervised ML -  SVM model,Learn arobust machine learning algorithm used for both regression and classification challenges,,"- Understand the fundamental concepts of SVM and how it can be applied to different types of data.
+- Learn to implement SVM for regression (SVR) and classification (SVC), and fine-tune the model parameters for optimal performance.",Main_session,Session,https://www.dropbox.com/scl/fi/w7oir7ozxhhaogj7u3goe/DS101-Supervised-Classification-Models-Support-Vector-Machines.paper?rlkey=9imdef8voh38mxns5x7prgsb4&st=s2vwomos&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-23/blob/main/DS101-Supervised_Classification_Models_-Support_Ve.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+5,3,25/2/2025,3,DS092,Machine Learning 101,Usecase 4.2,Build Classification model with real datasets,,,Usecase,Usecases,https://www.dropbox.com/scl/fo/75b8a9ib12v4lz9einom6/ABGoMq7CntwZGEk1zaBvNK0?rlkey=wcrwxj3t4rbmw66vc8cypwi8n&st=i37by6ow&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-4/blob/main/Usecase_4_2.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+5,3,25/2/2025,4,,,Real-World Insights from a Data Science Expert,Behind the Data: Real-World Insights from a Data Science Expert,"A session with a distinguished data science expert, who will share their firsthand experiences and insights from their career in the field. This talk is designed to bridge the gap between theoretical knowledge and practical application","- Understand how data science drives decisions and innovation in various sectors such as finance, healthcare, and technology.
+- Dive into the most commonly used data science concepts and tools that are essential for tackling day-to-day challenges in the field.
+- Learn about effective data collection, processing, and analysis strategies that lead to successful outcomes in complex projects.
+- Gain valuable advice on building a successful career in data science, including tips on essential skills, continuing education, and industry trends.",Side_session,Session,,,,,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+5,3,25/2/2025,5,DS089,Machine Learning 101,Usecase 7.1 - Lab,Let's spend the next 15 minutes reviewing what data scientists around the world are saying about the field and learning from their insights.,,"- Understand Diverse Perspectives
+- Learn About Real-World Applications
+- Inspire Critical Thinking and Innovation
+- Enhance Networking and Community Awareness
+- Boosting Analytical Discussions",Usecase - Lab,Usecases,https://www.dropbox.com/scl/fo/t5xwibwhxifuvw1hsk59q/ABcEvfL-uwKjU5j_AArGEHk?rlkey=me51d4jjdmzlxkjlvt8ygaiqv&st=rv76u3mz&dl=0,,,,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+5,4,26/2/2025,1,DS095,Machine Learning 102,Lighting talk ,Explore the latest advancements in machine learning algorithms that enhance predictive accuracy and computational efficiency in 5 min talk,,"- Research recent advancements in machine learning algorithms.
+- Identify key features and innovations of new algorithms.
+- Understand how these advancements improve predictive accuracy.
+- Understand how these advancements enhance computational efficiency.
+- Practice public speaking and presentation skills
+- Distill thoughts to focus on main aspects
+- Improve Time Management
+- Learn from diverse topics and perspectives",Side_session,Session,,,,,Usecases Phase,"Soft Skills,
+Machine learning models","Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation",Unit 3: Machine Learning 101
+5,4,26/2/2025,2,DS103,Machine Learning 101,Supervised ML - Knn Model,"Gain insight into the k-Nearest Neighbors (KNN) algorithm, a simple yet effective approach for both regression and classification problems.",,"- Grasp the workings of the KNN algorithm and its application in predicting continuous and categorical outcomes.
+- Practice implementing KNN for various datasets and learn to select the optimal number of neighbors.",Main_session,Session,https://www.dropbox.com/scl/fi/2qobd8gg2z7rb61j3wtos/7-Supervised-Classification-Models-K-Nearest-Neighbors-KNN.paper?rlkey=ht7tz22qrzympr2xrmlxxxcm5&st=7zf4ax45&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-24/blob/main/DS103-Supervised_Classification_Models_-_K-Nearest.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+5,4,26/2/2025,4,DS104,Machine Learning 101,Usecase 4.2,Build Classification model with real datasets,,"- Understand Classification Techniques
+- Data Exploration and Preprocessing
+- Feature Selection
+- Model Building and Training
+- Model Evaluation
+- Interpretation of Results
+- Hands-on Implementation",Usecase,Usecases,https://www.dropbox.com/scl/fo/75b8a9ib12v4lz9einom6/ABGoMq7CntwZGEk1zaBvNK0?rlkey=wcrwxj3t4rbmw66vc8cypwi8n&st=i37by6ow&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-4/blob/main/Usecase_4_2.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+5,4,26/2/2025,5,DS105,Machine Learning 101,Usecase 7.1 - Lab,Let's spend the next 15 minutes reviewing what data scientists around the world are saying about the field and learning from their insights.,,"- Understand Diverse Perspectives
+- Learn About Real-World Applications
+- Inspire Critical Thinking and Innovation
+- Enhance Networking and Community Awareness
+- Boosting Analytical Discussions",Usecase - Lab,Usecases,https://www.dropbox.com/scl/fo/t5xwibwhxifuvw1hsk59q/ABcEvfL-uwKjU5j_AArGEHk?rlkey=me51d4jjdmzlxkjlvt8ygaiqv&st=rv76u3mz&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-7/blob/main/Usecase_7_1_-_(Lab).pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+5,5,27/2/2025,1,DS095,Machine Learning 101,Lighting talk ,Explore the latest advancements in machine learning algorithms that enhance predictive accuracy and computational efficiency in 5 min talk,,"- Research recent advancements in machine learning algorithms.
+- Identify key features and innovations of new algorithms.
+- Understand how these advancements improve predictive accuracy.
+- Understand how these advancements enhance computational efficiency.
+- Practice public speaking and presentation skills
+- Distill thoughts to focus on main aspects
+- Improve Time Management
+- Learn from diverse topics and perspectives",Side_session,Session,,,,,Usecases Phase,"Soft Skills,
+Machine learning models","Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation",Unit 3: Machine Learning 101
+5,5,27/2/2025,2,DS106,Machine Learning 102,Intro to unsupervised learning,"Dive into unsupervised learning, the class of machine learning techniques designed to identify patterns and structures in unlabeled data.",,"- Understand the core concepts and different types of unsupervised learning algorithms.
+- Explore real-world applications where unsupervised learning can provide valuable insights.",Main_session,Session,https://www.dropbox.com/scl/fi/qds0fcrwixgkpmmc5wmeq/DS107-Unsupervised-Models-K-Means.paper?rlkey=v47w6nd72jh5b36h1tdn7lrot&st=oshw88bt&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-25/blob/main/DS107-Unsupervised_Models_-_K-Means.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+5,5,27/2/2025,3,DS107,Machine Learning 102,Unsupervised ML - Kmeans model,"Learn about K-Means, a popular clustering algorithm that partitions data into distinct groups based on similarity.",,"- Grasp the principles and algorithmic steps of the K-Means technique.
+- Apply the K-Means algorithm to datasets and interpret the clustering results.",Main_session,Session,https://www.dropbox.com/scl/fi/qds0fcrwixgkpmmc5wmeq/DS107-Unsupervised-Models-K-Means.paper?rlkey=v47w6nd72jh5b36h1tdn7lrot&st=oshw88bt&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-25/blob/main/DS107-Unsupervised_Models_-_K-Means.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+5,5,27/2/2025,4,DS087,Machine Learning 101,Project 4,Introduction to a project that applies the supervised machine learning model on a real-world use case.,Usecase 6.1 - Project 4 Or kaggle competition,,Usecase - Project,Usecases,https://www.kaggle.com/competitions/playground-series-s4e5/overview,,,https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+5,5,27/2/2025,5,DS108,Machine Learning 102,Usecase 4.3,Build Clustering model with real datasets,,"- Prepare the used cars dataset for clustering analysis.
+- Explore and visualize the dataset to understand its characteristics.
+- Select appropriate features and preprocess data for clustering.
+- Implement clustering algorithms such as K-means or DBSCAN.
+- Evaluate and interpret clustering results.
+- Use clustering models to gain insights into car segmentation.
+- Apply clustering techniques to identify meaningful car groups.
+- Discuss the implications of clustering results for business or analysis purposes.",Usecase,Usecases,https://www.dropbox.com/scl/fo/7f3wb79tva65sc4h0rbr5/AN-cxnqZpazJceyhYcjzFmI?rlkey=swfqbuvgawi466r9r5h9bibg1&st=1wndu2as&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-4/blob/main/Usecase%20cards/Usecase_4_3.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+5,5,27/2/2025,6,DS109,Machine Learning 102,Usecase 7.2 - Lab,Implement clustering models on real-world datasets,,"- Prepare the football players dataset by cleaning and preprocessing the data.
+- Implement clustering algorithms such as K-means or hierarchical clustering.
+- Evaluate the performance of the clustering models using appropriate metrics.
+- Interpret and analyze the clusters to identify distinct player groups.
+- Discuss the practical implications of the clustering results for player analysis or team strategy.",Usecase - Lab,Usecases,https://www.dropbox.com/scl/fo/szjrv5lo1ucotsuximqam/ACShXvyK8G6MTxZE5vdpcMQ?rlkey=au8j61yl3me6c2n3a1k09k835&st=6tlh7rzw&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-7/blob/main/Usecase_7_2_-_(Lab).pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+5,5,27/2/2025,7,DS110,Machine Learning 102,Week Activity,"Review the week's content, reinforcing understanding through interactive activity while encouraging teamwork and identifying areas for further review.",,"- Review the week's content, reinforcing understanding through interactive activity while encouraging teamwork and identifying areas for further review.",Week Activity,Activity,,,,kahoot.it,Usecases Phase,"Statistics , Data visualization, Data Manipulation and Analysis (working with data)","Step 1: Defining the Problem Statement, Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis, Step 7: Communicating Results",Unit 3: Machine Learning 101
+6,1,2/3/2025,1,DS031,Engagement Content,Week Champion Announcement,,,"- Encourage students to write clean, efficient, and well-documented code 
+- Encourage students to help each other 
+- Inspire students to continuously improve their skills and knowledge 
+- Create an environment where students feel supported and encouraged to seek help and offer assistance 
+- Instill the value of healthy competition where students strive to do their best while maintaining respect and support for their peers.",Side_session,Session,,,,,Usecases Phase,-,-,Unit 3: Machine Learning 101
+6,1,2/3/2025,2,DS095,Machine Learning 102,Lighting talk ,Explore the latest advancements in machine learning algorithms that enhance predictive accuracy and computational efficiency in 5 min talk,,"- Research recent advancements in machine learning algorithms.
+- Identify key features and innovations of new algorithms.
+- Understand how these advancements improve predictive accuracy.
+- Understand how these advancements enhance computational efficiency.
+- Practice public speaking and presentation skills
+- Distill thoughts to focus on main aspects
+- Improve Time Management
+- Learn from diverse topics and perspectives",Side_session,Session,,,,,Usecases Phase,"Soft Skills,
+Machine learning models","Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation",Unit 3: Machine Learning 101
+6,1,2/3/2025,3,DS111,"Machine Learning 101, Machine Learning 102",Journey Through Machine Learning: Quiz Your Knowledge!,"Test your knowledge of machine learning principles, algorithms, and applications with this engaging quiz designed for enthusiasts and experts alike",,"- Assess understanding of machine learning principles and algorithms.
+- Evaluate knowledge across various applications of machine learning.
+- Engage participants with an interactive and stimulating quiz format.
+- Encourage learning and reinforcement of machine learning concepts.
+- Cater to both enthusiasts and experts with varied difficulty levels.
+- Provide an opportunity for self-assessment and learning.",Quiz,Assessment,https://www.dropbox.com/scl/fi/9e9hnv7iozeb60vfjblwk/DS-Bootcamp-Quiz-3.paper?rlkey=t4lbwi9cpaaq3c6q7kesopl20&dl=0,https://forms.gle/ta7HowkDnoFZqVzr5,,https://forms.gle/ta7HowkDnoFZqVzr5,Usecases Phase,"Software engineering,
+Programming,
+Data Storage and Retrieval,
+Data Manipulation and Analysis (working with data),
+Statistics,
+Data visualization,
+Machine learning models","Step 1: Defining the Problem Statement,
+Step 2: Collecting Data,
+Step 3: Data Quality Checking and Remediation,
+Step 4: Exploratory Data Analysis,
+Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation,
+Step 7: Communicating Results,
+Step 8: Model Deployment",Unit 3: Machine Learning 101
+6,1,2/3/2025,4,DS112,Machine Learning 102,Unsupervised ML - DBSCAN Model,"Investigate Density-Based Spatial Clustering of Applications with Noise (DBSCAN), a clustering algorithm that excels in finding high-density areas and separating outliers.",,"- Understand the concept of density-based clustering and the parameters of DBSCAN.
+- Implement DBSCAN to identify arbitrarily shaped clusters and handle noise in complex datasets.",Main_session,Session,https://www.dropbox.com/scl/fi/fch2pasaqfi1dk2p2kblk/DS112-Unsupervised-Models-DBSCAN.paper?rlkey=gvhudpzojln0bpksqcrozrbbf&st=0r645vxg&dl=0,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-26/blob/main/DS112_-_Unsupervised_Models_-_DBSCAN.pdf,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-26/blob/main/DS112_-_Unsupervised_Models_-_DBSCAN.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+6,1,2/3/2025,5,DS113,Machine Learning 102,Model evaluation 3 - Clustering models,"Explore various methods to evaluate the performance and validity of clustering results, ensuring the most meaningful partitioning of data.",,"- Learn to use metrics like silhouette score and elbow method for assessing cluster quality.
+- Apply these evaluation techniques to determine the optimal number of clusters and validate clustering models.",Main_session,Session,https://www.dropbox.com/scl/fi/mudqry0n7ke6lbdu7ho2f/DS113-Model-evaluation-3-Clustering-Models.paper?rlkey=0ww3nusl6sf3l6m1zrmdph1a4&st=hx6yydey&dl=0,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-26/blob/main/DS113-_Model_evaluation_3_-_Clustering_Models.pdf,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-26/blob/main/DS113-_Model_evaluation_3_-_Clustering_Models.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+6,1,2/3/2025,6,DS108,Machine Learning 102,Usecase 4.3,Build Clustering model with real datasets,,"- Prepare the used cars dataset for clustering analysis.
+- Explore and visualize the dataset to understand its characteristics.
+- Select appropriate features and preprocess data for clustering.
+- Implement clustering algorithms such as K-means or DBSCAN.
+- Evaluate and interpret clustering results.
+- Use clustering models to gain insights into car segmentation.
+- Apply clustering techniques to identify meaningful car groups.
+- Discuss the implications of clustering results for business or analysis purposes.",Usecase,Usecases,https://www.dropbox.com/scl/fo/7f3wb79tva65sc4h0rbr5/AN-cxnqZpazJceyhYcjzFmI?rlkey=swfqbuvgawi466r9r5h9bibg1&st=1wndu2as&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-4/blob/main/Usecase%20cards/Usecase_4_3.pdf,Usecases Phase,Software engineering,Step 8: Model Deployment,Unit 3: Machine Learning 101
+6,1,2/3/2025,7,DS109,Machine Learning 102,Usecase 7.2 - Lab,Implement clustering models on real-world datasets,,"- Prepare the football players dataset by cleaning and preprocessing the data.
+- Implement clustering algorithms such as K-means or hierarchical clustering.
+- Evaluate the performance of the clustering models using appropriate metrics.
+- Interpret and analyze the clusters to identify distinct player groups.
+- Discuss the practical implications of the clustering results for player analysis or team strategy.",Usecase - Lab,Usecases,https://www.dropbox.com/scl/fo/szjrv5lo1ucotsuximqam/ACShXvyK8G6MTxZE5vdpcMQ?rlkey=au8j61yl3me6c2n3a1k09k835&st=6tlh7rzw&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-7/blob/main/Usecase_7_2_-_(Lab).pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 3: Machine Learning 101
+6,2,3/3/2025,1,DS095,Machine Learning 102,Lighting talk ,Explore the latest advancements in machine learning algorithms that enhance predictive accuracy and computational efficiency in 5 min talk,,"- Research recent advancements in machine learning algorithms.
+- Identify key features and innovations of new algorithms.
+- Understand how these advancements improve predictive accuracy.
+- Understand how these advancements enhance computational efficiency.
+- Practice public speaking and presentation skills
+- Distill thoughts to focus on main aspects
+- Improve Time Management
+- Learn from diverse topics and perspectives",Side_session,Session,,,,,Usecases Phase,"Soft Skills,
+Machine learning models","Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation",Unit 5: Mlops
+6,2,3/3/2025,2,DS118,Data Collection, Data Collecting - SQL,Understand the fundamentals of using Structured Query Language (SQL) to efficiently retrieve and manipulate data stored in relational databases.,,"- Learn the fundamental syntax and commands of Structured Query Language (SQL).
+- Understand how to retrieve data using SELECT statements.
+- Gain proficiency in filtering, sorting, and aggregating data with SQL queries.
+- Explore techniques for manipulating data with INSERT, UPDATE, and DELETE statements.
+- Practice joining tables to combine data from multiple sources.",Main_session,Session,https://www.dropbox.com/scl/fo/on226j1msj6i5b0vq70eg/ADD_UAGcc7aPreVEfilTpvU?rlkey=b0blmovs4ng73oe62gqde0c30&st=033jah4b&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-27,Usecases Phase,"Programming, Data Storage and Retrieval",Step 2: Collecting Data,Unit 5: Mlops
+6,2,3/3/2025,3,DS119,Data Collection,Hands-on Session ,Students will apply the concepts and techniques they've learned in the main session to real-world problems,,"- Master basic to advanced SQL queries for data extraction, filtering, and aggregation.
+- Learn to join multiple tables and work with subqueries to collect comprehensive datasets for analysis.",Hands-on_Session,Practical exercise,,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-27,Usecases Phase,"Programming, Data Storage and Retrieval",Step 2: Collecting Data,Unit 5: Mlops
+6,2,3/3/2025,4,DS120,Data Collection,Interactive Practice ,,,,Interactive Activity,Activity,https://github.com/Tuwaiq-DS-ML-bootcamp-V-6/Lessons/blob/main/Week-6/Day%201/4-%20Interactive%20Practice.pdf,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-27,Usecases Phase,"Programming, Data Storage and Retrieval",Step 2: Collecting Data,Unit 5: Mlops
+6,3,4/3/2025,1,DS095,Machine Learning 102,Lighting talk ,Explore the latest advancements in machine learning algorithms that enhance predictive accuracy and computational efficiency in 5 min talk,,"- Research recent advancements in machine learning algorithms.
+- Identify key features and innovations of new algorithms.
+- Understand how these advancements improve predictive accuracy.
+- Understand how these advancements enhance computational efficiency.
+- Practice public speaking and presentation skills
+- Distill thoughts to focus on main aspects
+- Improve Time Management
+- Learn from diverse topics and perspectives",Side_session,Session,,,,,Usecases Phase,"Soft Skills,
+Machine learning models","Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation",Unit 5: Mlops
+6,3,4/3/2025,2,DS115,Data Collection,Data Collecting - Web Scraping,"Learn the techniques of web scraping to programmatically collect data from websites, enabling the extraction of vast amounts of information from the internet.",,- Acquire the skills to use web scraping tools and libraries like Beautiful Soup,Main_session,Session,https://www.dropbox.com/scl/fi/u35chpslviqq6qe8j0r3q/DS115-Data-Collection-Web-Scrapping.paper?rlkey=yur0e9x6nkg4hrsdq5n8y06dh&st=iqr2p8wk&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-28/blob/main/DS115-_Data_Collection_%26_Web_Scrapping.pdf,Usecases Phase,"Programming, Data Storage and Retrieval",Step 2: Collecting Data,Unit 5: Mlops
+6,3,4/3/2025,3,DS116,Data Collection,Usecase 4.4,Students will apply the concepts and techniques they've learned in the main session to real-world problems,,"- Master basic to advanced SQL queries for data extraction, filtering, and aggregation.
+- Learn to join multiple tables and work with subqueries to collect comprehensive datasets for analysis.",Hands-on_Session,Practical exercise,https://www.dropbox.com/scl/fo/jnfddqvwpjgsro31a2qwd/AEU-Ena0z5I4tvMFTvVIYz0?rlkey=bkqnsihnvlfsy7heodvffvoes&st=zyoklxj0&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-4/blob/main/Usecase%20cards/Usecase_4_4.pdf,Usecases Phase,"Programming, Data Storage and Retrieval",Step 2: Collecting Data,Unit 5: Mlops
+6,3,4/3/2025,4,DS117,"Machine Learning 102, Data Collection",Usecase 8 - Project 5,Introduction to a project that applies scrapping tools to collect data to build unsupervised model,,"- Introduce the project's objective of using web scraping tools to gather data.
+- Explain the relevance of web scraping in collecting diverse datasets for unsupervised learning.
+- Outline the steps involved in scraping data and preparing it for model building.",Usecase - Project,Usecases,https://www.dropbox.com/scl/fo/bhtpupcaxt0o5m2tsxt8e/APs8P3zPxfMpZhpe4ID9wa4?rlkey=ti5tsmgviw84yj9ujvjl44ita&st=acugb5o5&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-8-Project-5/blob/main/Usecase_8_-_(Project_5).pdf,Usecases Phase,"Software engineering,
+Programming,
+Data Storage and Retrieval,
+Data Manipulation and Analysis (working with data),
+Statistics,
+Data visualization,
+Machine learning models","Step 1: Defining the Problem Statement,
+Step 2: Collecting Data,
+Step 3: Data Quality Checking and Remediation,
+Step 4: Exploratory Data Analysis,
+Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation,
+Step 7: Communicating Results,
+Step 8: Model Deployment",Unit 5: Mlops
+6,4,5/3/2025,1,DS095,Machine Learning 102,Lighting talk ,Explore the latest advancements in machine learning algorithms that enhance predictive accuracy and computational efficiency in 5 min talk,,"- Research recent advancements in machine learning algorithms.
+- Identify key features and innovations of new algorithms.
+- Understand how these advancements improve predictive accuracy.
+- Understand how these advancements enhance computational efficiency.
+- Practice public speaking and presentation skills
+- Distill thoughts to focus on main aspects
+- Improve Time Management
+- Learn from diverse topics and perspectives",Side_session,Session,,,,,Usecases Phase,"Soft Skills,
+Machine learning models","Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation",Unit 5: Mlops
+6,4,5/3/2025,2,DS114,MLOPS,Model Deployment,Explore the process of deploying machine learning models into production using FastAPI for backend services and Streamlit for interactive web interfaces.,,"- Implement a FastAPI service to serve machine learning models via RESTful APIs.
+- Create interactive web applications with Streamlit that interface with the deployed models.",Main_session,Session,"https://www.dropbox.com/scl/fi/7szimrq34cwtov8be6spu/DS114-Deployment-of-Machine-Learning-Model.paper?rlkey=i6el0tmichud6llwhfa6ciy8f&st=3mbetj5q&dl=0
+
+https://www.dropbox.com/scl/fi/ks5uwc8jbyvvxhdxi656b/DS114-FastAPI-Practise.paper?rlkey=3xcew5ttijy52o03902jlwweu&st=plow8qhh&dl=0
+
+https://www.dropbox.com/scl/fi/3qqjuh6pbt38abd3kiwic/DS114-Host-your-ML-application.paper?rlkey=ylbklv7h4mxtpot781l7z730u&st=qhje5b0j&dl=0
+
+https://www.dropbox.com/scl/fi/3du8o0qbdc3hr42o2kh8c/DS114-How-to-Request-API_.paper?rlkey=zudqsgmbkus44s4ny8uuajnsc&st=7yy3aoxw&dl=0",,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-29,Usecases Phase,Software engineering,Step 8: Model Deployment,Unit 5: Mlops
+6,4,5/3/2025,3,DS108,MLOPS,Usecase 4.3,Build FastAPI for our trained model,,"- Integrate a trained machine learning model into a FastAPI application.
+- Design and implement API endpoints for model inference and data input.
+- Validate input data and handle errors gracefully within the FastAPI framework.
+- Deploy the FastAPI application locally or on a cloud platform for testing.
+- Test the API endpoints using different input data to verify functionality and performance.",Usecase,Usecases,https://www.dropbox.com/scl/fo/7f3wb79tva65sc4h0rbr5/AN-cxnqZpazJceyhYcjzFmI?rlkey=swfqbuvgawi466r9r5h9bibg1&st=1wndu2as&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-4/blob/main/Usecase%20cards/Usecase_4_3.pdf,Usecases Phase,Software engineering,Step 8: Model Deployment,Unit 5: Mlops
+6,4,5/3/2025,4,DS109,MLOPS,Usecase 7.2 - Lab,Build FastAPI for our trained model,,"- Build a FastAPI application that integrates a pre-trained machine learning model.
+- Design API endpoints for model inference and data input using FastAPI.
+- Implement input validation and error handling within the FastAPI framework.
+- Deploy the FastAPI application on a local server or cloud platform.
+- Test the API endpoints with various input data to ensure functionality and performance.",Usecase - Lab,Usecases,https://www.dropbox.com/scl/fo/szjrv5lo1ucotsuximqam/ACShXvyK8G6MTxZE5vdpcMQ?rlkey=au8j61yl3me6c2n3a1k09k835&st=6tlh7rzw&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-7/blob/main/Usecase_7_2_-_(Lab).pdf,Usecases Phase,Software engineering,Step 8: Model Deployment,Unit 5: Mlops
+6,5,6/3/2025,1,DS095,Machine Learning 102,Lighting talk ,Explore the latest advancements in machine learning algorithms that enhance predictive accuracy and computational efficiency in 5 min talk,,"- Research recent advancements in machine learning algorithms.
+- Identify key features and innovations of new algorithms.
+- Understand how these advancements improve predictive accuracy.
+- Understand how these advancements enhance computational efficiency.
+- Practice public speaking and presentation skills
+- Distill thoughts to focus on main aspects
+- Improve Time Management
+- Learn from diverse topics and perspectives",Side_session,Session,,,,,Usecases Phase,"Soft Skills,
+Machine learning models","Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation",Unit 4: Machine Learning 102
+6,5,6/3/2025,2,DS121,Machine Learning 103,Intro to Time series,"Explore a statistical approach to analyze time-ordered data points to understand trends, cycles, and patterns over time.",,- Understand the unique characteristics of time series data and its applications.,Main_session,Session,https://www.dropbox.com/scl/fi/u7f7i333bwmkhx78b0qah/DS119-Introduction-to-Time-Series-Forecasting.paper?rlkey=jgsy9iuevvx6xmgfquldag7ym&st=cuoyuysl&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-30/blob/main/DS119-_Introduction_to_Time_Series_Forecasting.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 4: Machine Learning 102
+6,5,6/3/2025,3,DS122,Machine Learning 103,Usecase 9,,,,Usecase,Usecases,https://www.dropbox.com/scl/fo/48l0bepbk3rc9z7onpbgm/ALAnr5DQUbxrJnUNmE_qqCk?rlkey=wi7frzr64c5y0gksmmnkkflb0&st=xslltg99&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-9/blob/main/Usecase_9.pdf,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 4: Machine Learning 102
+7,1,9/3/2025,1,DS095,Machine Learning 103,Lighting talk ,Explore the latest advancements in machine learning algorithms that enhance predictive accuracy and computational efficiency in 5 min talk,,"- Research recent advancements in machine learning algorithms.
+- Identify key features and innovations of new algorithms.
+- Understand how these advancements improve predictive accuracy.
+- Understand how these advancements enhance computational efficiency.
+- Practice public speaking and presentation skills
+- Distill thoughts to focus on main aspects
+- Improve Time Management
+- Learn from diverse topics and perspectives
+",Side_session,Session,,,,,Usecases Phase,"Soft Skills,
+Machine learning models","Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation",Unit 4: Machine Learning 102
+7,1,9/3/2025,2,DS124,Deep Learning 101,Deep Learning Fundamental,"Gain a solid foundation in deep learning, exploring the neural networks that drive advancements in AI, from speech recognition to image classification.",,"- Comprehend the architecture and functioning of neural networks.
+- Acquire the knowledge to build and train basic deep learning models.",Main_session,Session,https://www.dropbox.com/scl/fi/zgotzsba6en8401qol8yj/DS124-Introduction-to-Neural-Networks.paper?rlkey=vr63h98rnu73a4t6s0lgg6o0z&st=r0ecljuc&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-31/blob/main/DS124-Introduction_to_Neural_Networks.pdf,Usecases Phase,Deep learning,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 4: Machine Learning 102
+7,1,9/3/2025,3,DS124,"Machine Learning 101, Machine Learning 102, MLOPS",Capstone Project,Exploring Capstone (Garduation Project) : What it is and how if function,,"- Define the concept of a Capstone (Graduation Project) and its purpose.
+- Explore the typical structure and components of a Capstone project.
+- Discuss the process of selecting and defining a Capstone project topic.
+- Explain the role of research, methodology, and implementation in a Capstone project.
+- Highlight the importance of presentation and evaluation in the completion of a Capstone project.",Usecase - Project,Usecases,https://www.dropbox.com/scl/fi/c9c687wbgtj4n8f7rfqfw/Capstone-Project.paper?rlkey=r723qi0aejcilnje2ki3jtg3d&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Capstone-Project,Usecases Phase,"Software engineering,
+Programming,
+Data Storage and Retrieval,
+Data Manipulation and Analysis (working with data),
+Statistics,
+Data visualization,
+Machine learning models","Step 1: Defining the Problem Statement,
+Step 2: Collecting Data,
+Step 3: Data Quality Checking and Remediation,
+Step 4: Exploratory Data Analysis,
+Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation,
+Step 7: Communicating Results,
+Step 8: Model Deployment",Unit 4: Machine Learning 102
+7,1,9/3/2025,4,DS116,Deep Learning 101,Usecase 4.4,conduct a hands-on to build a ANN model on real dataset,,"- Design and define the architecture of an Artificial Neural Network (ANN).
+- Split the dataset into training and testing sets.
+- Train the ANN model using appropriate optimization algorithms and loss functions.
+- Evaluate the model's performance on the test set using relevant metrics (e.g., accuracy, precision, recall).",Usecase,Usecases,https://www.dropbox.com/scl/fo/jnfddqvwpjgsro31a2qwd/AEU-Ena0z5I4tvMFTvVIYz0?rlkey=bkqnsihnvlfsy7heodvffvoes&st=twzkn4ti&dl=0,,,,Usecases Phase,Deep learning,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 4: Machine Learning 102
+7,2,10/3/2025,1,DS095,Machine Learning 102,Lighting talk ,Explore the latest advancements in machine learning algorithms that enhance predictive accuracy and computational efficiency in 5 min talk,,"- Research recent advancements in machine learning algorithms.
+- Identify key features and innovations of new algorithms.
+- Understand how these advancements improve predictive accuracy.
+- Understand how these advancements enhance computational efficiency.
+- Practice public speaking and presentation skills
+- Distill thoughts to focus on main aspects
+- Improve Time Management
+- Learn from diverse topics and perspectives",Side_session,Session,,,,,Usecases Phase,"Soft Skills,
+Machine learning models","Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation",Unit 4: Machine Learning 102
+7,2,10/3/2025,2,DS125,Deep Learning 101,Intro to Computer Vision,"Explore the realm of computer vision, where machines are taught to interpret and make decisions based on visual data, mimicking human vision.",,"- Grasp the principles behind image processing and visual data interpretation.
+- Implement basic computer vision tasks using tools and libraries such as OpenCV.",Main_session,Session,https://www.dropbox.com/scl/fi/cu468m8cc1o4bc0js49ix/DS125-Convolutional-Neural-Networks-CNN.paper?rlkey=o082ah509z9muxvam0szk88ll&st=lr4ptylo&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-32/blob/main/2-_Convolutional_Neural_Networks_(CNN).pdf,Usecases Phase,Computer vision,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 4: Machine Learning 102
+7,2,10/3/2025,3,DS126,Deep Learning 101,Usecase 10,,,"- Design and define the architecture of a Convolutional Neural Network (CNN).
+- Split the dataset into training and testing sets.
+- Train the CNN model using appropriate optimization algorithms and loss functions.
+- Evaluate the model's performance on the test set using relevant metrics (e.g., accuracy, confusion matrix).",Usecase,Usecases,https://www.dropbox.com/scl/fo/72llin2a3enbkadhnscbr/AIF8bD-mLr5QXu6qSJJt_-A?rlkey=zgbpf227cddgrpx7zf4zywcn2&st=9q6pyz2c&dl=0,,,,Usecases Phase,Computer vision,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 4: Machine Learning 102
+7,2,10/3/2025,4,,Career Couching ,Career Couching ,"Tailored reviews and enhancements for student resumes, ensuring they stand out in comming job evernt for Tuwaiq.",,"- Review student resumes to ensure they are tailored to specific job roles or industries.
+- Provide personalized feedback to enhance resume content, structure, and clarity.
+- Focus on highlighting key skills, experiences, and achievements relevant to the job event.
+- Optimize resume formatting to improve readability and visual appeal.
+- Empower students with strategies to effectively communicate their strengths and qualifications to potential employers.",Side_session,Session,,,,,Usecases Phase,"Soft Skills,
+Machine learning models","Step 1: Defining the Problem Statement,
+Step 2: Collecting Data,
+Step 3: Data Quality Checking and Remediation,
+Step 4: Exploratory Data Analysis,
+Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation,
+Step 7: Communicating Results,
+Step 8: Model Deployment",Unit 4: Machine Learning 102
+7,3,11/3/2025,1,DS095,Machine Learning 102,Lighting talk ,Explore the latest advancements in machine learning algorithms that enhance predictive accuracy and computational efficiency in 5 min talk,,"- Research recent advancements in machine learning algorithms.
+- Identify key features and innovations of new algorithms.
+- Understand how these advancements improve predictive accuracy.
+- Understand how these advancements enhance computational efficiency.
+- Practice public speaking and presentation skills
+- Distill thoughts to focus on main aspects
+- Improve Time Management
+- Learn from diverse topics and perspectives",Side_session,Session,,,,,Usecases Phase,"Soft Skills,
+Machine learning models","Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation",Unit 4: Machine Learning 102
+7,3,11/3/2025,4,,,Capstone Ideas Discussion,,,,Usecase,Usecases,,,,,Usecases Phase,"Software engineering,
+Programming,
+Data Storage and Retrieval,
+Data Manipulation and Analysis (working with data),
+Statistics,
+Data visualization,
+Machine learning models","Step 1: Defining the Problem Statement,
+Step 2: Collecting Data,
+Step 3: Data Quality Checking and Remediation,
+Step 4: Exploratory Data Analysis,
+Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation,
+Step 7: Communicating Results,
+Step 8: Model Deployment",Unit 4: Machine Learning 102
+7,3,11/3/2025,5,,Dish Party 🎊 🥳 🎉 🪅 🎈 ,Engagement Content,Dish Party 🎊 🥳 🎉 🪅 🎈 ,,Penguin Activity,Penguin Activity,Activity,,,,,Usecases Phase,-,-,Unit 4: Machine Learning 102
+7,4,12/3/2025,1,DS095,Machine Learning 102,Lighting talk ,Explore the latest advancements in machine learning algorithms that enhance predictive accuracy and computational efficiency in 5 min talk,,"- Research recent advancements in machine learning algorithms.
+- Identify key features and innovations of new algorithms.
+- Understand how these advancements improve predictive accuracy.
+- Understand how these advancements enhance computational efficiency.
+- Practice public speaking and presentation skills
+- Distill thoughts to focus on main aspects
+- Improve Time Management
+- Learn from diverse topics and perspectives",Side_session,Session,,,,,Usecases Phase,"Soft Skills,
+Machine learning models","Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation",Unit 4: Machine Learning 102
+7,4,12/3/2025,2,DS127,Deep Learning 101,Intro to Natural Language Processing (NLP),"Discover the field of NLP, which enables machines to understand and interpret human language, opening up a myriad of applications in AI.",,"- Understand the core concepts and challenges of NLP.
+- Learn to apply common NLP techniques to process and analyze text data.",Main_session,Session,https://www.dropbox.com/scl/fi/bg3e9iil2zg6rub2rpqzw/DS127-Natural-Language-Processing-NLP.paper?rlkey=ee5quloym5akdpesh6bt8zzg6&st=4er6hnl2&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Day-34/blob/main/3-_Natural_Language_Processing_(NLP).pdf,Usecases Phase,Natural language processing,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 4: Machine Learning 102
+7,4,12/3/2025,3,DS128,Deep Learning 101,Usecase 11,,,,Usecase,Usecases,https://www.dropbox.com/scl/fo/qs09468m2vf26v64qy9yt/AAFm949l8A4hdwVHAMkOEAs?rlkey=sz0x8jqxndzvot4tdz1jwbe94&st=bqaql7n6&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-11,Usecases Phase,Natural language processing,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",Unit 4: Machine Learning 102
+7,4,12/3/2025,4,DS117,Machine Learning 102,Usecase 8 - Project 5,Project Review: Each team will present for 10 minutes.,,,Usecase - Project,Usecases,https://www.dropbox.com/scl/fo/bhtpupcaxt0o5m2tsxt8e/APs8P3zPxfMpZhpe4ID9wa4?rlkey=ti5tsmgviw84yj9ujvjl44ita&st=mf7p12c7&dl=0,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-8/Usecase-8-Project-5/blob/main/Usecase_8_-_(Project_5).pdf,Usecases Phase,"Statistics , Data visualization, Data Manipulation and Analysis (working with data)","Step 1: Defining the Problem Statement, Step 3: Data Quality Checking and Remediation, Step 4: Exploratory Data Analysis, Step 7: Communicating Results",Unit 4: Machine Learning 102
+7,4,12/3/2025,5,,,Capstone Ideas Discussion,,,,Usecase,Usecases,,,,,Usecases Phase,"Software engineering,
+Programming,
+Data Storage and Retrieval,
+Data Manipulation and Analysis (working with data),
+Statistics,
+Data visualization,
+Machine learning models","Step 1: Defining the Problem Statement,
+Step 2: Collecting Data,
+Step 3: Data Quality Checking and Remediation,
+Step 4: Exploratory Data Analysis,
+Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation,
+Step 7: Communicating Results,
+Step 8: Model Deployment",Unit 4: Machine Learning 102
+7,5,13/3/2025,1,DS095,Machine Learning 102,Lighting talk ,Explore the latest advancements in machine learning algorithms that enhance predictive accuracy and computational efficiency in 5 min talk,,"- Research recent advancements in machine learning algorithms.
+- Identify key features and innovations of new algorithms.
+- Understand how these advancements improve predictive accuracy.
+- Understand how these advancements enhance computational efficiency.
+- Practice public speaking and presentation skills
+- Distill thoughts to focus on main aspects
+- Improve Time Management
+- Learn from diverse topics and perspectives",Side_session,Session,,,,,Usecases Phase,"Soft Skills,
+Machine learning models","Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation",
+7,5,13/3/2025,2,,,Capstone Ideas Discussion,,,,Usecase,Usecases,,,,,Usecases Phase,"Software engineering,
+Programming,
+Data Storage and Retrieval,
+Data Manipulation and Analysis (working with data),
+Statistics,
+Data visualization,
+Machine learning models","Step 1: Defining the Problem Statement,
+Step 2: Collecting Data,
+Step 3: Data Quality Checking and Remediation,
+Step 4: Exploratory Data Analysis,
+Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation,
+Step 7: Communicating Results,
+Step 8: Model Deployment",
+7,5,13/3/2025,3,,Career Couching ,Career Couching ,"Tailored reviews and enhancements for student resumes, ensuring they stand out in comming job evernt for Tuwaiq.",,"- Review student resumes to ensure they are tailored to specific job roles or industries.
+- Provide personalized feedback to enhance resume content, structure, and clarity.
+- Focus on highlighting key skills, experiences, and achievements relevant to the job event.
+- Optimize resume formatting to improve readability and visual appeal.
+- Empower students with strategies to effectively communicate their strengths and qualifications to potential employers.",Side_session,Session,,,,,Usecases Phase,"Soft Skills,
+Machine learning models","Step 1: Defining the Problem Statement,
+Step 2: Collecting Data,
+Step 3: Data Quality Checking and Remediation,
+Step 4: Exploratory Data Analysis,
+Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation,
+Step 7: Communicating Results,
+Step 8: Model Deployment",
+7,5,13/3/2025,4,DS123,"Machine Learning 101, Machine Learning 102, MLOPS",Capstone Project,Working on the graduatuin (Final) project,,,Usecase,Usecases,,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-6/Capstone-Project/blob/main/Capstone_Project.pdf,Usecases Phase,"Software engineering,
+Programming,
+Data Storage and Retrieval,
+Data Manipulation and Analysis (working with data),
+Statistics,
+Data visualization,
+Machine learning models","Step 1: Defining the Problem Statement,
+Step 2: Collecting Data,
+Step 3: Data Quality Checking and Remediation,
+Step 4: Exploratory Data Analysis,
+Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation,
+Step 7: Communicating Results,
+Step 8: Model Deployment",
+8,1,16/3/2025,1,DS095,Machine Learning 102,Lighting talk ,Explore the latest advancements in machine learning algorithms that enhance predictive accuracy and computational efficiency in 5 min talk,,"- Research recent advancements in machine learning algorithms.
+- Identify key features and innovations of new algorithms.
+- Understand how these advancements improve predictive accuracy.
+- Understand how these advancements enhance computational efficiency.
+- Practice public speaking and presentation skills
+- Distill thoughts to focus on main aspects
+- Improve Time Management
+- Learn from diverse topics and perspectives",Side_session,Session,,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-6/Lightning-talk/blob/main/Lightning_Talks_for_Data_Science.pdf,Usecases Phase,"Soft Skills,
+Machine learning models","Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation",
+8,1,16/3/2025,2,DS123,"Machine Learning 101, Machine Learning 102, MLOPS",Capstone Project,Working on the graduatuin (Final) project,,,Usecase,Usecases,,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-6/Capstone-Project/blob/main/Capstone_Project.pdf,Usecases Phase,"Software engineering,
+Programming,
+Data Storage and Retrieval,
+Data Manipulation and Analysis (working with data),
+Statistics,
+Data visualization,
+Machine learning models","Step 1: Defining the Problem Statement,
+Step 2: Collecting Data,
+Step 3: Data Quality Checking and Remediation,
+Step 4: Exploratory Data Analysis,
+Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation,
+Step 7: Communicating Results,
+Step 8: Model Deployment",
+8,1,16/3/2025,3,,,Real-World Insights from a Data Science Expert,Behind the Data: Real-World Insights from a Data Science Expert,"A session with a distinguished data science expert, who will share their firsthand experiences and insights from their career in the field. This talk is designed to bridge the gap between theoretical knowledge and practical application","- Understand how data science drives decisions and innovation in various sectors such as finance, healthcare, and technology.
+- Dive into the most commonly used data science concepts and tools that are essential for tackling day-to-day challenges in the field.
+- Learn about effective data collection, processing, and analysis strategies that lead to successful outcomes in complex projects.
+- Gain valuable advice on building a successful career in data science, including tips on essential skills, continuing education, and industry trends.",Side_session,Session,,,,,Usecases Phase,Machine learning models,"Step 5:  Building Machine Learning Models, Step 6: Model Evaluation",
+8,2,17/3/2025,1,DS095,Machine Learning 102,Lighting talk ,Explore the latest advancements in machine learning algorithms that enhance predictive accuracy and computational efficiency in 5 min talk,,"- Research recent advancements in machine learning algorithms.
+- Identify key features and innovations of new algorithms.
+- Understand how these advancements improve predictive accuracy.
+- Understand how these advancements enhance computational efficiency.
+- Practice public speaking and presentation skills
+- Distill thoughts to focus on main aspects
+- Improve Time Management
+- Learn from diverse topics and perspectives",Side_session,Session,,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-6/Lightning-talk/blob/main/Lightning_Talks_for_Data_Science.pdf,Usecases Phase,"Soft Skills,
+Machine learning models","Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation",
+8,2,17/3/2025,2,DS123,"Machine Learning 101, Machine Learning 102, MLOPS",Capstone Project,Working on the graduatuin (Final) project,,,Usecase,Usecases,,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-6/Capstone-Project/blob/main/Capstone_Project.pdf,Usecases Phase,"Software engineering,
+Programming,
+Data Storage and Retrieval,
+Data Manipulation and Analysis (working with data),
+Statistics,
+Data visualization,
+Machine learning models","Step 1: Defining the Problem Statement,
+Step 2: Collecting Data,
+Step 3: Data Quality Checking and Remediation,
+Step 4: Exploratory Data Analysis,
+Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation,
+Step 7: Communicating Results,
+Step 8: Model Deployment",
+8,2,17/3/2025,3,,Career Couching ,Career Couching ,"Tailored reviews and enhancements for student resumes, ensuring they stand out in comming job evernt for Tuwaiq.",,"- Review student resumes to ensure they are tailored to specific job roles or industries.
+- Provide personalized feedback to enhance resume content, structure, and clarity.
+- Focus on highlighting key skills, experiences, and achievements relevant to the job event.
+- Optimize resume formatting to improve readability and visual appeal.
+- Empower students with strategies to effectively communicate their strengths and qualifications to potential employers.",Side_session,Session,,,,,Usecases Phase,"Soft Skills,
+Machine learning models","Step 1: Defining the Problem Statement,
+Step 2: Collecting Data,
+Step 3: Data Quality Checking and Remediation,
+Step 4: Exploratory Data Analysis,
+Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation,
+Step 7: Communicating Results,
+Step 8: Model Deployment",
+8,3,18/3/2025,1,DS123,"Machine Learning 101, Machine Learning 102, MLOPS",Capstone Project,Working on the graduatuin (Final) project,,,Usecase,Usecases,,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-6/Capstone-Project/blob/main/Capstone_Project.pdf,Usecases Phase,"Software engineering,
+Programming,
+Data Storage and Retrieval,
+Data Manipulation and Analysis (working with data),
+Statistics,
+Data visualization,
+Machine learning models","Step 1: Defining the Problem Statement,
+Step 2: Collecting Data,
+Step 3: Data Quality Checking and Remediation,
+Step 4: Exploratory Data Analysis,
+Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation,
+Step 7: Communicating Results,
+Step 8: Model Deployment",
+8,4,19/3/2025,1,DS123,"Machine Learning 101, Machine Learning 102, MLOPS",Capstone Project,Working on the graduatuin (Final) project,,,Usecase,Usecases,,,,https://github.com/Tuwaiq-DS-ML-bootcamp-V-6/Capstone-Project/blob/main/Capstone_Project.pdf,Usecases Phase,"Software engineering,
+Programming,
+Data Storage and Retrieval,
+Data Manipulation and Analysis (working with data),
+Statistics,
+Data visualization,
+Machine learning models","Step 1: Defining the Problem Statement,
+Step 2: Collecting Data,
+Step 3: Data Quality Checking and Remediation,
+Step 4: Exploratory Data Analysis,
+Step 5:  Building Machine Learning Models,
+Step 6: Model Evaluation,
+Step 7: Communicating Results,
+Step 8: Model Deployment",

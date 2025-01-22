@@ -98,7 +98,7 @@ def get_champion():
 
     
     st.write( """### Our Champions Are:""")
-    _, im_col, _ = st.columns([0.3, 0.4, 0.3])
+    _, im_col, _ = st.columns([0.15, 0.7, 0.15])
     with im_col:
         st.data_editor(
         all_df,

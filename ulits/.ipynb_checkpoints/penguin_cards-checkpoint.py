@@ -75,17 +75,17 @@ def get_cards():
     # Initialize session state for flip state of each card
     if "flipped_cards" not in st.session_state:
         st.session_state.flipped_cards = [i=="1" for i in list(df_cards['Status'])]  # 7 unique cards
-    st.write(list(df_cards['Name']))
-    st.write(list(df_cards['Week num']))
+
     st.markdown(flip_css, unsafe_allow_html=True)
 
+    front_lst = list(df_cards['Week num'])
+    back_lst = list(df_cards['Name'])
+    text_index = 0
     # Display up to 3 Cards per Row
+    
     for row in range(0, 7, 3):  # 3 cards per row
         cols = st.columns(min(3, 7 - row))  # Ensures the last row has the correct number of cards
-        front_lst = list(df_cards['Week num'])
-        back_lst = list(df_cards['Name'])
-        for i , f, b in zip(range(min(3, 7 - row)), front_lst , back_lst ):
-            st.write(f,b)
+        for i in range(min(3, 7 - row)):
             index = row + i
             flip_class = "flipped" if st.session_state.flipped_cards[index] else ""
     
@@ -98,8 +98,9 @@ def get_cards():
                                 <img src='https://i.ibb.co/fHr4Qdb/Penguin-of-the-week-back-1-removebg-preview.png' alt='Card Image'>
                             </div>
                             <div class="flip-card-back"></div>
-                            {b}
+                            {back_lst[text_index]}
                         </div>
                     </div>
                 </div>
                 """, unsafe_allow_html=True)
+        text_index += 1

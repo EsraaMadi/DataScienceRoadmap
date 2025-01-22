@@ -113,7 +113,6 @@ def _draw_groups(time, groups):
         if week_no < i[0][0]:
             week_no = i[0][0]
             phase = i[0][3]
-            unit = i[0][4]
             if time == 0:
                 st.warning(f'## Week {week_no} 🗓 - {phase}')
             elif time == 1:
@@ -187,5 +186,5 @@ def get_roadmap_page():
     st.image("ulits/images/map.png")
     
     roadmap_df = _get_raw_roadmap()
-    st.dataframe(roadmap_df.groupby(['#Week', '#Day', 'Date', 'Phase', 'Unit']).sum())
+    #st.dataframe(roadmap_df.groupby(['#Week', '#Day', 'Date', 'Phase', 'Unit']).sum())
     _draw_agenda(roadmap_df)

@@ -120,7 +120,7 @@ def _draw_groups(time, groups):
             else:
                 st.info(f'## Week {week_no} 🗓 - {phase}')
         st.subheader(f'Day {i[0][1]} : {_format_date(i[0][2])}')
-        if day_agenda_df["Unit"]:
+        if day_agenda_df["Unit"].shape[0] > 0:
             unit = day_agenda_df["Unit"][0]
         st.caption(f" :blue[{unit}] :sunglasses:")
         item_count = 1

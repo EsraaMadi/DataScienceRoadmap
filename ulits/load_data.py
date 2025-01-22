@@ -76,7 +76,7 @@ def load_champian():
     # Store the DataFrame in a dictionary with the worksheet title as the key
     dataframes[week_sheet.title] = df
 
-    all_df = pd.DataFrame(all_weeks_data)
+    all_df = pd.DataFrame(all_weeks_data[1:], columns=all_weeks_data[0])
         
     return dataframes, all_df
 

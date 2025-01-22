@@ -11,7 +11,7 @@ def _get_raw_card():
 df_cards = _get_raw_card()
 # Initialize session state for flip state of each card
 if "flipped_cards" not in st.session_state:
-    st.session_state.flipped_cards = [True if i else 0 for i in list(df_cards['Status'])]  # 7 unique cards
+    st.session_state.flipped_cards = [i==1 for i in list(df_cards['Status'])]  # 7 unique cards
 
 # Function to toggle flip state for a specific card
 def flip_card(index):

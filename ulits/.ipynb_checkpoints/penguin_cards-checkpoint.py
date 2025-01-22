@@ -1,6 +1,13 @@
 import streamlit as st
 import ulits.load_data as ld
 
+
+@st.cache_data(show_spinner="Fetching roadmap...")
+def _get_raw_card():
+    df = ld.load_esraa_cards()
+    return df
+
+
 df_cards = _get_raw_card()
 # Initialize session state for flip state of each card
 if "flipped_cards" not in st.session_state:
@@ -11,10 +18,7 @@ def flip_card(index):
     st.session_state.flipped_cards[index] = not st.session_state.flipped_cards[index]
 
 
-@st.cache_data(show_spinner="Fetching roadmap...")
-def _get_raw_card():
-    df = ld.load_esraa_cards()
-    return df
+
 
 
 # CSS for flip effect and styling

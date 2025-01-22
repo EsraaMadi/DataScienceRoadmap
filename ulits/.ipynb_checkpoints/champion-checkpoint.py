@@ -80,14 +80,16 @@ def get_champion():
     
     # first section
     st.write( """### Based on:""")
-    row_col_no = len(df_students.columns[1:])/2
-    cols_row1 = st.columns(math.ceil(row_col_no))
-    cols_row2 = st.columns(math.floor(row_col_no))
+    cols_row1 = st.columns(3)
+    cols_row2 = st.columns(3)
+    cols_row3 = st.columns(3)
                            
     display_matrices = _get_materic(df_students.columns[1:])
     for c, i in zip(cols_row1,display_matrices):
         c.markdown(f"{i}", unsafe_allow_html=True)
     for c, i in zip(cols_row2,display_matrices[len(cols_row1):]):
+        c.markdown(f"{i}", unsafe_allow_html=True)
+    for c, i in zip(cols_row3,display_matrices[len(cols_row1)+len(cols_row2):]):
         c.markdown(f"{i}", unsafe_allow_html=True)
         
     #st.markdown('#')

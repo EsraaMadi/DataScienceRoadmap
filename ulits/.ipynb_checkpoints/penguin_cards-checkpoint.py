@@ -50,8 +50,13 @@ flip_css = """
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 14px;
+        font-size: 20px; /* Smaller Font */
+        font-family: 'Tajawal', sans-serif; /* Arabic Font */
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 10px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
     }
     .flip-card-front {
         background: #d8d9da;

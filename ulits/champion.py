@@ -90,10 +90,10 @@ def get_champion():
     for c, i in zip(cols_row2,display_matrices[len(cols_row1):]):
         c.markdown(f"{i}", unsafe_allow_html=True)
         
-    st.markdown('#')
+    #st.markdown('#')
     st.markdown('#')
     st.markdown("""---""")
-    st.markdown('#')
+    #st.markdown('#')
     st.markdown('#')
 
     st.write( """### Our Champions Are:""")
@@ -105,7 +105,12 @@ def get_champion():
         )
     },
         hide_index=True, use_container_width=True)
-        
+
+    st.markdown('#')
+    st.markdown('#')
+    st.markdown("""---""")
+    st.markdown('#')
+    st.markdown('#')
     
     if df_students.shape[0] > 0 :
     

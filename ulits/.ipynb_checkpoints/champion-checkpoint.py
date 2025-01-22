@@ -127,7 +127,7 @@ def get_champion():
             "Week Champion", help="Streamlit app preview screenshots", width="medium"
         )
     },
-        hide_index=True)
+        hide_index=True, use_container_width=True)
         
     
     if df_students.shape[0] > 0 :

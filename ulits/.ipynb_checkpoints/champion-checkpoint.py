@@ -121,13 +121,13 @@ def get_champion():
 
     # st.dataframe(all_df)
     st.data_editor(
-    all_df[['Rank']],
+    all_df,
     column_config={
         "Rank": st.column_config.ImageColumn(
-            "Preview Image", help="Streamlit app preview screenshots"
+            "Week Champion", help="Streamlit app preview screenshots"
         )
     },
-        hide_index=True,)
+        hide_index=True, width="medium")
         
     
     if df_students.shape[0] > 0 :

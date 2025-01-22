@@ -75,9 +75,7 @@ def get_cards():
     # Initialize session state for flip state of each card
     if "flipped_cards" not in st.session_state:
         st.session_state.flipped_cards = [i==1 for i in list(df_cards['Status'])]  # 7 unique cards
-    print(st.session_state.flipped_cards)
-    print("-----")
-
+    st.write([i==1 for i in list(df_cards['Status'])])
     st.markdown(flip_css, unsafe_allow_html=True)
 
     # Display up to 3 Cards per Row
@@ -96,7 +94,6 @@ def get_cards():
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <img src='https://i.ibb.co/fHr4Qdb/Penguin-of-the-week-back-1-removebg-preview.png' alt='Card Image'>
-                                {f}
                             </div>
                             <div class="flip-card-back"></div>
                             {b}

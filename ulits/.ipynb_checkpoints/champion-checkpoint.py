@@ -36,8 +36,8 @@ MATRIC_EMOJI = {
     'Week Activity': "🦋",
     "Hackerrank": "🌚",
     "Career Coach": "👭🏻",
-    "Clean Code": "☂️",
-    "Best Submit": "🏄🏻‍♂️",
+    "Active / initiative score": "☂️",
+    "Best Code": "🏄🏻‍♂️",
     "Help Others": "🧗🏻‍♀️",
 }
 

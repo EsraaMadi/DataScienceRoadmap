@@ -123,7 +123,7 @@ def _draw_groups(time, groups):
         if day_agenda_df["Unit"].shape[0] > 0:
             print(day_agenda_df["Unit"])
             print("-----")
-            unit = day_agenda_df["Unit"][0]
+            unit = day_agenda_df["Unit"].iloc[0]
         st.caption(f" :blue[{unit}] :sunglasses:")
         item_count = 1
         for index, row in day_agenda_df.iterrows():

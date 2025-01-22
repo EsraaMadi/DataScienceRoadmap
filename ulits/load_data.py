@@ -57,6 +57,7 @@ def load_champian():
 
     max_week_no = 0
     week_sheet = ''
+    all_weeks_data = []
     for worksheet in sheet.worksheets():
         if 'temp' in worksheet.title and max_week_no == 0:
             week_sheet = worksheet
@@ -65,6 +66,8 @@ def load_champian():
             if week_number > max_week_no:
                 max_week_no = week_number
                 week_sheet = worksheet
+        if worksheet.title == 'Champions':
+            all_weeks_data = worksheet.get_all_values()
 
     data = week_sheet.get_all_values()
     headers = data[10]      
@@ -72,8 +75,10 @@ def load_champian():
     df = pd.DataFrame(data, columns=headers[1:])
     # Store the DataFrame in a dictionary with the worksheet title as the key
     dataframes[week_sheet.title] = df
+
+    all_df = pd.DataFrame(all_weeks_data)
         
-    return dataframes
+    return dataframes, all_df
 
 
 def _clean_df(df):

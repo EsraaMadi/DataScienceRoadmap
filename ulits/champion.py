@@ -18,8 +18,8 @@ from datetime import datetime
 
 @st.cache_data(show_spinner="Fetching roadmap...")
 def _get_raw_chanpion():
-    df_lst = ld.load_champian()
-    return df_lst
+    df_lst, all_df = ld.load_champian()
+    return df_lst, all_df
 
 MATRIC_COLORS = {
     "Interactive Activity": "rgba(103, 36, 222, 0.2)",
@@ -72,7 +72,9 @@ def get_champion():
     st.markdown('#')
     
     # Get dictionery of each week
-    df_dict = _get_raw_chanpion()
+    df_dict, all_df = _get_raw_chanpion()
+
+    st.dataframe(all_df)
     
     # aggregate all weeks data in one datafram
     df_students = ld.get_champions(df_dict)

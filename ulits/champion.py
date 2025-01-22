@@ -96,15 +96,18 @@ def get_champion():
     #st.markdown('#')
     st.markdown('#')
 
+    
     st.write( """### Our Champions Are:""")
-    st.data_editor(
-    all_df,
-    column_config={
-        "Rank": st.column_config.ImageColumn(
-            "Week Champion", help="Streamlit app preview screenshots", width="medium"
-        )
-    },
-        hide_index=True, use_container_width=True)
+    _, im_col, _ = st.columns([0.15, 0.7, 0.15])
+    with im_col:
+        st.data_editor(
+        all_df,
+        column_config={
+            "Rank": st.column_config.ImageColumn(
+                "Week Champion", help="Streamlit app preview screenshots", width="small"
+            )
+        },
+            hide_index=True, use_container_width=True)
 
     st.markdown('#')
     st.markdown('#')

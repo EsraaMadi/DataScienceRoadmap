@@ -119,7 +119,9 @@ def _draw_groups(time, groups):
                 st.success(f'## Week {week_no} 🗓 - {phase}')
             else:
                 st.info(f'## Week {week_no} 🗓 - {phase}')
-        st.subheader(f'Day {i[0][1]} : {_format_date(i[0][2])} - ({day_agenda_df["Unit"]})')
+        st.subheader(f'Day {i[0][1]} : {_format_date(i[0][2])}')
+        unit = {day_agenda_df["Unit"]}
+        st.caption(f" :blue[{unit}] :sunglasses:")
         item_count = 1
         for index, row in day_agenda_df.iterrows():
             st.write("")

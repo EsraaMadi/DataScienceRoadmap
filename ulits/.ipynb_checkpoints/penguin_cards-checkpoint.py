@@ -86,6 +86,7 @@ def get_cards():
 
     front_lst = list(df_cards['Week num'])
     back_lst = list(df_cards['Name'])
+    back_lst = [i if len(i)>0 else " " for i in back_lst]
     text_index = 0
     # Display up to 3 Cards per Row
     

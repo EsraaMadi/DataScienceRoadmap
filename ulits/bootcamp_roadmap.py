@@ -62,7 +62,7 @@ def get_week_no(date):
 # @st.cache_data(show_spinner="Fetching roadmap...")
 def _get_raw_roadmap():
     df = ld.load_roadmap('Bootcamp Jan 2025 - TOC')
-    df['Date'] = pd.to_datetime(df['Date'], format='%d/%m/%Y')
+    df['Date'] = pd.to_datetime(df['Date'])
     return df
 
 def _get_item_tag(name):

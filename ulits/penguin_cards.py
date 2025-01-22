@@ -2,7 +2,7 @@ import streamlit as st
 import ulits.load_data as ld
 
 
-@st.cache_data(show_spinner="Fetching roadmap...")
+#@st.cache_data(show_spinner="Fetching roadmap...")
 def _get_raw_card():
     df = ld.load_esraa_cards()
     return df

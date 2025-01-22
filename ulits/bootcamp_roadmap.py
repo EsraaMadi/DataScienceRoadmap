@@ -62,7 +62,7 @@ def get_week_no(date):
 # @st.cache_data(show_spinner="Fetching roadmap...")
 def _get_raw_roadmap():
     df = ld.load_roadmap('Bootcamp Jan 2025 - TOC')
-    df['Date'] = pd.to_datetime(df['Date'])
+    #df['Date'] = pd.to_datetime(df['Date'])
     return df
 
 def _get_item_tag(name):
@@ -187,5 +187,5 @@ def get_roadmap_page():
     st.image("ulits/images/map.png")
     
     roadmap_df = _get_raw_roadmap()
-    st.dataframe(roadmap_df.groupby(['#Week', '#Day', 'Date', 'Phase', 'Unit']))
+    #st.dataframe(roadmap_df.groupby(['#Week', '#Day', 'Date', 'Phase', 'Unit']))
     _draw_agenda(roadmap_df)

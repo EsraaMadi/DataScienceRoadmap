@@ -1,4 +1,5 @@
 import streamlit as st
+import ulits.load_data as ld
 
 # Initialize session state for flip state of each card
 if "flipped_cards" not in st.session_state:
@@ -7,6 +8,13 @@ if "flipped_cards" not in st.session_state:
 # Function to toggle flip state for a specific card
 def flip_card(index):
     st.session_state.flipped_cards[index] = not st.session_state.flipped_cards[index]
+
+
+@st.cache_data(show_spinner="Fetching roadmap...")
+def _get_raw_card():
+    df = ld.load_esraa_cards()
+    return df
+
 
 # CSS for flip effect and styling
 flip_css = """
@@ -61,30 +69,29 @@ flip_css = """
     }
 </style>
 """
-st.markdown(flip_css, unsafe_allow_html=True)
 
-# Display up to 3 Cards per Row
-for row in range(0, 7, 3):  # 3 cards per row
-    cols = st.columns(min(3, 7 - row))  # Ensures the last row has the correct number of cards
-    for i in range(min(3, 7 - row)):
-        index = row + i
-        flip_class = "flipped" if st.session_state.flipped_cards[index] else ""
+def get_cards():
 
-        with cols[i]:
-            st.markdown(f"""
-            <div class="flip-card-container">
-                <div class="flip-card {flip_class}">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src='https://i.ibb.co/fHr4Qdb/Penguin-of-the-week-back-1-removebg-preview.png' alt='Card Image'>
+    st.dataframe(_get_raw_card())
+    st.markdown(flip_css, unsafe_allow_html=True)
+    
+    # Display up to 3 Cards per Row
+    for row in range(0, 7, 3):  # 3 cards per row
+        cols = st.columns(min(3, 7 - row))  # Ensures the last row has the correct number of cards
+        for i in range(min(3, 7 - row)):
+            index = row + i
+            flip_class = "flipped" if st.session_state.flipped_cards[index] else ""
+    
+            with cols[i]:
+                st.markdown(f"""
+                <div class="flip-card-container">
+                    <div class="flip-card {flip_class}">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src='https://i.ibb.co/fHr4Qdb/Penguin-of-the-week-back-1-removebg-preview.png' alt='Card Image'>
+                            </div>
+                            <div class="flip-card-back"></div>
                         </div>
-                        <div class="flip-card-back"></div>
                     </div>
                 </div>
-            </div>
-            """, unsafe_allow_html=True)
-
-            # Button to flip the card
-            if st.button(f"🧊 Flip Card {index+1} 🧊", key=f"btn_{index}"):
-                flip_card(index)
-                st.rerun()  # Forces UI update to reflect state changes
+                """, unsafe_allow_html=True)

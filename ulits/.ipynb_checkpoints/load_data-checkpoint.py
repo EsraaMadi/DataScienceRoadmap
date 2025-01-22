@@ -138,5 +138,17 @@ def load_students_names():
             student_names = [[row[0], row[1]] for row in data if len(row[0]) > 0]
             return student_names[1:]
 
+def load_esraa_cards():
+    # Open the spreadhseet
+    sheet = client.open_by_key('17g5TBpzzU5qboHF3UeF4KjH3P6Sd4E4_-Emm8wRkaBc')
+    
+    df = []
+    for worksheet in sheet.worksheets():
+        if worksheet.title == 'Esraa Privilege cards':
+            df = worksheet.get_all_values()
+
+    df = pd.DataFrame(df[1:], columns=df[0])
+        
+    return df
 
     

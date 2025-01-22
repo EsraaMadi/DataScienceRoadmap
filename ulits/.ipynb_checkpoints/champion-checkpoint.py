@@ -121,7 +121,7 @@ def get_champion():
 
     #st.dataframe(all_df)
     st.data_editor(
-    all_df,
+    all_df[['Rank']],
     column_config={
         "Rank": st.column_config.ImageColumn(
             "Preview Image", help="Streamlit app preview screenshots"

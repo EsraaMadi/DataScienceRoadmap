@@ -1,5 +1,6 @@
 import streamlit as st
 import ulits.champion as uc
+import ulits.penguin_cards as pc
 
 
 st.set_page_config(page_title='DS Bootcamp',layout='wide', page_icon="ulits/images/Logos_Colored.png")
@@ -26,4 +27,4 @@ with tab_champion:
     uc.get_champion()
 
 with tab_penguin:
-    pass
+    pc.get_cards()

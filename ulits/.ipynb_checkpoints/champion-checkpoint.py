@@ -96,7 +96,7 @@ def get_champion():
     st.markdown('#')
     st.markdown('#')
 
-    st.dataframe(all_df)
+    #st.dataframe(all_df)
     st.data_editor(
     all_df,
     column_config={

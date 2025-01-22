@@ -187,5 +187,5 @@ def get_roadmap_page():
     st.image("ulits/images/map.png")
     
     roadmap_df = _get_raw_roadmap()
-    roadmap_df.groupby(['#Week', '#Day', 'Date', 'Phase', 'Unit'])
+    st.write(list(roadmap_df.groupby(['#Week', '#Day', 'Date', 'Phase', 'Unit'])))
     _draw_agenda(roadmap_df)

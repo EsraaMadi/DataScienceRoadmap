@@ -50,31 +50,46 @@ flip_css = """
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 20px; /* Smaller Font */
-        font-family: 'Tajawal', sans-serif; /* Arabic Font */
-        font-weight: bold;
-        border-radius: 10px;
-        padding: 10px;
+        border-radius: 14px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-        text-align: center;
+        top: 0;
+        left: 0;
     }
     .flip-card-front {
         background: #d8d9da;
+        position: absolute;
+        overflow: hidden;
     }
     .flip-card-front img {
-        width: 100%; /* Adjusted to fit the card */
+        width: 100%;
         height: 100%;
-        object-fit: cover; /* Ensures image covers the entire card */
+        object-fit: cover;
         border-radius: 12px;
     }
+    .flip-card-front .overlay-text {
+    position: absolute;
+    bottom: 10%; /* Adjust as needed for spacing from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    }
+
     .flip-card-back {
         background: #d8d9da;
         transform: rotateY(180deg);
-        color: black;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+        padding: 10px;
     }
 </style>
-"""
 
+"""
 def get_cards():
 
     df_cards = _get_raw_card()
@@ -84,31 +99,31 @@ def get_cards():
 
     st.markdown(flip_css, unsafe_allow_html=True)
 
-    front_lst = list(df_cards['Week num'])
-    back_lst = list(df_cards['Name'])
-    back_lst = [i if len(i)>0 else " " for i in back_lst]
-    text_index = 0
+    card_numbers = list(df_cards['Week num'])
+    card_texts = list(df_cards['Name'])
+    card_texts = [i if len(i)>0 else " " for i in back_lst]
     # Display up to 3 Cards per Row
     
-    for row in range(0, 7, 3):  # 3 cards per row
-        cols = st.columns(min(3, 7 - row))  # Ensures the last row has the correct number of cards
-        for i in range(min(3, 7 - row)):
-            st.write(back_lst[text_index], front_lst[text_index])
-            index = row + i
-            flip_class = "flipped" if st.session_state.flipped_cards[index] else ""
-    
-            with cols[i]:
-                st.markdown(f"""
-                <div class="flip-card-container">
-                    <div class="flip-card {flip_class}">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src='https://i.ibb.co/fHr4Qdb/Penguin-of-the-week-back-1-removebg-preview.png' alt='Card Image'>
-                            </div>
-                            <div class="flip-card-back"></div>
-                            {back_lst[text_index]}
+   # Display up to 3 Cards per Row
+for row in range(0, 7, 3):  # 3 cards per row
+    cols = st.columns(min(3, 7 - row))  # Ensures the last row has the correct number of cards
+    for i in range(min(3, 7 - row)):
+        index = row + i
+        flip_class = "flipped" if st.session_state.flipped_cards[index] else ""
+
+        with cols[i]:
+            st.markdown(f"""
+            <div class="flip-card-container">
+                <div class="flip-card {flip_class}">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src='https://i.ibb.co/fHr4Qdb/Penguin-of-the-week-back-1-removebg-preview.png' alt='Card Image'>
+                            <div class="overlay-text">{card_numbers[index]}</div>
+                        </div>
+                        <div class="flip-card-back">
+                            {card_texts[index]}
                         </div>
                     </div>
                 </div>
-                """, unsafe_allow_html=True)
-            text_index += 1
+            </div>
+            """, unsafe_allow_html=True)

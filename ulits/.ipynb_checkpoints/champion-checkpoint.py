@@ -124,10 +124,10 @@ def get_champion():
     all_df,
     column_config={
         "Rank": st.column_config.ImageColumn(
-            "Week Champion", help="Streamlit app preview screenshots"
+            "Week Champion", help="Streamlit app preview screenshots", width="medium"
         )
     },
-        hide_index=True, width="medium")
+        hide_index=True)
         
     
     if df_students.shape[0] > 0 :

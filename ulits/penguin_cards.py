@@ -75,6 +75,7 @@ def get_cards():
     # Initialize session state for flip state of each card
     if "flipped_cards" not in st.session_state:
         st.session_state.flipped_cards = [i==1 for i in list(df_cards['Status'])]  # 7 unique cards
+        print(st.session_state.flipped_cards)
 
     st.markdown(flip_css, unsafe_allow_html=True)
 

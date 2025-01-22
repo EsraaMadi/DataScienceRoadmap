@@ -16,7 +16,7 @@ from datetime import datetime
 # week_no = days_difference // 7 + 1 
 # week_no = week_no -1
 
-@st.cache_data(show_spinner="Fetching roadmap...")
+#@st.cache_data(show_spinner="Fetching roadmap...")
 def _get_raw_chanpion():
     df_lst, all_df = ld.load_champian()
     return df_lst, all_df
@@ -96,7 +96,7 @@ def get_champion():
     st.markdown('#')
     st.markdown('#')
 
-    all_df = all_df.sort_values(by='Week num')
+    #all_df = all_df.sort_values(by='Week num')
     st.dataframe(all_df)
         
     

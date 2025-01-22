@@ -96,8 +96,15 @@ def get_champion():
     st.markdown('#')
     st.markdown('#')
 
-    #all_df = all_df.sort_values(by='Week num')
     st.dataframe(all_df)
+    st.data_editor(
+    all_df,
+    column_config={
+        "Rank": st.column_config.ImageColumn(
+            "Preview Image", help="Streamlit app preview screenshots"
+        )
+    },
+        hide_index=True,)
         
     
     if df_students.shape[0] > 0 :

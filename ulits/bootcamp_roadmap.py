@@ -141,6 +141,9 @@ def _draw_agenda(df):
 
     groups_df = list(df.groupby(['#Week', '#Day', 'Date', 'Phase', 'Unit']))
 
+    st.dataframe(df.groupby(['#Week', '#Day', 'Date', 'Phase', 'Unit']))
+    
+
     current_week_no = get_week_no(today)
 
     history_list, current_list, future_list, current_week_list, prev_week_list = _filter_groups(today,

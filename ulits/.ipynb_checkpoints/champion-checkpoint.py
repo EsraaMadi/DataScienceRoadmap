@@ -73,8 +73,6 @@ def get_champion():
     
     # Get dictionery of each week
     df_dict, all_df = _get_raw_chanpion()
-
-    st.dataframe(all_df)
     
     # aggregate all weeks data in one datafram
     df_students = ld.get_champions(df_dict)
@@ -97,8 +95,13 @@ def get_champion():
     st.markdown("""---""")
     st.markdown('#')
     st.markdown('#')
+
+    all_df = all_df.sort_values(by='Week num')
+    st.dataframe(all_df)
+        
     
     if df_students.shape[0] > 0 :
+    
         df_champian = df_students.copy()
         df_champian['total'] = df_students.iloc[:, 1:].sum(axis=1)
         top_1_df = df_champian.nlargest(1, 'total')

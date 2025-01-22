@@ -65,6 +65,7 @@ flip_css = """
     .flip-card-back {
         background: #d8d9da;
         transform: rotateY(180deg);
+        color: black;
     }
 </style>
 """

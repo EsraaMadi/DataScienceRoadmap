@@ -7,12 +7,6 @@ def _get_raw_card():
     df = ld.load_esraa_cards()
     return df
 
-
-df_cards = _get_raw_card()
-# Initialize session state for flip state of each card
-if "flipped_cards" not in st.session_state:
-    st.session_state.flipped_cards = [i==1 for i in list(df_cards['Status'])]  # 7 unique cards
-
 # Function to toggle flip state for a specific card
 def flip_card(index):
     st.session_state.flipped_cards[index] = not st.session_state.flipped_cards[index]
@@ -77,8 +71,13 @@ flip_css = """
 
 def get_cards():
 
+    df_cards = _get_raw_card()
+    # Initialize session state for flip state of each card
+    if "flipped_cards" not in st.session_state:
+        st.session_state.flipped_cards = [i==1 for i in list(df_cards['Status'])]  # 7 unique cards
+
     st.markdown(flip_css, unsafe_allow_html=True)
-    
+
     # Display up to 3 Cards per Row
     for row in range(0, 7, 3):  # 3 cards per row
         cols = st.columns(min(3, 7 - row))  # Ensures the last row has the correct number of cards

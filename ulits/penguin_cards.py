@@ -104,26 +104,26 @@ def get_cards():
     card_texts = [i if len(i)>0 else " " for i in back_lst]
     # Display up to 3 Cards per Row
     
-   # Display up to 3 Cards per Row
-for row in range(0, 7, 3):  # 3 cards per row
-    cols = st.columns(min(3, 7 - row))  # Ensures the last row has the correct number of cards
-    for i in range(min(3, 7 - row)):
-        index = row + i
-        flip_class = "flipped" if st.session_state.flipped_cards[index] else ""
-
-        with cols[i]:
-            st.markdown(f"""
-            <div class="flip-card-container">
-                <div class="flip-card {flip_class}">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src='https://i.ibb.co/fHr4Qdb/Penguin-of-the-week-back-1-removebg-preview.png' alt='Card Image'>
-                            <div class="overlay-text">{card_numbers[index]}</div>
-                        </div>
-                        <div class="flip-card-back">
-                            {card_texts[index]}
+       # Display up to 3 Cards per Row
+    for row in range(0, 7, 3):  # 3 cards per row
+        cols = st.columns(min(3, 7 - row))  # Ensures the last row has the correct number of cards
+        for i in range(min(3, 7 - row)):
+            index = row + i
+            flip_class = "flipped" if st.session_state.flipped_cards[index] else ""
+    
+            with cols[i]:
+                st.markdown(f"""
+                <div class="flip-card-container">
+                    <div class="flip-card {flip_class}">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src='https://i.ibb.co/fHr4Qdb/Penguin-of-the-week-back-1-removebg-preview.png' alt='Card Image'>
+                                <div class="overlay-text">{card_numbers[index]}</div>
+                            </div>
+                            <div class="flip-card-back">
+                                {card_texts[index]}
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            """, unsafe_allow_html=True)
+                """, unsafe_allow_html=True)

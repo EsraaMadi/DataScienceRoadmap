@@ -86,6 +86,7 @@ def get_cards():
     for row in range(0, 7, 3):  # 3 cards per row
         cols = st.columns(min(3, 7 - row))  # Ensures the last row has the correct number of cards
         for i in range(min(3, 7 - row)):
+            st.write(back_lst[text_index], front_lst[text_index])
             index = row + i
             flip_class = "flipped" if st.session_state.flipped_cards[index] else ""
     
@@ -103,4 +104,4 @@ def get_cards():
                     </div>
                 </div>
                 """, unsafe_allow_html=True)
-        text_index += 1
+            text_index += 1

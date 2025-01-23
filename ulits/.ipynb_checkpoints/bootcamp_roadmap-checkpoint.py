@@ -47,8 +47,8 @@ ITEMS_NUMBERS = {
 
 # Get today's date
 start_course_date = datetime(2025, 1, 26).date()
-today = datetime(2025, 2, 19).date()
-#today = datetime.now().date()
+#today = datetime(2025, 2, 19).date()
+today = datetime.now().date()
 
 def get_week_no(date):
     # Calculate the difference in days between the two dates
@@ -188,5 +188,4 @@ def get_roadmap_page():
     st.image("ulits/images/map.png")
     
     roadmap_df = _get_raw_roadmap()
-    #st.dataframe(roadmap_df.groupby(['#Week', '#Day', 'Date', 'Phase', 'Unit']).sum())
     _draw_agenda(roadmap_df)

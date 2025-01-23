@@ -18,6 +18,7 @@ def flip_card(index):
 # CSS for flip effect and styling
 flip_css = """
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
     .flip-card-container {
         display: flex;
         justify-content: center;
@@ -67,28 +68,44 @@ flip_css = """
         border-radius: 12px;
     }
     .flip-card-front .overlay-text {
-    position: absolute;
-    bottom: 10%; /* Adjust as needed for spacing from the bottom */
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-    text-align: center;
-    }
-
-    .flip-card-back {
-        background: #d8d9da;
-        transform: rotateY(180deg);
-        font-size: 1.5rem;
+        position: absolute;
+        bottom: 10%; /* Adjust as needed for spacing from the bottom */
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
         font-weight: bold;
-        color: #333;
+        color: white;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
         text-align: center;
-        padding: 10px;
     }
-</style>
+    .flip-card-back {
+    background: #d8d9da;
+    transform: rotateY(180deg);
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures top, center, and bottom text are spaced */
+    }
 
+    .flip-card-back .top-text {
+    font-size: 1.5rem;
+    margin: 18px 0;
+    font-family: 'Tajawal', sans-serif;
+    }
+
+    .flip-card-back .center-text {
+    font-size: 3rem;
+    margin: 15px 0; /* Adds some spacing */
+    }
+
+    .flip-card-back .bottom-text {
+    font-size: 1rem;
+    }
+
+</style>
 """
 def get_cards():
 
@@ -102,6 +119,8 @@ def get_cards():
     card_numbers = list(df_cards['Week num'])
     card_texts = list(df_cards['Name'])
     card_texts = [i if len(i)>0 else " " for i in card_texts]
+    center_texts = ["🧊"] * len(card_numbers)
+    bottom_texts = list(df_cards['expire date'])
     # Display up to 3 Cards per Row
     
        # Display up to 3 Cards per Row
@@ -112,18 +131,20 @@ def get_cards():
             flip_class = "flipped" if st.session_state.flipped_cards[index] else ""
     
             with cols[i]:
-                st.markdown(f"""
-                <div class="flip-card-container">
-                    <div class="flip-card {flip_class}">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src='https://i.ibb.co/fHr4Qdb/Penguin-of-the-week-back-1-removebg-preview.png' alt='Card Image'>
-                                <div class="overlay-text">{card_numbers[index]}</div>
-                            </div>
-                            <div class="flip-card-back">
-                                {card_texts[index]}
-                            </div>
+            st.markdown(f"""
+            <div class="flip-card-container">
+                <div class="flip-card {flip_class}">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src='https://i.ibb.co/fHr4Qdb/Penguin-of-the-week-back-1-removebg-preview.png' alt='Card Image'>
+                            <div class="overlay-text">{card_numbers[index]}</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="top-text">{card_texts[index]}</div>
+                            <div class="center-text">{center_texts[index]}</div>
+                            <div class="bottom-text">Expire at: {bottom_texts[index]}</div>
                         </div>
                     </div>
                 </div>
-                """, unsafe_allow_html=True)
+            </div>
+            """, unsafe_allow_html=True)

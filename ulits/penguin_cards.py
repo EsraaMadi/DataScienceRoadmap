@@ -131,8 +131,8 @@ def get_cards():
             flip_class = "flipped" if st.session_state.flipped_cards[index] else ""
     
             with cols[i]:
-            st.markdown(f"""
-            <div class="flip-card-container">
+            st.markdown(
+                f"""<div class="flip-card-container">
                 <div class="flip-card {flip_class}">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">

@@ -131,20 +131,20 @@ def get_cards():
             flip_class = "flipped" if st.session_state.flipped_cards[index] else ""
     
             with cols[i]:
-            st.markdown(
-                f"""<div class="flip-card-container">
-                <div class="flip-card {flip_class}">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src='https://i.ibb.co/fHr4Qdb/Penguin-of-the-week-back-1-removebg-preview.png' alt='Card Image'>
-                            <div class="overlay-text">{card_numbers[index]}</div>
-                        </div>
-                        <div class="flip-card-back">
-                            <div class="top-text">{card_texts[index]}</div>
-                            <div class="center-text">{center_texts[index]}</div>
-                            <div class="bottom-text">Expire at: {bottom_texts[index]}</div>
+                st.markdown(
+                    f"""<div class="flip-card-container">
+                    <div class="flip-card {flip_class}">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src='https://i.ibb.co/fHr4Qdb/Penguin-of-the-week-back-1-removebg-preview.png' alt='Card Image'>
+                                <div class="overlay-text">{card_numbers[index]}</div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="top-text">{card_texts[index]}</div>
+                                <div class="center-text">{center_texts[index]}</div>
+                                <div class="bottom-text">Expire at: {bottom_texts[index]}</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            """, unsafe_allow_html=True)
+                """, unsafe_allow_html=True)

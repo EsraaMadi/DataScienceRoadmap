@@ -131,7 +131,6 @@ def _draw_groups(time, groups):
             a, b = st.columns([0.03, 0.97])
             a.markdown(ITEMS_NUMBERS[item_count])
             if len(row['Display_link (github/Others)']) > 0:
-#                html_code = f"<a href={row['Display_link (github/Others)']} > {row['Title']}</a>{item_tag}{description}"
                 html_code = f'<a href="{row["Display_link (github/Others)"]}" target="_blank" rel="noopener noreferrer">{row["Title"]}</a>{item_tag}{description}'
             else:
                 html_code = f"<strong>{row['Title']}</strong> {item_tag}{description}"

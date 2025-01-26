@@ -10,10 +10,10 @@ def get_emoji(gender):
 
 # Flip the next card automatically every second
 def auto_flip():
-    current_card = st.session_state.card_flip_order[st.session_state.current_card]
-    print(st.session_state.current_card,st.session_state.card_flip_order)
-    st.session_state.flipped_cards[current_card] = not st.session_state.flipped_cards[current_card]
-    st.session_state.current_card += 1
+    if st.session_state.current_card < len(st.session_state.cards):
+        current_card = st.session_state.card_flip_order[st.session_state.current_card]
+        st.session_state.flipped_cards[current_card] = not st.session_state.flipped_cards[current_card]
+        st.session_state.current_card += 1
 
 
 def drow_cards():

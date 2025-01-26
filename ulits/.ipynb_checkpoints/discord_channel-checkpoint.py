@@ -17,4 +17,4 @@ def get_discord():
         st.markdown('#')
     
         st.markdown('#')
-        st.write("[Link](https://discord.tuwaiqadmin.com/invite/cm2u82h7p000d2i6j1qcwxpqz)")
+        st.write("[Link](https://discord.tuwaiqadmin.com/invite/cm5v4lbju0009mx9xsi7gbhti)")

@@ -171,8 +171,6 @@ def _draw_agenda(df, today):
 # # st.markdown('#')
 
 def get_roadmap_page():
-
-datetime(2025, 1, 26).date()
     #today = datetime(2025, 2, 19).date()
     today = datetime.now().date()
 

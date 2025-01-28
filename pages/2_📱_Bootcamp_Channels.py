@@ -36,4 +36,4 @@ with tab_wifi:
     wi.git_wifi()
 
 with tab_suport:
-    wi.get_bootcamp_support()
+    us.get_bootcamp_support()

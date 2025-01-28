@@ -25,12 +25,11 @@ def get_bootcamp_support():
       <li>⁠تزويدهم بالأدوات اللازمة لمواجهة التحديات واتخاذ القرارات المهنية المناسبة </li>
     </ul>
 استمارة الإرشاد المهني الخاصة بالطلاب 
-  تتيح للطلاب تسجيل بياناتهم بشكل مباشر،وسيتم التواصل معهم لتقديم الدعم والإرشاد
+   تتيح للطلاب تسجيل بياناتهم بشكل مباشر،وسيتم التواصل معهم لتقديم الدعم والإرشاد
 <a href="https://forms.gle/u53DXWSD8h3qEtT9A" target="_blank" rel="noopener noreferrer">
         الرابط
     </a>
         </div>
     """
                     , unsafe_allow_html=True)
-    st.write("[Link](https://forms.gle/u53DXWSD8h3qEtT9A)")
  

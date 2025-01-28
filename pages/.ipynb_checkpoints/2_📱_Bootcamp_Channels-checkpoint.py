@@ -2,6 +2,7 @@ import streamlit as st
 import ulits.discord_channel as dc
 import ulits.bootcamp_github as bg
 import ulits.wi_fi_access as wi
+import ulits.bootcamp_support as us
 
 
 
@@ -13,7 +14,7 @@ _, im_col, _ = st.columns([0.35, 0.3, 0.35])
 with im_col:
     st.image("ulits/images/tuwaiq-academy-logo.png")
 
-tab_discord, tab_github, tab_wifi = st.tabs(["📺 Discord Channel", " 📖 Github","📶 Wi-Fi Access"])
+tab_discord, tab_github, tab_wifi, tab_suport = st.tabs(["📺 Discord Channel", " 📖 Github","📶 Wi-Fi Access", "🫶🏼 Career Guidance"])
 
 css = '''
 <style>
@@ -33,3 +34,6 @@ with tab_github:
 
 with tab_wifi:
     wi.git_wifi()
+
+with tab_suport:
+    wi.get_bootcamp_support()

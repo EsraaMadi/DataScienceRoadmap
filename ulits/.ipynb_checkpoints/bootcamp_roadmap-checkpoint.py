@@ -47,8 +47,6 @@ ITEMS_NUMBERS = {
 
 # Get today's date
 start_course_date = datetime(2025, 1, 26).date()
-#today = datetime(2025, 2, 19).date()
-today = datetime.now().date()
 
 def get_week_no(date):
     # Calculate the difference in days between the two dates
@@ -139,7 +137,7 @@ def _draw_groups(time, groups):
         st.markdown("""---""")
         
 
-def _draw_agenda(df):
+def _draw_agenda(df, today):
 
     groups_df = list(df.groupby(['#Week', '#Day', 'Date', 'Phase']))
     
@@ -173,6 +171,12 @@ def _draw_agenda(df):
 # # st.markdown('#')
 
 def get_roadmap_page():
+
+datetime(2025, 1, 26).date()
+    #today = datetime(2025, 2, 19).date()
+    today = datetime.now().date()
+
+
     st.markdown('#')
     
     st.write(
@@ -188,4 +192,4 @@ def get_roadmap_page():
     st.image("ulits/images/map.png")
     
     roadmap_df = _get_raw_roadmap()
-    _draw_agenda(roadmap_df)
+    _draw_agenda(roadmap_df, today)
